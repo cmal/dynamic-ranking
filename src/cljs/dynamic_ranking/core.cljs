@@ -47,27 +47,17 @@
 
 (defn rank-rects []
   (let [rank (rf/subscribe [:rank])]
-    [:g
+    [:div.canvas-inner
      (doall (for [i    (range (count @rank))
                   :let [r (get @rank i)]]
               ^{:key r}
-              [:rect
-               {:class  "rect-smooth"
-                :id     r
-                :x      20
-                :y      (+ 20 (* i 30))
-                :height 20
-                :width  (* 20 (inc r))
-                :style  {:stroke "#006" :fill "#060"}}]))]))
+              [:div.canvas-rect
+               {:style {:width (str (* 20 (inc r)) "px")
+                        :top   (str (* i 30) "px")}}
+               ]))]))
 
 (defn dynamic-rank []
-  [:svg
-   {:x      0
-    :y      0
-    :width  640
-    :height 480
-    :style  {:border     "1px solid #999"
-             :background "white"}}
+  [:div.canvas
    [rank-rects]])
 
 
@@ -75,6 +65,12 @@
   (let [time @(rf/subscribe [:time])]
     [:div
      [:div time]
+     [:div.trans {:style {:position   "absolute"
+                          :top        "880px"
+                          :display    "block"
+                          :background (if (even? time) "yellow" "red")
+                          :height     "200px"
+                          :width      "200px"}}]
      [:div [dynamic-rank]]]))
 
 (defn chart-page []

@@ -67,9 +67,34 @@ body {
     }
 }
 
-.rect-smooth {
-    transition: all 1s;
-    -moz-transition: all 1s; /* Firefox 4 */
-    -webkit-transition: all 1s; /* Safari 和 Chrome */
-    -o-transition: all 1s; /* Opera */
+div.canvas {
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    width: 640px;
+    height: 480px;
+    border: 1px solid #999;
+    background: white;
+
+}
+
+div.canvas-rect {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 20px;
+    background: green;
+
+    transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in; /* Firefox 4 */
+    -webkit-transition: all 1s ease-in; /* Safari 和 Chrome */
+    -o-transition: all 1s ease-in; /* Opera */
+
+}
+
+div.trans {
+    transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in; /* Firefox 4 */
+    -webkit-transition: all 1s ease-in; /* Safari 和 Chrome */
+    -o-transition: all 1s ease-in; /* Opera */
 }

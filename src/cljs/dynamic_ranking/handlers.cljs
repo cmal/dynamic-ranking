@@ -22,4 +22,4 @@
  (fn [db [_ time]]
    (assoc db
           :time time
-          :rank (nth db/ranks (- time db/init-time)))))
+          :rank (nth db/ranks (mod (- time db/init-time) 100)))))

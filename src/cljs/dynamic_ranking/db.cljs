@@ -4,7 +4,7 @@
 (defonce init-time
   (int (/ (int (js/Date.)) 1000)))
 
-(defonce ranks (repeatedly 1000 (partial shuffle (range 5))))
+(defonce ranks (repeatedly 100 (partial shuffle (range 5))))
 
 (def default-db
   {:page :home
