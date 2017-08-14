@@ -15,8 +15,3 @@
  :time
  (fn [db _]
    (:time db)))
-
-(reg-sub
- :rank
- (fn [db _]
-   (:rank db)))

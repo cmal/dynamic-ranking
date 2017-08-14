@@ -45,33 +45,24 @@
       [:div {:dangerouslySetInnerHTML
              {:__html (md->html docs)}}]])])
 
-(defn rank-rects []
-  (let [rank (rf/subscribe [:rank])]
+(defn dynamic-rank [time]
+  (fn []
     [:div.canvas-inner
-     (doall (for [i    (range (count @rank))
-                  :let [r (get @rank i)]]
-              ^{:key r}
-              [:div.canvas-rect
-               {:style {:width (str (* 20 (inc r)) "px")
-                        :top   (str (* i 30) "px")}}
-               ]))]))
-
-(defn dynamic-rank []
-  [:div.canvas
-   [rank-rects]])
-
+     (doall
+      (let [rank (shuffle (range 5))]
+        (for [r    rank
+              :let [i (.indexOf rank r)]]
+          ^{:key r}
+          [:div.canvas-rect
+           {:style {:width (str (* 20 (inc r)) "px")
+                    :top   (str (* i 30) "px")}}
+           ])))]))
 
 (defn chart []
   (let [time @(rf/subscribe [:time])]
     [:div
      [:div time]
-     [:div.trans {:style {:position   "absolute"
-                          :top        "880px"
-                          :display    "block"
-                          :background (if (even? time) "yellow" "red")
-                          :height     "200px"
-                          :width      "200px"}}]
-     [:div [dynamic-rank]]]))
+     [:div [dynamic-rank time]]]))
 
 (defn chart-page []
   [:div.container
