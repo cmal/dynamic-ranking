@@ -46,24 +46,33 @@
       [:div {:dangerouslySetInnerHTML
              {:__html (md->html docs)}}]])])
 
-(defn div-rec-component [width top a i]
+(defn div-rec-component [i time rank]
   (r/create-class
-   {:display-name (str "div-rec-component" @a)
+   {:display-name (str "div-rec-component" @time @rank)
     :component-did-update
     (fn []
-      (println @a "==>" width top " component did update"))
+      (println "==> component did update"))
     :component-did-mount
     (fn []
-      (println @a "==>" width top " component did mount"))
+      (println "==> component did mount"))
     :component-will-unmount
     (fn []
-      (println @a "==>" width top " component will unmount"))
+      (println "==> component will unmount"))
     :reagent-render
-    (fn [width top a i]
-      (println @a "==>" width top " component render")
+    (fn [i time rank]
+      (println "==> component render")
       [:div.canvas-rect
-       {:style {:width (str (+ width (* 5 (+ 471100 @a))) "px")
-                :top   (str top "px")}}
+       {:style {:width      (str
+                             (+ (* (inc i) 30) (* 5 (mod @time 40)))
+                             "px")
+                :top        (str
+                             (if (= (nth @rank i) (dec (count @rank)))
+                               (* 20 (+ 3 (nth @rank i)))
+                               (* 20 (nth @rank i)))
+                             "px")
+                :background (when (= (nth @rank i) (dec (count @rank)))
+                              "red")
+                }}
        i])}))
 
 (defn dynamic-rank []
@@ -73,7 +82,7 @@
      (doall
       (for [i (range 5)]
         ^{:key (str "dynr-" i)}
-        [div-rec-component (* (inc i) 30) (* 20 (inc (nth @rank i))) time i]
+        [div-rec-component i time rank]
         ))]))
 
 (defn chart []
@@ -141,4 +150,4 @@
 ;; initialize data
 (defonce time-updater
   (js/setInterval
-   #(rf/dispatch [:set-time (int (/ (int (js/Date.)) 1000))]) 1000))
+   #(rf/dispatch [:set-time (int (/ (int (js/Date.)) 1000))]) 5000))
