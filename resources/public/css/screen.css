@@ -98,3 +98,13 @@ div.trans {
     -webkit-transition: all 1s ease-in; /* Safari 和 Chrome */
     -o-transition: all 1s ease-in; /* Opera */
 }
+
+div.canvas-inner {
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    width: 640px;
+    height: 480px;
+    border: 1px solid #999;
+    background: white;
+}

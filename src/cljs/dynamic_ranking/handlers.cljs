@@ -21,4 +21,5 @@
  :set-time
  (fn [db [_ time]]
    (assoc db
-          :time time)))
+          :time time
+          :rank (shuffle (range 5)))))

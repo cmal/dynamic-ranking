@@ -7,4 +7,5 @@
 (def default-db
   {:page :home
    :time init-time
+   :rank (range 5)
    })

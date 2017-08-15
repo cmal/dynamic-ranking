@@ -8,7 +8,8 @@
             [ajax.core :refer [GET POST]]
             [dynamic-ranking.ajax :refer [load-interceptors!]]
             [dynamic-ranking.handlers]
-            [dynamic-ranking.subscriptions])
+            [dynamic-ranking.subscriptions]
+            )
   (:import goog.History))
 
 (defn nav-link [uri title page collapsed?]
@@ -45,24 +46,48 @@
       [:div {:dangerouslySetInnerHTML
              {:__html (md->html docs)}}]])])
 
-(defn dynamic-rank [time]
-  (fn []
-    [:div.canvas-inner
-     (doall
-      (let [rank (shuffle (range 5))]
-        (for [r    rank
-              :let [i (.indexOf rank r)]]
-          ^{:key r}
-          [:div.canvas-rect
-           {:style {:width (str (* 20 (inc r)) "px")
-                    :top   (str (* i 30) "px")}}
-           ])))]))
+(defn div-rec-component [width top a]
+  (r/create-class
+   {:display-name (str "div-rec-component" @a)
+    :component-did-update
+    (fn []
+      (println @a "==>" width top " component did update"))
+    :component-did-mount
+    (fn []
+      (println @a "==>" width top " component did mount"))
+    :component-will-unmount
+    (fn []
+      (println @a "==>" width top " component will unmount"))
+    :reagent-render
+    (fn [width top a]
+      (println @a "==>" width top " component render")
+      [:div.canvas-rect
+       {:style {:width (str width "px")
+                :top   (str top "px")}}])}))
+
+
+(defn dynamic-rank []
+  (let [time (rf/subscribe [:time])
+        rank (rf/subscribe [:rank])]
+    (fn []
+      [:div.canvas-inner
+       ^{:key (str "dynr-" 0)}
+       [div-rec-component (* 0 30) (* 20 (inc (nth @rank 0))) time]
+       ^{:key (str "dynr-" 1)}
+       [div-rec-component (* 1 30) (* 20 (inc (nth @rank 1))) time]
+       ^{:key (str "dynr-" 2)}
+       [div-rec-component (* 2 30) (* 20 (inc (nth @rank 2))) time]
+       ^{:key (str "dynr-" 3)}
+       [div-rec-component (* 3 30) (* 20 (inc (nth @rank 3))) time]
+       ^{:key (str "dynr-" 4)}
+       [div-rec-component (* 4 30) (* 20 (inc (nth @rank 4))) time]
+       ])))
 
 (defn chart []
-  (let [time @(rf/subscribe [:time])]
+  (let [time (rf/subscribe [:time])]
     [:div
-     [:div time]
-     [:div [dynamic-rank time]]]))
+     [:div @time]
+     [:div [dynamic-rank]]]))
 
 (defn chart-page []
   [:div.container
