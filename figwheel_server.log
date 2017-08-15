@@ -1181,3 +1181,46 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ran
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.838 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.757 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.582 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.7 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.59 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.603 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.218 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.907 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.705 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.734 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.866 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.743 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.815 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.818 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js

@@ -46,7 +46,7 @@
       [:div {:dangerouslySetInnerHTML
              {:__html (md->html docs)}}]])])
 
-(defn div-rec-component [width top a]
+(defn div-rec-component [width top a i]
   (r/create-class
    {:display-name (str "div-rec-component" @a)
     :component-did-update
@@ -59,29 +59,22 @@
     (fn []
       (println @a "==>" width top " component will unmount"))
     :reagent-render
-    (fn [width top a]
+    (fn [width top a i]
       (println @a "==>" width top " component render")
       [:div.canvas-rect
-       {:style {:width (str width "px")
-                :top   (str top "px")}}])}))
-
+       {:style {:width (str (+ width (* 5 (+ 471100 @a))) "px")
+                :top   (str top "px")}}
+       i])}))
 
 (defn dynamic-rank []
   (let [time (rf/subscribe [:time])
         rank (rf/subscribe [:rank])]
-    (fn []
-      [:div.canvas-inner
-       ^{:key (str "dynr-" 0)}
-       [div-rec-component (* 0 30) (* 20 (inc (nth @rank 0))) time]
-       ^{:key (str "dynr-" 1)}
-       [div-rec-component (* 1 30) (* 20 (inc (nth @rank 1))) time]
-       ^{:key (str "dynr-" 2)}
-       [div-rec-component (* 2 30) (* 20 (inc (nth @rank 2))) time]
-       ^{:key (str "dynr-" 3)}
-       [div-rec-component (* 3 30) (* 20 (inc (nth @rank 3))) time]
-       ^{:key (str "dynr-" 4)}
-       [div-rec-component (* 4 30) (* 20 (inc (nth @rank 4))) time]
-       ])))
+    [:div.canvas-inner
+     (doall
+      (for [i (range 5)]
+        ^{:key (str "dynr-" i)}
+        [div-rec-component (* (inc i) 30) (* 20 (inc (nth @rank i))) time i]
+        ))]))
 
 (defn chart []
   (let [time (rf/subscribe [:time])]

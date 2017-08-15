@@ -82,8 +82,11 @@ div.canvas-rect {
     position: absolute;
     margin-left: 20px;
     margin-top: 10px;
-    height: 20px;
+    height: 18px;
     background: green;
+    color: white;
+    text-align: right;
+    line-height: 18px;
 
     transition: all 1s ease-in;
     -moz-transition: all 1s ease-in; /* Firefox 4 */
