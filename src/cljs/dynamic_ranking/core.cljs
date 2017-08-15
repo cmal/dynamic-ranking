@@ -9,6 +9,7 @@
             [dynamic-ranking.ajax :refer [load-interceptors!]]
             [dynamic-ranking.handlers]
             [dynamic-ranking.subscriptions]
+            [dynamic-ranking.db :refer [init-time]]
             )
   (:import goog.History))
 
@@ -51,27 +52,25 @@
    {:display-name (str "div-rec-component" @time @rank)
     :component-did-update
     (fn []
-      (println "==> component did update"))
+      #_(println "==> component did update"))
     :component-did-mount
     (fn []
-      (println "==> component did mount"))
+      #_(println "==> component did mount"))
     :component-will-unmount
     (fn []
-      (println "==> component will unmount"))
+      #_(println "==> component will unmount"))
     :reagent-render
     (fn [i time rank]
-      (println "==> component render")
+      #_(println "==> component render")
       [:div.canvas-rect
-       {:style {:width      (str
-                             (+ (* (inc i) 30) (* 5 (mod @time 40)))
-                             "px")
-                :top        (str
-                             (if (= (nth @rank i) (dec (count @rank)))
-                               (* 20 (+ 3 (nth @rank i)))
-                               (* 20 (nth @rank i)))
-                             "px")
-                :background (when (= (nth @rank i) (dec (count @rank)))
-                              "red")
+       {:style {:width (str
+                        (+ (* (inc i) 30) (* 5 (mod @time 10)))
+                        "px")
+                :top   (str
+                        (if (= (nth @rank i) (dec (count @rank)))
+                          (* 20 (+ 3 (nth @rank i)))
+                          (* 20 (nth @rank i)))
+                        "px")
                 }}
        i])}))
 
@@ -89,12 +88,21 @@
   (let [time (rf/subscribe [:time])]
     [:div
      [:div @time]
-     [:div [dynamic-rank]]]))
+     [:div [dynamic-rank]]
+     [:div.canvas-cover]]))
+
+
+(defn top-pe-chart []
+  (let [secucodes (rf/subscribe [:secucodes])]
+    [:div
+     (count @secucodes)]))
+
 
 (defn chart-page []
   [:div.container
    [:div.chart
-    [chart]]])
+    [chart]
+    [top-pe-chart]]])
 
 (def pages
   {:home  #'home-page
@@ -135,6 +143,14 @@
 (defn fetch-docs! []
   (GET "/docs" {:handler #(rf/dispatch [:set-docs %])}))
 
+(defn fetch-pe! []
+  (GET "/pe" {:handler #(do
+                         (rf/dispatch [:set-pe %])
+                         (rf/dispatch [:set-secucodes (->> %
+                                                          (map second)
+                                                          (mapcat (fn [rec] (map first rec)))
+                                                          set)]))}))
+
 (defn mount-components []
   (rf/clear-subscription-cache!)
   (r/render [#'page] (.getElementById js/document "app")))
@@ -143,6 +159,7 @@
   (rf/dispatch-sync [:initialize-db])
   (load-interceptors!)
   (fetch-docs!)
+  (fetch-pe!)
   (hook-browser-navigation!)
   (mount-components))
 
@@ -150,4 +167,4 @@
 ;; initialize data
 (defonce time-updater
   (js/setInterval
-   #(rf/dispatch [:set-time (int (/ (int (js/Date.)) 1000))]) 5000))
+   #(rf/dispatch [:set-time (- (int (/ (int (js/Date.)) 1000)) init-time)]) 1000))

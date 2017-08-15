@@ -31,7 +31,9 @@
                  [ring/ring-core "1.6.2"]
                  [ring/ring-defaults "0.3.1"]
                  [secretary "1.2.3"]
-                 [selmer "1.11.0"]]
+                 [selmer "1.11.0"]
+                 [ring-json-response "0.2.0"]
+                 ]
 
   :min-lein-version "2.0.0"
 
@@ -48,81 +50,81 @@
   [:target-path [:cljsbuild :builds :app :compiler :output-dir] [:cljsbuild :builds :app :compiler :output-to]]
   :figwheel
   {:http-server-root "public"
-   :nrepl-port 7002
-   :css-dirs ["resources/public/css"]
+   :nrepl-port       7002
+   :css-dirs         ["resources/public/css"]
    :nrepl-middleware
    [cemerick.piggieback/wrap-cljs-repl cider.nrepl/cider-middleware]}
   
 
   :profiles
   {:uberjar {:omit-source true
-             :prep-tasks ["compile" ["cljsbuild" "once" "min"]]
+             :prep-tasks  ["compile" ["cljsbuild" "once" "min"]]
              :cljsbuild
              {:builds
               {:min
                {:source-paths ["src/cljc" "src/cljs" "env/prod/cljs"]
                 :compiler
-                {:output-to "target/cljsbuild/public/js/app.js"
+                {:output-to     "target/cljsbuild/public/js/app.js"
                  :optimizations :advanced
-                 :pretty-print false
+                 :pretty-print  false
                  :closure-warnings
                  {:externs-validation :off :non-standard-jsdoc :off}
-                 :externs ["react/externs/react.js"]}}}}
+                 :externs       ["react/externs/react.js"]}}}}
              
              
-             :aot :all
-             :uberjar-name "dynamic-ranking.jar"
-             :source-paths ["env/prod/clj"]
+             :aot            :all
+             :uberjar-name   "dynamic-ranking.jar"
+             :source-paths   ["env/prod/clj"]
              :resource-paths ["env/prod/resources"]}
 
-   :dev           [:project/dev :profiles/dev]
-   :test          [:project/dev :project/test :profiles/test]
+   :dev  [:project/dev :profiles/dev]
+   :test [:project/dev :project/test :profiles/test]
 
-   :project/dev  {:dependencies [[prone "1.1.4"]
-                                 [ring/ring-mock "0.3.1"]
-                                 [ring/ring-devel "1.6.2"]
-                                 [pjstadig/humane-test-output "0.8.2"]
-                                 [binaryage/devtools "0.9.4"]
-                                 [com.cemerick/piggieback "0.2.2"]
-                                 [doo "0.1.7"]
-                                 [figwheel-sidecar "0.5.12"]]
-                  :plugins      [[com.jakemccrary/lein-test-refresh "0.19.0"]
-                                 [lein-doo "0.1.7"]
-                                 [lein-figwheel "0.5.12"]
-                                 [org.clojure/clojurescript "1.9.854"]]
-                  :cljsbuild
-                  {:builds
-                   {:app
-                    {:source-paths ["src/cljs" "src/cljc" "env/dev/cljs"]
-                     :figwheel {:on-jsload "dynamic-ranking.core/mount-components"}
-                     :compiler
-                     {:main "dynamic-ranking.app"
-                      :asset-path "/js/out"
-                      :output-to "target/cljsbuild/public/js/app.js"
-                      :output-dir "target/cljsbuild/public/js/out"
-                      :source-map true
-                      :optimizations :none
-                      :pretty-print true}}}}
-                  
-                  
-                  
-                  :doo {:build "test"}
-                  :source-paths ["env/dev/clj"]
-                  :resource-paths ["env/dev/resources"]
-                  :repl-options {:init-ns user}
-                  :injections [(require 'pjstadig.humane-test-output)
-                               (pjstadig.humane-test-output/activate!)]}
+   :project/dev {:dependencies [[prone "1.1.4"]
+                                [ring/ring-mock "0.3.1"]
+                                [ring/ring-devel "1.6.2"]
+                                [pjstadig/humane-test-output "0.8.2"]
+                                [binaryage/devtools "0.9.4"]
+                                [com.cemerick/piggieback "0.2.2"]
+                                [doo "0.1.7"]
+                                [figwheel-sidecar "0.5.12"]]
+                 :plugins      [[com.jakemccrary/lein-test-refresh "0.19.0"]
+                                [lein-doo "0.1.7"]
+                                [lein-figwheel "0.5.12"]
+                                [org.clojure/clojurescript "1.9.854"]]
+                 :cljsbuild
+                 {:builds
+                  {:app
+                   {:source-paths ["src/cljs" "src/cljc" "env/dev/cljs"]
+                    :figwheel     {:on-jsload "dynamic-ranking.core/mount-components"}
+                    :compiler
+                    {:main          "dynamic-ranking.app"
+                     :asset-path    "/js/out"
+                     :output-to     "target/cljsbuild/public/js/app.js"
+                     :output-dir    "target/cljsbuild/public/js/out"
+                     :source-map    true
+                     :optimizations :none
+                     :pretty-print  true}}}}
+                 
+                 
+                 
+                 :doo            {:build "test"}
+                 :source-paths   ["env/dev/clj"]
+                 :resource-paths ["env/dev/resources"]
+                 :repl-options   {:init-ns user}
+                 :injections     [(require 'pjstadig.humane-test-output)
+                                  (pjstadig.humane-test-output/activate!)]}
    :project/test {:resource-paths ["env/test/resources"]
                   :cljsbuild
                   {:builds
                    {:test
                     {:source-paths ["src/cljc" "src/cljs" "test/cljs"]
                      :compiler
-                     {:output-to "target/test.js"
-                      :main "dynamic-ranking.doo-runner"
+                     {:output-to     "target/test.js"
+                      :main          "dynamic-ranking.doo-runner"
                       :optimizations :whitespace
-                      :pretty-print true}}}}
+                      :pretty-print  true}}}}
                   
                   }
-   :profiles/dev {}
+   :profiles/dev  {}
    :profiles/test {}})

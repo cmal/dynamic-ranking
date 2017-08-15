@@ -18,6 +18,17 @@
    (assoc db :docs docs)))
 
 (reg-event-db
+ :set-pe
+ (fn [db [_ pe]]
+   (assoc db :pe pe)))
+
+(reg-event-db
+ :set-secucodes
+ (fn [db [_ secucodes]]
+   (println "set-secucodes" (count secucodes))
+   (assoc db :secucodes secucodes)))
+
+(reg-event-db
  :set-time
  (fn [db [_ time]]
    (assoc db

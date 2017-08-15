@@ -12,6 +12,16 @@
    (:docs db)))
 
 (reg-sub
+ :pe
+ (fn [db _]
+   (:pe db)))
+
+(reg-sub
+ :secucodes
+ (fn [db _]
+   (:secucodes db)))
+
+(reg-sub
  :time
  (fn [db _]
    (:time db)))
