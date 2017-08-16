@@ -30,3 +30,13 @@
  :rank
  (fn [db _]
    (:rank db)))
+
+(reg-sub
+ :current-date
+ (fn [db _]
+   (:current-date db)))
+
+(reg-sub
+ :current-pe-rank
+ (fn [db _]
+   (:current-pe-rank db)))

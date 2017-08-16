@@ -93,7 +93,54 @@ div.canvas-inner {
 
 div.canvas-cover {
     position: relative;
-    height: 80px;
+    height: 180px;
     background: white;
     border: 0px solid #999;
+    /* display: none; */
+}
+
+div.pe-rank {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #999;
+    background: rgba(100,100,0,0.1);
+    z-index: 0;
+}
+
+div.pe-rect {
+    position: absolute;
+    height: 28px;
+    color: white;
+    text-align: left;
+    line-height: 28px;
+    z-index: -1;
+
+    transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in; /* Firefox 4 */
+    -webkit-transition: all 1s ease-in; /* Safari 和 Chrome */
+    -o-transition: all 1s ease-in; /* Opera */
+}
+
+div.pe-date {
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    z-index: 10000;
+}
+
+img.logo {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    background: white;
+}
+
+span.in-bar {
+    float: right;
+}
+
+span.logo-text {
+    margin-left: 5px;
 }

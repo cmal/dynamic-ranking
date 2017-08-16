@@ -31,6 +31,13 @@
 (reg-event-db
  :set-time
  (fn [db [_ time]]
-   (assoc db
-          :time time
-          :rank (shuffle (range 5)))))
+   (let [cnt (count (:pe db))]
+     (if (zero? cnt)
+       (assoc db :time time :rank (shuffle (range 5)))
+       (let [index (- (mod time cnt) 5)
+             rec (nth (:pe db) (if (neg? index) 0 index))]
+         (assoc db
+                :time time
+                :rank (shuffle (range 5))
+                :current-date (first rec)
+                :current-pe-rank (vec (second rec))))))))

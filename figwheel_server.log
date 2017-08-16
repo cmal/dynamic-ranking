@@ -1511,3 +1511,532 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ran
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.543 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
 notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.907 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.746 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.659 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.59 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.896 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.653 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.717 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.72 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.02 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.398 seconds.[0m
+[36m----  Could not Read  src/cljs/dynamic_ranking/core.cljs   line:101 ----[0m
+
+  [1m/Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 101, col 23] Unmatched delimiter ).[0m
+
+  [36m 99[0m  [36m     (doall[0m
+  [36m100[0m  [36m      (for [i (count 10)][0m
+  [33m101[0m  [1m        ^{:key (str)}))]))[0m
+  [0m   [0m  [33m        /Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 101, col 23] Unmatched delimiter ).[0m
+  [36m102[0m  [36m[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m(defn top-pe-chart [][0m
+
+[36m----  Reader Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:102  column:10  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/div-pe-component[0m
+
+  [36m 98[0m  [36m    [:div.canvas-pe-rank[0m
+  [36m 99[0m  [36m     (doall[0m
+  [36m100[0m  [36m      (for [i (count @secucodes)][0m
+  [36m101[0m  [36m        ^{:key (str "dype-" i)}[0m
+  [33m102[0m  [1m        [div-pe-component i date pe-rank]))]))[0m
+  [0m   [0m  [33m         ^--- Use of undeclared Var dynamic-ranking.core/div-pe-component[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m(defn top-pe-chart [][0m
+  [36m106[0m  [36m  [:div[0m
+  [36m107[0m  [36m   [:div [dynamic-pe-rank]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:102  column:10  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/div-pe-component[0m
+
+  [36m 98[0m  [36m    [:div.canvas-pe-rank[0m
+  [36m 99[0m  [36m     (doall[0m
+  [36m100[0m  [36m      (for [i (count @secucodes)][0m
+  [36m101[0m  [36m        ^{:key (str "dype-" i)}[0m
+  [33m102[0m  [1m        [div-pe-component i date pe-rank]))]))[0m
+  [0m   [0m  [33m         ^--- Use of undeclared Var dynamic-ranking.core/div-pe-component[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m(defn top-pe-chart [][0m
+  [36m106[0m  [36m  [:div[0m
+  [36m107[0m  [36m   [:div [dynamic-pe-rank]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.921 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.683 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.642 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.649 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.37 seconds.[0m
+[36m----  Could not Read  src/cljs/dynamic_ranking/core.cljs   line:101 ----[0m
+
+  [1m/Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 101, col 25] The map literal starting with :width on line 101 column 16 contains 1 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m 99[0m  [36m  (println @pe-rank)[0m
+  [36m100[0m  [36m  [:div.pe-rect[0m
+  [33m101[0m  [1m   {:style {:width }}[0m
+  [0m   [0m  [33m   /Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 101, col 25] The map literal starting with :width on line 101 column 16 contains 1 form(s). Map literals must contain an even number of forms.[0m
+  [36m102[0m  [36m   ][0m
+  [36m103[0m  [36m  )[0m
+  [36m104[0m  [36m}))[0m
+
+[36m----  Reader Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.628 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:111  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/pe-rank[0m
+
+  [36m107[0m  [36m    [:div.pe-rank[0m
+  [36m108[0m  [36m     (doall[0m
+  [36m109[0m  [36m      (for [i (range (count @secucodes))][0m
+  [36m110[0m  [36m        ^{:key (str "dype-" i)}[0m
+  [33m111[0m  [1m        [div-pe-component i date pe-rank]))]))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.core/pe-rank[0m
+  [36m112[0m  [36m[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m(defn top-pe-chart [][0m
+  [36m115[0m  [36m  [:div[0m
+  [36m116[0m  [36m   [:div [dynamic-pe-rank]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:111  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/pe-rank[0m
+
+  [36m107[0m  [36m    [:div.pe-rank[0m
+  [36m108[0m  [36m     (doall[0m
+  [36m109[0m  [36m      (for [i (range (count @secucodes))][0m
+  [36m110[0m  [36m        ^{:key (str "dype-" i)}[0m
+  [33m111[0m  [1m        [div-pe-component i date pe-rank]))]))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.core/pe-rank[0m
+  [36m112[0m  [36m[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m(defn top-pe-chart [][0m
+  [36m115[0m  [36m  [:div[0m
+  [36m116[0m  [36m   [:div [dynamic-pe-rank]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.479 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.184 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.802 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.754 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.832 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.037 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.733 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.87 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.805 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:103  column:28  ----[0m
+
+  [1mWrong number of args (1) passed to cljs.core/contains?[0m
+
+  [36m 99[0m  [36m(let [pe-rank (rf/subscribe [:current-pe-rank])[0m
+  [36m100[0m  [36m      rank-secu (vec (map first @pe-rank))][0m
+  [36m101[0m  [36m  [:div.pe-rect[0m
+  [36m102[0m  [36m   {:style {:position "absolute"[0m
+  [33m103[0m  [1m            :top (if (contains? (set rank-secu))[0m
+  [0m   [0m  [33m                     ^--- Wrong number of args (1) passed to cljs.core/contains?[0m
+  [36m104[0m  [36m                   (str (* 30 (inc (.indexOf rank-secu (nth @secucodes i)))) "px")[0m
+  [36m105[0m  [36m                   "400px")[0m
+  [36m106[0m  [36m            :width "100px"}}[0m
+  [36m107[0m  [36m   @date]))}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.219 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.761 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.697 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.681 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.695 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.705 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.636 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.571 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.805 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.745 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.874 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:96  column:44  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/date[0m
+
+  [36m 92[0m  [36m     [:div.canvas-cover]]))[0m
+  [36m 93[0m  [36m[0m
+  [36m 94[0m  [36m(defn div-pe-component [i secucodes][0m
+  [36m 95[0m  [36m  (r/create-class[0m
+  [33m 96[0m  [1m   {:display-name (str "div-pe-component" @date)[0m
+  [0m   [0m  [33m                                           ^--- Use of undeclared Var dynamic-ranking.core/date[0m
+  [36m 97[0m  [36m    :reagent-render[0m
+  [36m 98[0m  [36m    (fn [i secucodes][0m
+  [36m 99[0m  [36m      (let [pe-rank (rf/subscribe [:current-pe-rank])[0m
+  [36m100[0m  [36m            rank-secu (vec (map first @pe-rank))[0m
+  [36m101[0m  [36m            code (nth @secucodes i)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.993 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:96  column:44  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/date[0m
+
+  [36m 92[0m  [36m     [:div.canvas-cover]]))[0m
+  [36m 93[0m  [36m[0m
+  [36m 94[0m  [36m(defn div-pe-component [i secucodes][0m
+  [36m 95[0m  [36m  (r/create-class[0m
+  [33m 96[0m  [1m   {:display-name (str "div-pe-component" @date)[0m
+  [0m   [0m  [33m                                           ^--- Use of undeclared Var dynamic-ranking.core/date[0m
+  [36m 97[0m  [36m    :reagent-render[0m
+  [36m 98[0m  [36m    (fn [i secucodes][0m
+  [36m 99[0m  [36m      (let [pe-rank (rf/subscribe [:current-pe-rank])[0m
+  [36m100[0m  [36m            rank-secu (vec (map first @pe-rank))[0m
+  [36m101[0m  [36m            code (nth @secucodes i)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.19 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.874 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.77 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.578 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.621 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.739 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.754 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.998 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.481 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.309 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.876 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.57 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.612 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.344 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.324 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.133 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.603 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.859 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.661 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:103  column:17  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/round[0m
+
+  [36m 99[0m  [36m(let [pe-rank (rf/subscribe [:current-pe-rank])[0m
+  [36m100[0m  [36m      rank-secu (vec (map first @pe-rank))[0m
+  [36m101[0m  [36m      code (nth @secucodes i)[0m
+  [36m102[0m  [36m      index (.indexOf rank-secu code)[0m
+  [33m103[0m  [1m      pe (round (if (neg? index) 0 (nth (map second @pe-rank) index)) 2)][0m
+  [0m   [0m  [33m          ^--- Use of undeclared Var dynamic-ranking.core/round[0m
+  [36m104[0m  [36m  [:div.pe-rect[0m
+  [36m105[0m  [36m   {:style {:position "absolute"[0m
+  [36m106[0m  [36m            :top (if (neg? index)[0m
+  [36m107[0m  [36m                   "400px"[0m
+  [36m108[0m  [36m                   (str (* 30 (inc index)) "px"))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.222 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.772 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.907 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.727 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.647 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.652 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.86 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.891 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.863 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.92 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.766 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.791 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.938 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.879 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.857 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.884 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.953 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.929 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.695 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.32 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/core.cljs  ----[0m
+
+  [1mNo such namespace: clojure.str, could not locate clojure/str.cljs, clojure/str.cljc, or JavaScript source providing "clojure.str" [0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.419 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.164 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:129  column:24  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/get-logo-url[0m
+
+  [36m125[0m  [36m                                \0 "green"[0m
+  [36m126[0m  [36m                                \3 "orange"[0m
+  [36m127[0m  [36m                                \6 "purple")}}[0m
+  [36m128[0m  [36m         [:span[0m
+  [33m129[0m  [1m          [:img {:src (get-logo-url code)}][0m
+  [0m   [0m  [33m                       ^--- Use of undeclared Var dynamic-ranking.core/get-logo-url[0m
+  [36m130[0m  [36m          [:span[0m
+  [36m131[0m  [36m           {:style {:float "right"}}] code " " (.toFixed pe 2)]]))}))[0m
+  [36m132[0m  [36m[0m
+  [36m133[0m  [36m(defn dynamic-pe-rank [][0m
+  [36m134[0m  [36m  (let [date (rf/subscribe [:current-date])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.66 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.907 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:129  column:24  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/get-tiny-logo-url-png[0m
+
+  [36m125[0m  [36m                                \0 "green"[0m
+  [36m126[0m  [36m                                \3 "orange"[0m
+  [36m127[0m  [36m                                \6 "purple")}}[0m
+  [36m128[0m  [36m         [:span[0m
+  [33m129[0m  [1m          [:img {:src (get-tiny-logo-url-png code)}][0m
+  [0m   [0m  [33m                       ^--- Use of undeclared Var dynamic-ranking.core/get-tiny-logo-url-png[0m
+  [36m130[0m  [36m          [:span[0m
+  [36m131[0m  [36m           {:style {:float "right"}}] code " " (.toFixed pe 2)]]))}))[0m
+  [36m132[0m  [36m[0m
+  [36m133[0m  [36m(defn dynamic-pe-rank [][0m
+  [36m134[0m  [36m  (let [date (rf/subscribe [:current-date])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.809 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:129  column:24  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/get-tiny-logo-url-png[0m
+
+  [36m125[0m  [36m                                \0 "green"[0m
+  [36m126[0m  [36m                                \3 "orange"[0m
+  [36m127[0m  [36m                                \6 "purple")}}[0m
+  [36m128[0m  [36m         [:span[0m
+  [33m129[0m  [1m          [:img {:src (get-tiny-logo-url-png code)}][0m
+  [0m   [0m  [33m                       ^--- Use of undeclared Var dynamic-ranking.core/get-tiny-logo-url-png[0m
+  [36m130[0m  [36m          [:span[0m
+  [36m131[0m  [36m           {:style {:float "right"}}] code " " (.toFixed pe 2)]]))}))[0m
+  [36m132[0m  [36m[0m
+  [36m133[0m  [36m(defn dynamic-pe-rank [][0m
+  [36m134[0m  [36m  (let [date (rf/subscribe [:current-date])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.85 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.596 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.558 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.786 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.88 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.808 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.387 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/core.cljs  ----[0m
+
+  [1mNo such namespace: dynamic-ranking.img, could not locate dynamic_ranking/img.cljs, dynamic_ranking/img.cljc, or JavaScript source providing "dynamic-ranking.img" [0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.871 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/img.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.71 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/img.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.628 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.59 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css

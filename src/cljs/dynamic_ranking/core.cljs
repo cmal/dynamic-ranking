@@ -1,5 +1,6 @@
 (ns dynamic-ranking.core
-  (:require [reagent.core :as r]
+  (:require [clojure.string :as str]
+            [reagent.core :as r]
             [re-frame.core :as rf]
             [secretary.core :as secretary]
             [goog.events :as events]
@@ -10,6 +11,7 @@
             [dynamic-ranking.handlers]
             [dynamic-ranking.subscriptions]
             [dynamic-ranking.db :refer [init-time]]
+            [dynamic-ranking.img :refer [postfix]]
             )
   (:import goog.History))
 
@@ -91,17 +93,65 @@
      [:div [dynamic-rank]]
      [:div.canvas-cover]]))
 
+(defn get-width-by-pe [maxpe minpe cnt pe]
+  (condp = pe
+    maxpe "100%"
+    minpe "30%"
+    (str (+ 30 (* 70 (/ (- pe minpe) maxpe))) "%")))
+
+(defn get-tiny-logo-url [secucode]
+  (str "http://dev.joudou.com/static/enterprise_logos/logos/" (str/join (concat (take 1 secucode) '(\/) (take 6 secucode)))))
+
+(defn div-pe-component [i secucodes]
+  (r/create-class
+   {:display-name (str "div-pe-component" i)
+    :reagent-render
+    (fn [i secucodes]
+      (let [pe-rank (rf/subscribe [:current-pe-rank])
+            rank-secu (vec (map first @pe-rank))
+            code (nth @secucodes i)
+            index (.indexOf rank-secu code)
+            pes (map second @pe-rank)
+            pe (if (neg? index) 0 (nth pes index))
+            maxpe (apply max pes)
+            minpe (apply min pes)
+            cnt (count pes)]
+        [:div.pe-rect
+         {:style {:position "absolute"
+                  :top (if (neg? index)
+                         "400px"
+                         (str (* 30 index) "px"))
+                  :width (get-width-by-pe maxpe minpe cnt pe)
+                  :background (case (first code)
+                                \0 "green"
+                                \3 "orange"
+                                \6 "purple")}}
+         [:span.in-bar
+          [:img.logo {:src (str (get-tiny-logo-url code)
+                                "." (get postfix (str/join (take 6 code))))}]
+          [:span.logo-text code " " (.toFixed pe 2)]]]))}))
+
+(defn dynamic-pe-rank []
+  (let [date (rf/subscribe [:current-date])
+        secucodes (rf/subscribe [:secucodes])]
+    [:div.pe-rank
+     [:div.pe-date @date]
+     (doall
+      (for [i (range (count @secucodes))]
+        ^{:key (str "dype-" i)}
+        [div-pe-component i secucodes]))]))
+
 
 (defn top-pe-chart []
-  (let [secucodes (rf/subscribe [:secucodes])]
-    [:div
-     (count @secucodes)]))
+  [:div
+   [:div [dynamic-pe-rank]]
+   [:div.canvas-cover]])
 
 
 (defn chart-page []
   [:div.container
    [:div.chart
-    [chart]
+    #_[chart]
     [top-pe-chart]]])
 
 (def pages
@@ -149,7 +199,8 @@
                          (rf/dispatch [:set-secucodes (->> %
                                                           (map second)
                                                           (mapcat (fn [rec] (map first rec)))
-                                                          set)]))}))
+                                                          set
+                                                          vec)]))}))
 
 (defn mount-components []
   (rf/clear-subscription-cache!)
