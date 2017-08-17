@@ -46,7 +46,7 @@
 (defn change-time
   [db time]
   (let [pe      (:pe db)
-        index   (- (mod time (:data-length db)) 5)
+        index   (mod time (:data-length db))
         rec     (nth pe (if (neg? index) 0 index))
         pe-rank (second rec)]
     (assoc db
@@ -61,17 +61,27 @@
  (fn [{:keys [db]} [_ time]]
    {:db (if (empty? (:pe db))
           (assoc db :time time)
-          (change-time db time))
+          (-> (change-time db time)
+              (assoc :first-holder-days 1)))
     :dispatch [:update-top-stockname]}))
+
+(defn update-holder-days
+  [db old-top]
+  (let [current-top (:current-top db)]
+    (if (= current-top old-top)
+      (update db :first-holder-days inc)
+      (assoc db :first-holder-days 1))))
 
 (reg-event-fx
  :inc-time
  (fn [{:keys [db]} _]
-   {:db (let [time (inc (:time db))]
-          (if (empty? (:pe db))
-            (assoc db :time time)
-            (change-time db time)))
-    :dispatch [:update-top-stockname]}))
+   (let [old-top (:current-top db)]
+     {:db       (let [time (inc (:time db))]
+                  (if (empty? (:pe db))
+                    (assoc db :time time)
+                    (-> (change-time db time)
+                        (update-holder-days old-top))))
+      :dispatch [:update-top-stockname]})))
 
 (reg-event-db
  :set-stocknames

@@ -55,3 +55,8 @@
  :top-stockname
  (fn [db _]
    (:top-stockname db)))
+
+(reg-sub
+ :first-holder-days
+ (fn [db _]
+   (:first-holder-days db)))

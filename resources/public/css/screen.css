@@ -143,11 +143,13 @@ div.pe-rect {
     text-align: left;
     line-height: 26px;
     z-index: -1;
+    /* top: 400px; */
 
-    transition: all 2s ease-in;
-    -moz-transition: all 2s ease-in; /* Firefox 4 */
-    -webkit-transition: all 2s ease-in; /* Safari 和 Chrome */
-    -o-transition: all 2s ease-in; /* Opera */
+    transition: top 2s ease-out, width 2s linear;
+    -moz-transition: top 2s ease-out, width 2s linear; /* Firefox 4 */
+    -webkit-transition: top 2s ease-out, width 2s linear; /* Safari 和 Chrome */
+    -o-transition: top 2s ease-out, width 2s linear; /* Opera */
+
 }
 
 span.in-bar, span.out-bar {

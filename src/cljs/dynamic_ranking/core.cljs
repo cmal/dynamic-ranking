@@ -21,7 +21,7 @@
     [:li.nav-item
      {:class (when (= page @selected-page) "active")}
      [:a.nav-link
-      {:href uri
+      {:href     uri
        :on-click #(reset! collapsed? true)} title]]))
 
 (defn navbar []
@@ -52,90 +52,86 @@
 
 (def bar-height 34)
 
-(defn div-rec-component [i time rank]
-  (r/create-class
-   {:display-name (str "div-rec-component" @time @rank)
-    :component-did-update
-    (fn []
-      #_(println "==> component did update"))
-    :component-did-mount
-    (fn []
-      #_(println "==> component did mount"))
-    :component-will-unmount
-    (fn []
-      #_(println "==> component will unmount"))
-    :reagent-render
-    (fn [i time rank]
-      #_(println "==> component render")
-      [:div.canvas-rect
-       {:style {:width (str
-                        (+ (* (inc i) bar-height) (* 5 (mod @time 10)))
-                        "px")
-                :top   (str
-                        (if (= (nth @rank i) (dec (count @rank)))
-                          (* 20 (+ 3 (nth @rank i)))
-                          (* 20 (nth @rank i)))
-                        "px")
-                }}
-       i])}))
+#_(defn div-rec-component [i time rank]
+    (r/create-class
+     {:display-name (str "div-rec-component" @time @rank)
+      :component-did-update
+      (fn []
+        #_(println "==> component did update"))
+      :component-did-mount
+      (fn []
+        #_(println "==> component did mount"))
+      :component-will-unmount
+      (fn []
+        #_(println "==> component will unmount"))
+      :reagent-render
+      (fn [i time rank]
+        #_(println "==> component render")
+        [:div.canvas-rect
+         {:style {:width (+ (* (inc i) bar-height) (* 5 (mod @time 10)))
+                  :top   (let [top (if (= (nth @rank i) (dec (count @rank)))
+                                     (* 20 (+ 3 (nth @rank i)))
+                                     (* 20 (nth @rank i)))]
+                           (println "top " top)
+                           top)
+                  }}
+         i])}))
 
-(defn dynamic-rank []
-  (let [time (rf/subscribe [:time])
-        rank (rf/subscribe [:rank])]
-    [:div.canvas-inner
-     (doall
-      (for [i (range 5)]
-        ^{:key (str "dynr-" i)}
-        [div-rec-component i time rank]
-        ))]))
+#_(defn dynamic-rank []
+    (let [time (rf/subscribe [:time])
+          rank (rf/subscribe [:rank])]
+      [:div.canvas-inner
+       (doall
+        (for [i (range 5)]
+          ^{:key (str "dynr-" i)}
+          [div-rec-component i time rank]
+          ))]))
 
-(defn chart []
-  (let [time (rf/subscribe [:time])]
-    [:div
-     [:div @time]
-     [:div [dynamic-rank]]
-     [:div.canvas-cover]]))
+#_(defn chart []
+    (let [time (rf/subscribe [:time])]
+      [:div
+       [:div @time]
+       [:div [dynamic-rank]]
+       [:div.canvas-cover]]))
 
 
 (defn get-width-by-pe [maxpe minpe cnt pe]
   (let [max-width 80
         min-width 20
-        interval (- max-width min-width)]
+        interval  (- max-width min-width)]
     (str (min 80 (+ min-width (* interval (/ (- pe minpe) maxpe)))) "%")))
 
 (defn get-tiny-logo-url [secucode]
   (str "http://dev.joudou.com/static/enterprise_logos/logos/" (str/join (concat (take 1 secucode) '(\/) (take 6 secucode)))))
 
-(defn div-pe-component [i secucodes]
+(defn div-pe-component [i code]
   (r/create-class
    {:display-name (str "div-pe-component" i)
     :reagent-render
-    (fn [i secucodes]
-      (let [pe-rank (rf/subscribe [:current-pe-rank])
+    (fn [i code]
+      (let [pe-rank   (rf/subscribe [:current-pe-rank])
             rank-secu (vec (map first @pe-rank))
-            code (nth @secucodes i)
-            index (.indexOf rank-secu code)
-            pes (map second @pe-rank)
-            pe (if (neg? index) 0 (nth pes index))
-            cnt (count pes)
+            index     (.indexOf rank-secu code)
+            pes       (map second @pe-rank)
+            pe        (if (neg? index) 0 (nth pes index))
+            cnt       (count pes)
             overflow? (> (- (first pes) (second pes)) (second pes) 1000)
-            maxpe (if overflow? (second pes) (first pes))
-            minpe (last pes)]
+            maxpe     (if overflow? (second pes) (first pes))
+            minpe     (last pes)]
         [:div.pe-rect
-         {:style {:position "absolute"
-                  :top (if (neg? index)
-                         "400px"
-                         (str (* bar-height index) "px"))
-                  :width (get-width-by-pe maxpe minpe cnt pe)
+         {:style {:top        (if (neg? index) ;; BUG ?
+                                400
+                                (* bar-height index))
+                  :width      (get-width-by-pe maxpe minpe cnt pe)
                   :background (case (first code)
                                 \0 "green"
                                 \3 "orange"
                                 \6 "purple")}}
          [:span.in-bar
           #_(when-not (neg? index)
-            #_[:img.logo {:src (str (get-tiny-logo-url code)
-                                  "." (get postfix (str/join (take 6 code))))}])
-          [:span.code code (when (and overflow? (zero? index)) "==>>")]]
+              #_[:img.logo {:src (str (get-tiny-logo-url code)
+                                      "." (get postfix (str/join (take 6 code))))}])
+          [:span.code code (when (and overflow? (zero? index)) " >>>")]]
          [:span.out-bar
           [:span.pe (if (zero? pe) "" (.toFixed pe 2))]]]))}))
 
@@ -143,9 +139,10 @@
   (let [secucodes (rf/subscribe [:secucodes])]
     [:div.pe-rank
      (doall
-      (for [i (range (count @secucodes))]
+      (for [i    (range (count @secucodes))
+            :let [code (nth @secucodes i)]]
         ^{:key (str "dype-" i)}
-        [div-pe-component i secucodes]))]))
+        [div-pe-component i code]))]))
 
 (defn main-chart []
   [:div.chart
@@ -168,34 +165,52 @@
 (defn progress-bar [total index]
   (let [width 530]
     [:div#progress-bar.progress-bar
-     {:style {:width (str width "px")}
+     {:style    {:width width}
       :on-click (fn [e]
                   (when-let [node (js/document.getElementById "progress-bar")]
                     (rf/dispatch [:set-time (* total (/ (- (.-clientX e) (.-x (getPageOffset node))) width))])))}
      [:div.progress-past
-      {:style {:width (str (* width (/ index total)) "px")}}]]))
+      {:style {:width (* width (/ index total))}}]]))
+
+(defonce month-names
+  {"01" "Jan"
+   "02" "Feb"
+   "03" "Mar"
+   "04" "Apr"
+   "05" "May"
+   "06" "Jun"
+   "07" "Jul"
+   "08" "Aug"
+   "09" "Sep"
+   "10" "Oct"
+   "11" "Nov"
+   "12" "Dec"})
 
 (defn chart-page []
-  (let [date (rf/subscribe [:current-date])
-        pe-rank (rf/subscribe [:current-pe-rank])
-        total (rf/subscribe [:data-length])
-        time (rf/subscribe [:time])
-        secucode (rf/subscribe [:current-top])
-        stockname (rf/subscribe [:top-stockname])]
+  (let [date              (rf/subscribe [:current-date])
+        pe-rank           (rf/subscribe [:current-pe-rank])
+        total             (rf/subscribe [:data-length])
+        time              (rf/subscribe [:time])
+        secucode          (rf/subscribe [:current-top])
+        stockname         (rf/subscribe [:top-stockname])
+        first-holder-days (rf/subscribe [:first-holder-days])]
     [:div.container
-     [progress-bar @total (- (mod @time @total) 5)]
+     [progress-bar @total (mod @time @total)]
      [:div.top-desc #_(ffirst @pe-rank)
       [:div @secucode]
-      [:div @stockname]]
+      [:div @stockname]
+      [:div "#1 PE holder"]
+      [:div "for " @first-holder-days " days"]]
      [:div.title "Top PE of Chinese stock market's history on"]
-     [:div.date @date]
+     (let [[y m d] (str/split @date #"-")]
+       [:div.date (month-names m) " " d ", " y])
      [rank-desc]
      [main-chart]]))
 
 (def pages
-  {:home  #'home-page
+  {:home    #'home-page
    #_:about #_#'about-page
-   :chart #'chart-page})
+   :chart   #'chart-page})
 
 (defn page []
   [:div
@@ -233,13 +248,13 @@
 
 (defn fetch-pe! []
   (GET "/pe" {:handler #(do
-                         (rf/dispatch [:set-pe %])
-                         (rf/dispatch [:set-secucodes
-                                       (->> %
-                                            (map second)
-                                            (mapcat (fn [rec] (map first rec)))
-                                            set
-                                            vec)]))}))
+                          (rf/dispatch [:set-pe %])
+                          (rf/dispatch [:set-secucodes
+                                        (->> %
+                                             (map second)
+                                             (mapcat (fn [rec] (map first rec)))
+                                             set
+                                             vec)]))}))
 
 (defn fetch-stocknames! []
   (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))
