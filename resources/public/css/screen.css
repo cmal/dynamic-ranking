@@ -1,119 +1,106 @@
 html,
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
     height: 100%;
+    margin: 0;
+    background: black;
+    color: #ccc;
 }
-.navbar {
-  margin-bottom: 10px;
-  border-radius: 0px;
-}
-.navbar-brand {
-  float: none;
-}
-.navbar-nav .nav-item {
-  float: none;
-}
-.navbar-divider,
-.navbar-nav .nav-item+.nav-item,
-.navbar-nav .nav-link + .nav-link {
-  margin-left: 0;
-}
-@media (min-width: 34em) {
-  .navbar-brand {
-    float: left;
-  }
-  .navbar-nav .nav-item {
-    float: left;
-  }
-  .navbar-divider,
-  .navbar-nav .nav-item+.nav-item,
-  .navbar-nav .nav-link + .nav-link {
-    margin-left: 1rem;
-  }
+/* .navbar { */
+/*   margin-bottom: 10px; */
+/*   border-radius: 0px; */
+/* } */
+/* .navbar-brand { */
+/*   float: none; */
+/* } */
+/* .navbar-nav .nav-item { */
+/*   float: none; */
+/* } */
+/* .navbar-divider, */
+/* .navbar-nav .nav-item+.nav-item, */
+/* .navbar-nav .nav-link + .nav-link { */
+/*   margin-left: 0; */
+/* } */
+/* @media (min-width: 34em) { */
+/*   .navbar-brand { */
+/*     float: left; */
+/*   } */
+/*   .navbar-nav .nav-item { */
+/*     float: left; */
+/*   } */
+/*   .navbar-divider, */
+/*   .navbar-nav .nav-item+.nav-item, */
+/*   .navbar-nav .nav-link + .nav-link { */
+/*     margin-left: 1rem; */
+/*   } */
+/* } */
+
+/* @-moz-keyframes three-quarters-loader { */
+/*     0% { */
+/*         -moz-transform: rotate(0deg); */
+/*         transform: rotate(0deg); */
+/*     } */
+/*     100% { */
+/*         -moz-transform: rotate(340deg); */
+/*         transform: rotate(340deg); */
+/*     } */
+/* } */
+/* @-webkit-keyframes three-quarters-loader { */
+/*     0% { */
+/*         -webkit-transform: rotate(0deg); */
+/*         transform: rotate(0deg); */
+/*     } */
+/*     100% { */
+/*         -webkit-transform: rotate(340deg); */
+/*         transform: rotate(340deg); */
+/*     } */
+/* } */
+/* @keyframes three-quarters-loader { */
+/*     0% { */
+/*         -moz-transform: rotate(0deg); */
+/*         -ms-transform: rotate(0deg); */
+/*         -webkit-transform: rotate(0deg); */
+/*         transform: rotate(0deg); */
+/*     } */
+/*     100% { */
+/*         -moz-transform: rotate(340deg); */
+/*         -ms-transform: rotate(340deg); */
+/*         -webkit-transform: rotate(340deg); */
+/*         transform: rotate(340deg); */
+/*     } */
+/* } */
+
+div.container {
+    position: relative;
 }
 
-@-moz-keyframes three-quarters-loader {
-    0% {
-        -moz-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+div.chart {
+    position: relative;
+    top: 240px;
+    margin-left: 120px;
 }
-@-webkit-keyframes three-quarters-loader {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+
+div.rank-desc {
+    position: relative;
+    float: left;
+    top: 240px;
+    text-align:right;
+    width: 100px;
+    padding-right: 20px;
 }
-@keyframes three-quarters-loader {
-    0% {
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+
+div.rank-desc-item {
+    height: 34px;
+    line-height: 34px;
+    font-size: 28px;
 }
 
 div.canvas-rect {
     position: absolute;
     height: 18px;
     background: green;
-    color: white;
     text-align: right;
     line-height: 18px;
-    z-index: -1;
-
-    transition: all .7s ease-in;
-    -moz-transition: all .7s ease-in; /* Firefox 4 */
-    -webkit-transition: all .7s ease-in; /* Safari 和 Chrome */
-    -o-transition: all .7s ease-in; /* Opera */
-}
-
-div.canvas-inner {
-    position: relative;
-    width: 240px;
-    height: 80px;
-    border: 1px solid #999;
-    background: rgba(0,0,0,0.1);
-    z-index: 0;
-}
-
-div.canvas-cover {
-    position: relative;
-    height: 180px;
-    background: white;
-    border: 0px solid #999;
-    /* display: none; */
-}
-
-div.pe-rank {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    border: 1px solid #999;
-    background: rgba(100,100,0,0.1);
-    z-index: 0;
-}
-
-div.pe-rect {
-    position: absolute;
-    height: 28px;
-    color: white;
-    text-align: left;
-    line-height: 28px;
     z-index: -1;
 
     transition: all 1s ease-in;
@@ -122,25 +109,115 @@ div.pe-rect {
     -o-transition: all 1s ease-in; /* Opera */
 }
 
-div.pe-date {
-    color: black;
-    position: absolute;
-    top: 30px;
-    left: -120px;
-    z-index: 10000;
+div.canvas-inner {
+    position: relative;
+    width: 240px;
+    height: 80px;
+    border: 0px solid #999;
+    /* background: rgba(255,255,255,0.1); */
+    z-index: 0;
 }
 
-img.logo {
-    width: 26px;
+div.canvas-cover {
+    position: relative;
+    height: 180px;
+    left: -120px;
+    /* width: 100%; */
+    background: black;
+    border: 0px solid #999;
+    /* display: none; */
+}
+
+div.pe-rank {
+    position: relative;
+    width: 100%;
+    height: 343px;
+    border: 0px solid #999;
+    background: rgba(100,100,0,0.1);
+    z-index: 0;
+}
+
+div.pe-rect {
+    position: absolute;
     height: 26px;
+    text-align: left;
     line-height: 26px;
-    background: white;
+    z-index: -1;
+
+    transition: all 2s ease-in;
+    -moz-transition: all 2s ease-in; /* Firefox 4 */
+    -webkit-transition: all 2s ease-in; /* Safari 和 Chrome */
+    -o-transition: all 2s ease-in; /* Opera */
+}
+
+span.in-bar, span.out-bar {
+    line-height: 34px;
 }
 
 span.in-bar {
     float: right;
 }
 
-span.logo-text {
+span.code {
+    display: inline-block;
+    position: relative;
     margin-left: 5px;
+    margin-right: 5px;
+    top: -3px;
+    font-size: 30px;
+}
+
+span.pe {
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    top: -3px;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+div.top-desc {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    font-size: 40px;
+}
+
+div.title {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    font-size: 40px;
+}
+
+div.date {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    font-size: 80px;
+}
+
+img.logo {
+    display: inline-block;
+    position: relative;
+    top: -1.5px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    background: white;
+}
+
+div.progress-bar {
+    position: absolute;
+    height: 20px;
+    background: #ddd;
+    top: 180px;
+    right: 60px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+div.progress-past {
+    background: blue;
+    height: 20px;
 }

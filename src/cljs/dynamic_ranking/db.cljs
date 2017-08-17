@@ -1,12 +1,9 @@
 (ns dynamic-ranking.db
   )
 
-(defonce init-time
-  (int (/ (int (js/Date.)) 1000)))
-
 (def default-db
   {:page            :home
-   :time            0
+   :time            3000
    :rank            (range 5)
    :pe              [["1991-03-06" '(["000002.SZ" 31.71])]
                      ["1991-03-07" '(["000002.SZ" 31.56])]
@@ -20,4 +17,5 @@
                      ["1991-03-19" '(["000005.SZ" 46.65] ["000002.SZ" 30.05])]]
    :current-date    "1991-03-06"
    :current-pe-rank [["000002.SZ" 31.71]]
-   :secucodes       ["000002.SZ"]})
+   :secucodes       ["000002.SZ"]
+   :data-length     10})

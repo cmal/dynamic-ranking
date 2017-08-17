@@ -40,3 +40,8 @@
  :current-pe-rank
  (fn [db _]
    (:current-pe-rank db)))
+
+(reg-sub
+ :data-length
+ (fn [db _]
+   (:data-length db)))
