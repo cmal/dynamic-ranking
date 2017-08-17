@@ -16,5 +16,8 @@
        (-> (response/ok (-> "docs/docs.md" io/resource slurp))
            (response/header "Content-Type" "text/plain; charset=utf-8")))
   (GET "/pe" []
-       (-> (json-response (-> "docs/pe.txt" io/resource slurp edn/read-string)))))
+       (-> (json-response (-> "docs/pe.txt" io/resource slurp edn/read-string))))
+  (GET "/stocknames" []
+       (-> (response/ok (-> "docs/stock-name.txt" io/resource slurp))
+           (response/header "Content-Type" "text/plain; charset=utf-8"))))
 

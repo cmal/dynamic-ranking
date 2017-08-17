@@ -45,3 +45,13 @@
  :data-length
  (fn [db _]
    (:data-length db)))
+
+(reg-sub
+ :current-top
+ (fn [db _]
+   (:current-top db)))
+
+(reg-sub
+ :top-stockname
+ (fn [db _]
+   (:top-stockname db)))

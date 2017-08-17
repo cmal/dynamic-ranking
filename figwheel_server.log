@@ -2966,3 +2966,380 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ran
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.828 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.295 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.388 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.596 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.652 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.649 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:240  column:64  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/read-string[0m
+
+  [36m236[0m  [36m                                            set[0m
+  [36m237[0m  [36m                                            vec)]))}))[0m
+  [36m238[0m  [36m[0m
+  [36m239[0m  [36m(defn fetch-stocknames! [][0m
+  [33m240[0m  [1m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [0m   [0m  [33m                                                               ^--- Use of undeclared Var dynamic-ranking.core/read-string[0m
+  [36m241[0m  [36m[0m
+  [36m242[0m  [36m(defn mount-components [][0m
+  [36m243[0m  [36m  (rf/clear-subscription-cache!)[0m
+  [36m244[0m  [36m  (r/render [#'page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.606 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:240  column:64  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/read-string[0m
+
+  [36m236[0m  [36m                                            set[0m
+  [36m237[0m  [36m                                            vec)]))}))[0m
+  [36m238[0m  [36m[0m
+  [36m239[0m  [36m(defn fetch-stocknames! [][0m
+  [33m240[0m  [1m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [0m   [0m  [33m                                                               ^--- Use of undeclared Var dynamic-ranking.core/read-string[0m
+  [36m241[0m  [36m[0m
+  [36m242[0m  [36m(defn mount-components [][0m
+  [36m243[0m  [36m  (rf/clear-subscription-cache!)[0m
+  [36m244[0m  [36m  (r/render [#'page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.584 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.558 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.924 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.818 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.779 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:72  column:29  ----[0m
+
+  [1mNo such namespace: str, could not locate str.cljs, str.cljc, or JavaScript source providing ""[0m
+
+  [36m68[0m  [36m       (assoc db[0m
+  [36m69[0m  [36m              :time time[0m
+  [36m70[0m  [36m              :current-date (first rec)[0m
+  [36m71[0m  [36m              :current-pe-rank (vec pe-rank)[0m
+  [33m72[0m  [1m              :current-top (str/join (take 6 (ffirst pe-rank))))))))[0m
+  [0m  [0m  [33m                            ^--- No such namespace: str, could not locate str.cljs, str.cljc, or JavaScript source providing ""[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(reg-event-db[0m
+  [36m75[0m  [36m :set-stocknames[0m
+  [36m76[0m  [36m (fn [db [_ stocknames]][0m
+  [36m77[0m  [36m   (println stocknames)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:72  column:29  ----[0m
+
+  [1mUse of undeclared Var str/join[0m
+
+  [36m68[0m  [36m       (assoc db[0m
+  [36m69[0m  [36m              :time time[0m
+  [36m70[0m  [36m              :current-date (first rec)[0m
+  [36m71[0m  [36m              :current-pe-rank (vec pe-rank)[0m
+  [33m72[0m  [1m              :current-top (str/join (take 6 (ffirst pe-rank))))))))[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var str/join[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(reg-event-db[0m
+  [36m75[0m  [36m :set-stocknames[0m
+  [36m76[0m  [36m (fn [db [_ stocknames]][0m
+  [36m77[0m  [36m   (println stocknames)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.687 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:58  column:29  ----[0m
+
+  [1mNo such namespace: str, could not locate str.cljs, str.cljc, or JavaScript source providing ""[0m
+
+  [36m54[0m  [36m       (assoc db[0m
+  [36m55[0m  [36m              :time time[0m
+  [36m56[0m  [36m              :current-date (first rec)[0m
+  [36m57[0m  [36m              :current-pe-rank (vec pe-rank)[0m
+  [33m58[0m  [1m              :current-top (str/join (take 6 (ffirst pe-rank))))))))[0m
+  [0m  [0m  [33m                            ^--- No such namespace: str, could not locate str.cljs, str.cljc, or JavaScript source providing ""[0m
+  [36m59[0m  [36m[0m
+  [36m60[0m  [36m(reg-event-db[0m
+  [36m61[0m  [36m :inc-time[0m
+  [36m62[0m  [36m (fn [db [_]][0m
+  [36m63[0m  [36m   (let [time (inc (:time db))][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:58  column:29  ----[0m
+
+  [1mUse of undeclared Var str/join[0m
+
+  [36m54[0m  [36m       (assoc db[0m
+  [36m55[0m  [36m              :time time[0m
+  [36m56[0m  [36m              :current-date (first rec)[0m
+  [36m57[0m  [36m              :current-pe-rank (vec pe-rank)[0m
+  [33m58[0m  [1m              :current-top (str/join (take 6 (ffirst pe-rank))))))))[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var str/join[0m
+  [36m59[0m  [36m[0m
+  [36m60[0m  [36m(reg-event-db[0m
+  [36m61[0m  [36m :inc-time[0m
+  [36m62[0m  [36m (fn [db [_]][0m
+  [36m63[0m  [36m   (let [time (inc (:time db))][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:74  column:29  ----[0m
+
+  [1mNo such namespace: str, could not locate str.cljs, str.cljc, or JavaScript source providing ""[0m
+
+  [36m70[0m  [36m       (assoc db[0m
+  [36m71[0m  [36m              :time time[0m
+  [36m72[0m  [36m              :current-date (first rec)[0m
+  [36m73[0m  [36m              :current-pe-rank (vec pe-rank)[0m
+  [33m74[0m  [1m              :current-top (str/join (take 6 (ffirst pe-rank))))))))[0m
+  [0m  [0m  [33m                            ^--- No such namespace: str, could not locate str.cljs, str.cljc, or JavaScript source providing ""[0m
+  [36m75[0m  [36m[0m
+  [36m76[0m  [36m(reg-event-db[0m
+  [36m77[0m  [36m :set-stocknames[0m
+  [36m78[0m  [36m (fn [db [_ stocknames]][0m
+  [36m79[0m  [36m   (println stocknames)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:74  column:29  ----[0m
+
+  [1mUse of undeclared Var str/join[0m
+
+  [36m70[0m  [36m       (assoc db[0m
+  [36m71[0m  [36m              :time time[0m
+  [36m72[0m  [36m              :current-date (first rec)[0m
+  [36m73[0m  [36m              :current-pe-rank (vec pe-rank)[0m
+  [33m74[0m  [1m              :current-top (str/join (take 6 (ffirst pe-rank))))))))[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var str/join[0m
+  [36m75[0m  [36m[0m
+  [36m76[0m  [36m(reg-event-db[0m
+  [36m77[0m  [36m :set-stocknames[0m
+  [36m78[0m  [36m (fn [db [_ stocknames]][0m
+  [36m79[0m  [36m   (println stocknames)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.205 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.255 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.027 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.948 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.93 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.632 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.077 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.013 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.009 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.888 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.911 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.807 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.763 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.752 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.743 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.757 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:59  column:2  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+
+  [36m55[0m  [36m           :current-pe-rank (vec pe-rank)[0m
+  [36m56[0m  [36m           :current-top (ffirst pe-rank)[0m
+  [36m57[0m  [36m           )))[0m
+  [36m58[0m  [36m[0m
+  [33m59[0m  [1m(reg-event-fx[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+  [36m60[0m  [36m :set-time[0m
+  [36m61[0m  [36m (fn [{:keys [db]} [_ time]][0m
+  [36m62[0m  [36m   {:db (if (empty? (:pe db))[0m
+  [36m63[0m  [36m          (assoc db :time time)[0m
+  [36m64[0m  [36m          (change-time db time))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:67  column:2  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+
+  [36m63[0m  [36m          (assoc db :time time)[0m
+  [36m64[0m  [36m          (change-time db time))[0m
+  [36m65[0m  [36m    :dispatch [:update-top-stockname]}))[0m
+  [36m66[0m  [36m[0m
+  [33m67[0m  [1m(reg-event-fx[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+  [36m68[0m  [36m :inc-time[0m
+  [36m69[0m  [36m (fn [{:keys [db]} _][0m
+  [36m70[0m  [36m   {:db (let [time (inc (:time db))][0m
+  [36m71[0m  [36m          (if (empty? (:pe db))[0m
+  [36m72[0m  [36m            (assoc db :time time)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.828 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:59  column:2  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+
+  [36m55[0m  [36m           :current-pe-rank (vec pe-rank)[0m
+  [36m56[0m  [36m           :current-top (ffirst pe-rank)[0m
+  [36m57[0m  [36m           )))[0m
+  [36m58[0m  [36m[0m
+  [33m59[0m  [1m(reg-event-fx[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+  [36m60[0m  [36m :set-time[0m
+  [36m61[0m  [36m (fn [{:keys [db]} [_ time]][0m
+  [36m62[0m  [36m   {:db (if (empty? (:pe db))[0m
+  [36m63[0m  [36m          (assoc db :time time)[0m
+  [36m64[0m  [36m          (change-time db time))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:67  column:2  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+
+  [36m63[0m  [36m          (assoc db :time time)[0m
+  [36m64[0m  [36m          (change-time db time))[0m
+  [36m65[0m  [36m    :dispatch [:update-top-stockname]}))[0m
+  [36m66[0m  [36m[0m
+  [33m67[0m  [1m(reg-event-fx[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+  [36m68[0m  [36m :inc-time[0m
+  [36m69[0m  [36m (fn [{:keys [db]} _][0m
+  [36m70[0m  [36m   {:db (let [time (inc (:time db))][0m
+  [36m71[0m  [36m          (if (empty? (:pe db))[0m
+  [36m72[0m  [36m            (assoc db :time time)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:86  column:16  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/stocknames[0m
+
+  [36m82[0m  [36m:update-top-stockname[0m
+  [36m83[0m  [36m(fn [db _][0m
+  [36m84[0m  [36m  (let [{:keys [stocknames current-top]} db])[0m
+  [36m85[0m  [36m  (assoc db :top-stockname[0m
+  [33m86[0m  [1m         (get stocknames (str/join (take 6 current-top))))))[0m
+  [0m  [0m  [33m              ^--- Use of undeclared Var dynamic-ranking.handlers/stocknames[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:86  column:45  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/current-top[0m
+
+  [36m82[0m  [36m:update-top-stockname[0m
+  [36m83[0m  [36m(fn [db _][0m
+  [36m84[0m  [36m  (let [{:keys [stocknames current-top]} db])[0m
+  [36m85[0m  [36m  (assoc db :top-stockname[0m
+  [33m86[0m  [1m         (get stocknames (str/join (take 6 current-top))))))[0m
+  [0m  [0m  [33m                                           ^--- Use of undeclared Var dynamic-ranking.handlers/current-top[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.807 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:59  column:2  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+
+  [36m55[0m  [36m           :current-pe-rank (vec pe-rank)[0m
+  [36m56[0m  [36m           :current-top (ffirst pe-rank)[0m
+  [36m57[0m  [36m           )))[0m
+  [36m58[0m  [36m[0m
+  [33m59[0m  [1m(reg-event-fx[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+  [36m60[0m  [36m :set-time[0m
+  [36m61[0m  [36m (fn [{:keys [db]} [_ time]][0m
+  [36m62[0m  [36m   {:db (if (empty? (:pe db))[0m
+  [36m63[0m  [36m          (assoc db :time time)[0m
+  [36m64[0m  [36m          (change-time db time))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:67  column:2  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+
+  [36m63[0m  [36m          (assoc db :time time)[0m
+  [36m64[0m  [36m          (change-time db time))[0m
+  [36m65[0m  [36m    :dispatch [:update-top-stockname]}))[0m
+  [36m66[0m  [36m[0m
+  [33m67[0m  [1m(reg-event-fx[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var dynamic-ranking.handlers/reg-event-fx[0m
+  [36m68[0m  [36m :inc-time[0m
+  [36m69[0m  [36m (fn [{:keys [db]} _][0m
+  [36m70[0m  [36m   {:db (let [time (inc (:time db))][0m
+  [36m71[0m  [36m          (if (empty? (:pe db))[0m
+  [36m72[0m  [36m            (assoc db :time time)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.931 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.737 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.193 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.797 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.899 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.304 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js

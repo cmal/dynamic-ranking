@@ -3,7 +3,7 @@
 
 (def default-db
   {:page            :home
-   :time            3000
+   :time            0
    :rank            (range 5)
    :pe              [["1991-03-06" '(["000002.SZ" 31.71])]
                      ["1991-03-07" '(["000002.SZ" 31.56])]
@@ -18,4 +18,7 @@
    :current-date    "1991-03-06"
    :current-pe-rank [["000002.SZ" 31.71]]
    :secucodes       ["000002.SZ"]
-   :data-length     10})
+   :data-length     10
+   :stocknames      {}
+   :current-top     "000002.SZ"
+   :top-stockname   "万  科Ａ"})

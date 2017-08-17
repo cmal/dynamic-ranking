@@ -1,6 +1,8 @@
 (ns dynamic-ranking.handlers
   (:require [dynamic-ranking.db :as db]
-            [re-frame.core :refer [dispatch reg-event-db]]))
+            [re-frame.core :refer [dispatch reg-event-db reg-event-fx]]
+            [clojure.string :as str]
+))
 
 (reg-event-db
   :initialize-db
@@ -41,31 +43,44 @@
 ;;   (println "set-secucodes" (count secucodes))
    (assoc db :secucodes secucodes)))
 
-(reg-event-db
+(defn change-time
+  [db time]
+  (let [pe      (:pe db)
+        index   (- (mod time (:data-length db)) 5)
+        rec     (nth pe (if (neg? index) 0 index))
+        pe-rank (second rec)]
+    (assoc db
+           :time time
+           :current-date (first rec)
+           :current-pe-rank (vec pe-rank)
+           :current-top (ffirst pe-rank)
+           )))
+
+(reg-event-fx
  :set-time
- (fn [db [_ time]]
-   (println "set time: " time)
-   (if (empty? (:pe db))
-     (assoc db :time time)
-     (let [pe    (:pe db)
-           index (- (mod time (:data-length db)) 5)
-           rec   (nth pe (if (neg? index) 0 index))]
-       (assoc db
-              :time time
-              :current-date (first rec)
-              :current-pe-rank (vec (second rec)))))))
+ (fn [{:keys [db]} [_ time]]
+   {:db (if (empty? (:pe db))
+          (assoc db :time time)
+          (change-time db time))
+    :dispatch [:update-top-stockname]}))
+
+(reg-event-fx
+ :inc-time
+ (fn [{:keys [db]} _]
+   {:db (let [time (inc (:time db))]
+          (if (empty? (:pe db))
+            (assoc db :time time)
+            (change-time db time)))
+    :dispatch [:update-top-stockname]}))
 
 (reg-event-db
- :inc-time
- (fn [db [_]]
-   (let [time (inc (:time db))]
-     (println "inc time")
-     (if (empty? (:pe db))
-       (assoc db :time time))
-     (let [pe    (:pe db)
-           index (- (mod time (:data-length db)) 5)
-           rec   (nth pe (if (neg? index) 0 index))]
-       (assoc db
-              :time time
-              :current-date (first rec)
-              :current-pe-rank (vec (second rec)))))))
+ :set-stocknames
+ (fn [db [_ stocknames]]
+   (assoc db :stocknames stocknames)))
+
+(reg-event-db
+ :update-top-stockname
+ (fn [db _]
+   (let [{:keys [stocknames current-top]} db]
+     (assoc db :top-stockname
+            (get stocknames (str/join (take 6 current-top)))))))

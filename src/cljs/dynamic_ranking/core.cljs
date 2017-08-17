@@ -1,5 +1,6 @@
 (ns dynamic-ranking.core
   (:require [clojure.string :as str]
+            [cljs.reader :refer [read-string]]
             [reagent.core :as r]
             [re-frame.core :as rf]
             [secretary.core :as secretary]
@@ -178,10 +179,14 @@
   (let [date (rf/subscribe [:current-date])
         pe-rank (rf/subscribe [:current-pe-rank])
         total (rf/subscribe [:data-length])
-        time (rf/subscribe [:time])]
+        time (rf/subscribe [:time])
+        secucode (rf/subscribe [:current-top])
+        stockname (rf/subscribe [:top-stockname])]
     [:div.container
      [progress-bar @total (- (mod @time @total) 5)]
-     [:div.top-desc (ffirst @pe-rank)]
+     [:div.top-desc #_(ffirst @pe-rank)
+      [:div @secucode]
+      [:div @stockname]]
      [:div.title "Top PE of Chinese stock market's history on"]
      [:div.date @date]
      [rank-desc]
@@ -236,6 +241,9 @@
                                             set
                                             vec)]))}))
 
+(defn fetch-stocknames! []
+  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))
+
 (defn mount-components []
   (rf/clear-subscription-cache!)
   (r/render [#'page] (.getElementById js/document "app")))
@@ -245,9 +253,9 @@
   (load-interceptors!)
   (fetch-docs!)
   (fetch-pe!)
+  (fetch-stocknames!)
   (hook-browser-navigation!)
   (mount-components))
-
 
 ;; -----
 ;; initialize timer
