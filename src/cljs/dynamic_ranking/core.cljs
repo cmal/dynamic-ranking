@@ -123,9 +123,9 @@
                                 (* bar-height index))
                   :width      (get-width-by-pe maxpe pe index)
                   :background (case (first code)
-                                \0 "green"
-                                \3 "orange"
-                                \6 "purple")}}
+                                \0 "#00B692"
+                                \3 "#F79018"
+                                \6 "#8536A3")}}
          [:span.in-bar
           #_(when-not (neg? index)
               #_[:img.logo {:src (str (get-tiny-logo-url code)

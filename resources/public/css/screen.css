@@ -4,7 +4,7 @@ body {
     height: 100%;
     margin: 0;
     background: black;
-    color: #ccc;
+    color: #E9E7E6;
     min-width: 1024px;
     max-width: 1680px;
     margin: 0 auto;
@@ -215,14 +215,14 @@ img.logo {
 div.progress-bar {
     position: absolute;
     height: 20px;
-    background: #ddd;
+    background: #E9E7E6;
     top: 180px;
     right: 60px;
-    border: 1px solid #ddd;
+    border: 1px solid #E9E7E6;
     cursor: pointer;
 }
 
 div.progress-past {
-    background: blue;
+    background: #1375b0;
     height: 20px;
 }
