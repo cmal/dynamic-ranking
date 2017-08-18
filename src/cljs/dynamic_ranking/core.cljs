@@ -95,11 +95,12 @@
        [:div.canvas-cover]]))
 
 
-(defn get-width-by-pe [maxpe minpe cnt pe]
+(defn get-width-by-pe [maxpe pe index]
   (let [max-width 80
         min-width 20
-        interval  (- max-width min-width)]
-    (str (min 80 (+ min-width (* interval (/ (- pe minpe) maxpe)))) "%")))
+        interval  (- max-width min-width)
+        width     (str (min 80 (+ min-width (* interval (/ pe maxpe)))) "%")]
+    width))
 
 (defn get-tiny-logo-url [secucode]
   (str "http://dev.joudou.com/static/enterprise_logos/logos/" (str/join (concat (take 1 secucode) '(\/) (take 6 secucode)))))
@@ -114,15 +115,13 @@
             index     (.indexOf rank-secu code)
             pes       (map second @pe-rank)
             pe        (if (neg? index) 0 (nth pes index))
-            cnt       (count pes)
-            overflow? (> (- (first pes) (second pes)) (second pes) 1000)
-            maxpe     (if overflow? (second pes) (first pes))
-            minpe     (last pes)]
+            maxpe     (max 500 (first pes)) ;; 这招好用
+            ]
         [:div.pe-rect
-         {:style {:top        (if (neg? index) ;; BUG ?
+         {:style {:top        (if (neg? index)
                                 400
                                 (* bar-height index))
-                  :width      (get-width-by-pe maxpe minpe cnt pe)
+                  :width      (get-width-by-pe maxpe pe index)
                   :background (case (first code)
                                 \0 "green"
                                 \3 "orange"
@@ -131,7 +130,9 @@
           #_(when-not (neg? index)
               #_[:img.logo {:src (str (get-tiny-logo-url code)
                                       "." (get postfix (str/join (take 6 code))))}])
-          [:span.code code (when (and overflow? (zero? index)) " >>>")]]
+          [:span.code
+           code
+           #_(when (and overflow? (zero? index)) " >>>")]]
          [:span.out-bar
           [:span.pe (if (zero? pe) "" (.toFixed pe 2))]]]))}))
 

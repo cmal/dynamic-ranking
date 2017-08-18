@@ -5,6 +5,9 @@ body {
     margin: 0;
     background: black;
     color: #ccc;
+    min-width: 1024px;
+    max-width: 1680px;
+    margin: 0 auto;
 }
 /* .navbar { */
 /*   margin-bottom: 10px; */
