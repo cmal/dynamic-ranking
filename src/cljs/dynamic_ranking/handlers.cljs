@@ -92,20 +92,25 @@
 (def time-intervals [2000 1000 500 200])
 
 (reg-fx
- :clear-timer
- (fn [timer]
-   (js/clearInterval timer)))
+ :switch-interval
+ (let [live-intervals (atom {"switch-timer" (js/setInterval
+                                             #(dispatch [:inc-time])
+                                             (get time-intervals 0))})] ;; get initialized
+   (fn [{:keys [action id delay event]}]
+     (js/clearInterval (get @live-intervals id))
+     (swap! live-intervals assoc id (js/setInterval #(dispatch event) delay)))))
 
 (reg-event-fx
  :switch-timer
  (fn [{:keys [db]} _]
-   (let [{:keys [timer-id time-interval-id]} db
+   (let [{:keys [time-interval-id]} db
          new-time-interval-id (mod
                                (inc time-interval-id)
                                (count time-intervals))]
-     {:clear-timer timer-id
-      :db          (assoc db
-                          :time-interval-id new-time-interval-id
-                          :timer-id (js/setInterval
-                                     #(dispatch [:inc-time])
-                                     (get time-intervals new-time-interval-id)))}))) ;; ??? not pure
+     {:switch-interval
+      {;; NOTE: the `:id` is not what is returned by `setInterval`  !!!
+       :id    "switch-timer"                      ;; it is MY id for this interval
+       :delay (get time-intervals new-time-interval-id) ;; how many milli secs
+       :event [:inc-time]                               ;; what event to dispatch
+       }
+      :db (assoc db :time-interval-id new-time-interval-id)})))

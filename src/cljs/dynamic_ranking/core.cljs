@@ -149,7 +149,9 @@
                                 \3 "#F79018"
                                 \6 "#8536A3")
                   :transition transition
-                  :-webkit-transition transition}}
+                  :-webkit-transition transition
+                  :-moz-transition transition
+                  :-o-transition transition}}
          [:span.in-bar
           #_(when-not (neg? index)
               #_[:img.logo {:src (str (get-tiny-logo-url code)

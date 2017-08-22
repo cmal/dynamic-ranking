@@ -5,7 +5,6 @@
   {:page              :home
    :data-type         :pe
    :time-interval-id  0
-   :timer-id          (js/setInterval #(dispatch [:inc-time]) 2000)
    :time              0
    :data              []
    :current-date      ""

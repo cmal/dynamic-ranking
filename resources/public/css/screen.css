@@ -149,10 +149,10 @@ div.rect {
     z-index: -1;
     /* top: 400px; */
 
-    transition: top .5s ease-out, width .5s linear;
-    -moz-transition: top .5s ease-out, width .5s linear; /* Firefox 4 */
-    -webkit-transition: top .5s ease-out, width .5s linear; /* Safari 和 Chrome */
-    -o-transition: top .5s ease-out, width .5s linear; /* Opera */
+    /* transition: top .5s ease-out, width .5s linear; */
+    /* -moz-transition: top .5s ease-out, width .5s linear; /\* Firefox 4 *\/ */
+    /* -webkit-transition: top .5s ease-out, width .5s linear; /\* Safari 和 Chrome *\/ */
+    /* -o-transition: top .5s ease-out, width .5s linear; /\* Opera *\/ */
 
 }
 
