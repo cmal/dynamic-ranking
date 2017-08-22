@@ -1,6 +1,6 @@
 (ns dynamic-ranking.handlers
   (:require [dynamic-ranking.db :as db]
-            [re-frame.core :refer [dispatch reg-event-db reg-event-fx]]
+            [re-frame.core :refer [dispatch reg-event-db reg-event-fx reg-fx]]
             [clojure.string :as str]
 ))
 
@@ -20,46 +20,40 @@
    (assoc db :docs docs)))
 
 (reg-event-db
- :set-pe
- (fn [db [_ pe]]
-;;   (println "max pe" (apply max (map second (map #(get % 10) (map second pe)))))
+ :set-data
+ (fn [db [_ data]]
    (assoc db
-          :pe pe
-          :data-length (count pe))))
-;; max pe of order:
-;; 1 3058599.43
-;; 2 650522.54
-;; 3 34359.54
-;; 4 30732.17
-;; 5 22677.57
-;; 6 15360.9
-;; 7 14463.39
-;; 8 12153.43
-;; 9 10291.51
+          :data data
+          :data-length (count data))))
+
+(reg-event-db
+ :set-type
+ (fn [db [_ type]]
+   (assoc db
+          :data-type type)))
 
 (reg-event-db
  :set-secucodes
  (fn [db [_ secucodes]]
-;;   (println "set-secucodes" (count secucodes))
    (assoc db :secucodes secucodes)))
 
 (defn change-time
   [db time]
-  (let [pe      (:pe db)
+  (let [data      (:data db)
         index   (mod time (:data-length db))
-        rec     (nth pe (if (neg? index) 0 index))
-        pe-rank (second rec)]
+        rec     (nth data (if (neg? index) 0 index))
+        rank (second rec)]
     (assoc db
            :time time
            :current-date (first rec)
-           :current-pe-rank (vec pe-rank)
-           :current-top (ffirst pe-rank)
+           :current-rank (vec rank)
+           :current-top (ffirst rank)
            )))
 
 (reg-event-fx
  :set-time
  (fn [{:keys [db]} [_ time]]
-   {:db (if (empty? (:pe db))
+   {:db (if (empty? (:data db))
           (assoc db :time time)
           (-> (change-time db time)
               (assoc :first-holder-days 1)))
@@ -77,7 +71,7 @@
  (fn [{:keys [db]} _]
    (let [old-top (:current-top db)]
      {:db       (let [time (inc (:time db))]
-                  (if (empty? (:pe db))
+                  (if (empty? (:data db))
                     (assoc db :time time)
                     (-> (change-time db time)
                         (update-holder-days old-top))))
@@ -94,3 +88,24 @@
    (let [{:keys [stocknames current-top]} db]
      (assoc db :top-stockname
             (get stocknames (str/join (take 6 current-top)))))))
+
+(def time-intervals [2000 1000 500 200])
+
+(reg-fx
+ :clear-timer
+ (fn [timer]
+   (js/clearInterval timer)))
+
+(reg-event-fx
+ :switch-timer
+ (fn [{:keys [db]} _]
+   (let [{:keys [timer-id time-interval-id]} db
+         new-time-interval-id (mod
+                               (inc time-interval-id)
+                               (count time-intervals))]
+     {:clear-timer timer-id
+      :db          (assoc db
+                          :time-interval-id new-time-interval-id
+                          :timer-id (js/setInterval
+                                     #(dispatch [:inc-time])
+                                     (get time-intervals new-time-interval-id)))}))) ;; ??? not pure

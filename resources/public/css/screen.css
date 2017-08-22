@@ -9,6 +9,7 @@ body {
     max-width: 1680px;
     margin: 0 auto;
 }
+
 /* .navbar { */
 /*   margin-bottom: 10px; */
 /*   border-radius: 0px; */
@@ -131,7 +132,7 @@ div.canvas-cover {
     /* display: none; */
 }
 
-div.pe-rank {
+div.rank {
     position: relative;
     width: 100%;
     height: 343px;
@@ -140,7 +141,7 @@ div.pe-rank {
     z-index: 0;
 }
 
-div.pe-rect {
+div.rect {
     position: absolute;
     height: 26px;
     text-align: left;
@@ -148,10 +149,10 @@ div.pe-rect {
     z-index: -1;
     /* top: 400px; */
 
-    transition: top 2s ease-out, width 2s linear;
-    -moz-transition: top 2s ease-out, width 2s linear; /* Firefox 4 */
-    -webkit-transition: top 2s ease-out, width 2s linear; /* Safari 和 Chrome */
-    -o-transition: top 2s ease-out, width 2s linear; /* Opera */
+    transition: top .5s ease-out, width .5s linear;
+    -moz-transition: top .5s ease-out, width .5s linear; /* Firefox 4 */
+    -webkit-transition: top .5s ease-out, width .5s linear; /* Safari 和 Chrome */
+    -o-transition: top .5s ease-out, width .5s linear; /* Opera */
 
 }
 
@@ -172,7 +173,24 @@ span.code {
     font-size: 30px;
 }
 
-span.pe {
+span.name {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    top: -4px;
+    font-size: 26px;
+}
+
+span.val-chn {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    font-size: 26px;
+}
+
+
+span.val {
     display: inline-block;
     position: relative;
     left: 100%;
@@ -225,4 +243,16 @@ div.progress-bar {
 div.progress-past {
     background: #1375b0;
     height: 20px;
+}
+
+div.timer-btn {
+    position: absolute;
+    top: 180px;
+    right: 620px;
+    width: 51px;
+    border: 1px solid #E9E7E6;
+    background: #E9E7E6;
+    color: #666;
+    height: 20px;
+    line-height: 20px;
 }

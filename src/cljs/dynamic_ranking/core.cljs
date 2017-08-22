@@ -10,7 +10,7 @@
             [markdown.core :refer [md->html]]
             [ajax.core :refer [GET POST]]
             [dynamic-ranking.ajax :refer [load-interceptors!]]
-            [dynamic-ranking.handlers]
+            [dynamic-ranking.handlers :refer [time-intervals]]
             [dynamic-ranking.subscriptions]
             [dynamic-ranking.img :refer [postfix]]
             )
@@ -95,59 +95,92 @@
        [:div.canvas-cover]]))
 
 
-(defn get-width-by-pe [maxpe pe index]
+(defn get-width-by-val [max-val val index]
   (let [max-width 80
-        min-width 20
+        min-width 30
         interval  (- max-width min-width)
-        width     (str (min 80 (+ min-width (* interval (/ pe maxpe)))) "%")]
+        width     (str (min 80 (+ min-width (* interval (/ val max-val)))) "%")]
     width))
 
 (defn get-tiny-logo-url [secucode]
   (str "http://dev.joudou.com/static/enterprise_logos/logos/" (str/join (concat (take 1 secucode) '(\/) (take 6 secucode)))))
 
-(defn div-pe-component [i code]
+
+(defn large-num-formatter [val]
+  (cond
+    (< val 1E4) [:span.val-num (.toFixed val 2)]
+    (< val 1E8) [:span
+                 [:span.val-num (.toFixed (/ val 1E4) 2)] [:span.val-chn "万"]]
+    (< val 1E12) [:span
+                  [:span.val-num (.toFixed (/ val 1E8) 2)] [:span.val-chn "亿"]]
+    :else [:span
+           [:span.val-num (.toFixed (/ val 1E12) 2)] [:span.val-chn "万亿"]]))
+
+(defn data-formatter [val data-type]
+  (case data-type
+    :pe        (if (zero? val) "" (.toFixed val 2))
+    :lowest-pe (if (zero? val) "" (.toFixed val 2))
+    :mv        (if (zero? val) "" (large-num-formatter val))))
+
+(defn div-rect-component [i code]
   (r/create-class
-   {:display-name (str "div-pe-component" i)
+   {:display-name (str "div-rect-component" i)
     :reagent-render
     (fn [i code]
-      (let [pe-rank   (rf/subscribe [:current-pe-rank])
-            rank-secu (vec (map first @pe-rank))
-            index     (.indexOf rank-secu code)
-            pes       (map second @pe-rank)
-            pe        (if (neg? index) 0 (nth pes index))
-            maxpe     (max 500 (first pes)) ;; 这招好用
+      (let [rank       (rf/subscribe [:current-rank])
+            stocknames (rf/subscribe [:stocknames])
+            data-type  (rf/subscribe [:data-type])
+            time-interval-id (rf/subscribe [:time-interval-id])
+            rank-secu  (vec (map first @rank))
+            index      (.indexOf rank-secu code)
+            vals       (map second @rank)
+            val        (if (neg? index) 0 (nth vals index))
+            max-val    (max 500 (first vals)) ;; 这招好用
+            transition (let [itv (/ (get time-intervals @time-interval-id) 1000)]
+                                (str "top " itv "s ease-out, width " itv "s ease-out"))
             ]
-        [:div.pe-rect
+        [:div.rect
          {:style {:top        (if (neg? index)
                                 400
                                 (* bar-height index))
-                  :width      (get-width-by-pe maxpe pe index)
+                  :width      (get-width-by-val max-val val index)
                   :background (case (first code)
                                 \0 "#00B692"
                                 \3 "#F79018"
-                                \6 "#8536A3")}}
+                                \6 "#8536A3")
+                  :transition transition
+                  :-webkit-transition transition}}
          [:span.in-bar
           #_(when-not (neg? index)
               #_[:img.logo {:src (str (get-tiny-logo-url code)
                                       "." (get postfix (str/join (take 6 code))))}])
+          [:span.name
+           (get @stocknames (str/join (take 6 code)))]
           [:span.code
            code
            #_(when (and overflow? (zero? index)) " >>>")]]
          [:span.out-bar
-          [:span.pe (if (zero? pe) "" (.toFixed pe 2))]]]))}))
+          [:span.val (data-formatter val @data-type)]]]))}))
 
-(defn dynamic-pe-rank []
+(defn dynamic-rank []
   (let [secucodes (rf/subscribe [:secucodes])]
-    [:div.pe-rank
+    [:div.rank
      (doall
       (for [i    (range (count @secucodes))
             :let [code (nth @secucodes i)]]
-        ^{:key (str "dype-" i)}
-        [div-pe-component i code]))]))
+        ^{:key (str "dyrk-" i)}
+        [div-rect-component i code]))]))
+
+(def speed ["1x" "2x" "4x" "10x"])
+
+(defn time-controller []
+  (let [id (rf/subscribe [:time-interval-id])]
+    [:div.timer-btn {:on-click #(rf/dispatch [:switch-timer])}
+     "速度 " (get speed @id) " "]))
 
 (defn main-chart []
   [:div.chart
-   [:div [dynamic-pe-rank]]
+   [:div [dynamic-rank]]
    [:div.canvas-cover]])
 
 (defn rank-desc []
@@ -189,7 +222,7 @@
 
 (defn chart-page []
   (let [date              (rf/subscribe [:current-date])
-        pe-rank           (rf/subscribe [:current-pe-rank])
+        pe-rank           (rf/subscribe [:current-rank])
         total             (rf/subscribe [:data-length])
         time              (rf/subscribe [:time])
         secucode          (rf/subscribe [:current-top])
@@ -206,7 +239,8 @@
      (let [[y m d] (str/split @date #"-")]
        [:div.date (month-names m) " " d ", " y])
      [rank-desc]
-     [main-chart]]))
+     [main-chart]
+     [time-controller]]))
 
 (def pages
   {:home    #'home-page
@@ -247,15 +281,25 @@
 (defn fetch-docs! []
   (GET "/docs" {:handler #(rf/dispatch [:set-docs %])}))
 
+(defn data-handler
+  [data type]
+  (let [d (read-string data)]
+    (rf/dispatch [:set-data d])
+    (rf/dispatch [:set-secucodes (->> d
+                                      (map second)
+                                      (mapcat (fn [rec] (map first rec)))
+                                      set
+                                      vec)])
+    (rf/dispatch [:set-type type])))
+
 (defn fetch-pe! []
-  (GET "/pe" {:handler #(do
-                          (rf/dispatch [:set-pe %])
-                          (rf/dispatch [:set-secucodes
-                                        (->> %
-                                             (map second)
-                                             (mapcat (fn [rec] (map first rec)))
-                                             set
-                                             vec)]))}))
+  (GET "/pe" {:handler #(data-handler % :pe)}))
+
+(defn fetch-lowest-pe! []
+  (GET "/lowest-pe" {:handler #(data-handler % :lowest-pe)}))
+
+(defn fetch-mv! []
+  (GET "/mv" {:handler #(data-handler % :mv)}))
 
 (defn fetch-stocknames! []
   (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))
@@ -268,14 +312,7 @@
   (rf/dispatch-sync [:initialize-db])
   (load-interceptors!)
   (fetch-docs!)
-  (fetch-pe!)
+  (fetch-mv!)
   (fetch-stocknames!)
   (hook-browser-navigation!)
   (mount-components))
-
-;; -----
-;; initialize timer
-(defonce time-updater
-  (js/setInterval
-   #(rf/dispatch [:inc-time]) 2000))
-;; -----

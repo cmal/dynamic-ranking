@@ -3768,3 +3768,2867 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ran
 Notifying browser that CSS file changed: resources/public/css/screen.css
 Notifying browser that CSS file changed: resources/public/css/screen.css
 Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.847 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.831 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.65 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.669 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.801 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.772 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.044 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.773 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.689 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.675 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.712 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.752 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.901 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:28  column:31  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/pe[0m
+
+  [36m24[0m  [36m (fn [db [_ data]][0m
+  [36m25[0m  [36m;;   (println "max pe" (apply max (map second (map #(get % 10) (map second pe)))))[0m
+  [36m26[0m  [36m   (assoc db[0m
+  [36m27[0m  [36m          :data data[0m
+  [33m28[0m  [1m          :data-length (count pe))))[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var dynamic-ranking.handlers/pe[0m
+  [36m29[0m  [36m;; max pe of order:[0m
+  [36m30[0m  [36m;; 1 3058599.43[0m
+  [36m31[0m  [36m;; 2 650522.54[0m
+  [36m32[0m  [36m;; 3 34359.54[0m
+  [36m33[0m  [36m;; 4 30732.17[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.116 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.413 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.122 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.27 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.182 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.897 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.523 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.841 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.249 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.419 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/core.cljs  ----[0m
+
+  [1mNo such namespace: clojure.edn, could not locate clojure/edn.cljs, clojure/edn.cljc, or JavaScript source providing "clojure.edn" [0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.422 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/core.cljs  ----[0m
+
+  [1mNo such namespace: clojure.edn, could not locate clojure/edn.cljs, clojure/edn.cljc, or JavaScript source providing "clojure.edn" [0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.405 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/core.cljs  ----[0m
+
+  [1mNo such namespace: clojure.edn, could not locate clojure/edn.cljs, clojure/edn.cljc, or JavaScript source providing "clojure.edn" [0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.78 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.862 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.831 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.744 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.676 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.363 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.805 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.836 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.883 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.202 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.068 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.814 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.625 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.908 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.651 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:120  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/Number[0m
+
+  [36m116[0m  [36m    index      (.indexOf rank-secu code)[0m
+  [36m117[0m  [36m    vals       (map second @rank)[0m
+  [36m118[0m  [36m    val        (if (neg? index) 0 (nth vals index))[0m
+  [36m119[0m  [36m    max-val    (max 500 (first vals)) ;; 这招好用[0m
+  [33m120[0m  [1m    _ (println (.toFixed (Number. max-val) 2))[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var dynamic-ranking.core/Number[0m
+  [36m121[0m  [36m    ][0m
+  [36m122[0m  [36m[:div.rect[0m
+  [36m123[0m  [36m {:style {:top        (if (neg? index)[0m
+  [36m124[0m  [36m                        400[0m
+  [36m125[0m  [36m                        (* bar-height index))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:120  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/Number[0m
+
+  [36m116[0m  [36m    index      (.indexOf rank-secu code)[0m
+  [36m117[0m  [36m    vals       (map second @rank)[0m
+  [36m118[0m  [36m    val        (if (neg? index) 0 (nth vals index))[0m
+  [36m119[0m  [36m    max-val    (max 500 (first vals)) ;; 这招好用[0m
+  [33m120[0m  [1m    _ (println (.toFixed (Number. max-val) 2))[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var dynamic-ranking.core/Number[0m
+  [36m121[0m  [36m    ][0m
+  [36m122[0m  [36m[:div.rect[0m
+  [36m123[0m  [36m {:style {:top        (if (neg? index)[0m
+  [36m124[0m  [36m                        400[0m
+  [36m125[0m  [36m                        (* bar-height index))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.93 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.191 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.92 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.69 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.802 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.697 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.721 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.841 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.247 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.145 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.373 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.808 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.264 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.844 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.415 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.206 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.514 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.947 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.311 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.006 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.42 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.813 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.262 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.802 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.393 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.334 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.905 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:271  column:25  ----[0m
+
+  [1mWrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+
+  [36m267[0m  [36m(defn fetch-lowest-pe! [][0m
+  [36m268[0m  [36m  (GET "/lowest-pe" {:handler #(data-handler % :lowest-pe)}))[0m
+  [36m269[0m  [36m[0m
+  [36m270[0m  [36m(defn fetch-mv! [][0m
+  [33m271[0m  [1m  (GET "/mv" {:handler #(data-handler :mv)}))[0m
+  [0m   [0m  [33m                        ^--- Wrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+  [36m272[0m  [36m[0m
+  [36m273[0m  [36m(defn fetch-stocknames! [][0m
+  [36m274[0m  [36m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [36m275[0m  [36m[0m
+  [36m276[0m  [36m(defn mount-components [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.146 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:271  column:25  ----[0m
+
+  [1mWrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+
+  [36m267[0m  [36m(defn fetch-lowest-pe! [][0m
+  [36m268[0m  [36m  (GET "/lowest-pe" {:handler #(data-handler % :lowest-pe)}))[0m
+  [36m269[0m  [36m[0m
+  [36m270[0m  [36m(defn fetch-mv! [][0m
+  [33m271[0m  [1m  (GET "/mv" {:handler #(data-handler :mv)}))[0m
+  [0m   [0m  [33m                        ^--- Wrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+  [36m272[0m  [36m[0m
+  [36m273[0m  [36m(defn fetch-stocknames! [][0m
+  [36m274[0m  [36m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [36m275[0m  [36m[0m
+  [36m276[0m  [36m(defn mount-components [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.151 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:271  column:25  ----[0m
+
+  [1mWrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+
+  [36m267[0m  [36m(defn fetch-lowest-pe! [][0m
+  [36m268[0m  [36m  (GET "/lowest-pe" {:handler #(data-handler % :lowest-pe)}))[0m
+  [36m269[0m  [36m[0m
+  [36m270[0m  [36m(defn fetch-mv! [][0m
+  [33m271[0m  [1m  (GET "/mv" {:handler #(data-handler :mv)}))[0m
+  [0m   [0m  [33m                        ^--- Wrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+  [36m272[0m  [36m[0m
+  [36m273[0m  [36m(defn fetch-stocknames! [][0m
+  [36m274[0m  [36m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [36m275[0m  [36m[0m
+  [36m276[0m  [36m(defn mount-components [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.066 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:271  column:25  ----[0m
+
+  [1mWrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+
+  [36m267[0m  [36m(defn fetch-lowest-pe! [][0m
+  [36m268[0m  [36m  (GET "/lowest-pe" {:handler #(data-handler % :lowest-pe)}))[0m
+  [36m269[0m  [36m[0m
+  [36m270[0m  [36m(defn fetch-mv! [][0m
+  [33m271[0m  [1m  (GET "/mv" {:handler #(data-handler :mv)}))[0m
+  [0m   [0m  [33m                        ^--- Wrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+  [36m272[0m  [36m[0m
+  [36m273[0m  [36m(defn fetch-stocknames! [][0m
+  [36m274[0m  [36m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [36m275[0m  [36m[0m
+  [36m276[0m  [36m(defn mount-components [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.967 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:276  column:25  ----[0m
+
+  [1mWrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+
+  [36m272[0m  [36m(defn fetch-lowest-pe! [][0m
+  [36m273[0m  [36m  (GET "/lowest-pe" {:handler #(data-handler % :lowest-pe)}))[0m
+  [36m274[0m  [36m[0m
+  [36m275[0m  [36m(defn fetch-mv! [][0m
+  [33m276[0m  [1m  (GET "/mv" {:handler #(data-handler :mv)}))[0m
+  [0m   [0m  [33m                        ^--- Wrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+  [36m277[0m  [36m[0m
+  [36m278[0m  [36m(defn fetch-stocknames! [][0m
+  [36m279[0m  [36m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [36m280[0m  [36m[0m
+  [36m281[0m  [36m(defn mount-components [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.895 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.432 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/core.cljs   line:109  column:3  ----[0m
+
+  [1mcond requires an even number of forms[0m
+
+  [36m108[0m  [36m(defn data-formatter [val data-type][0m
+  [33m109[0m  [1m  (cond data-type[0m
+  [0m   [0m  [33m  ^--- cond requires an even number of forms[0m
+  [36m110[0m  [36m        :pe  (if (zero? val) "" (.toFixed val 2))[0m
+  [36m111[0m  [36m        :lowest-pe (if (zero? val) "" (.toFixed val 2))[0m
+  [36m112[0m  [36m        :mv (if (zero? val) "" (.toFixed val 2))))[0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:282  column:25  ----[0m
+
+  [1mWrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+
+  [36m278[0m  [36m(defn fetch-lowest-pe! [][0m
+  [36m279[0m  [36m  (GET "/lowest-pe" {:handler #(data-handler % :lowest-pe)}))[0m
+  [36m280[0m  [36m[0m
+  [36m281[0m  [36m(defn fetch-mv! [][0m
+  [33m282[0m  [1m  (GET "/mv" {:handler #(data-handler :mv)}))[0m
+  [0m   [0m  [33m                        ^--- Wrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+  [36m283[0m  [36m[0m
+  [36m284[0m  [36m(defn fetch-stocknames! [][0m
+  [36m285[0m  [36m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [36m286[0m  [36m[0m
+  [36m287[0m  [36m(defn mount-components [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.802 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.397 seconds.[0m
+[36m----  Could not Read  src/cljs/dynamic_ranking/core.cljs   line:307 ----[0m
+
+  [1m/Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 307, col 1] Unexpected EOF while reading item 28 of list, starting at line 109 and column 1.[0m
+
+[36m----  Reader Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:286  column:25  ----[0m
+
+  [1mWrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+
+  [36m282[0m  [36m(defn fetch-lowest-pe! [][0m
+  [36m283[0m  [36m  (GET "/lowest-pe" {:handler #(data-handler % :lowest-pe)}))[0m
+  [36m284[0m  [36m[0m
+  [36m285[0m  [36m(defn fetch-mv! [][0m
+  [33m286[0m  [1m  (GET "/mv" {:handler #(data-handler :mv)}))[0m
+  [0m   [0m  [33m                        ^--- Wrong number of args (1) passed to dynamic-ranking.core/data-handler[0m
+  [36m287[0m  [36m[0m
+  [36m288[0m  [36m(defn fetch-stocknames! [][0m
+  [36m289[0m  [36m  (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))[0m
+  [36m290[0m  [36m[0m
+  [36m291[0m  [36m(defn mount-components [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.728 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.998 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.853 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.716 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.953 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.779 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.479 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.661 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.792 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:6  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m93[0m  [36m(reg-event-db[0m
+  [36m94[0m  [36m :switch-timer[0m
+  [36m95[0m  [36m (fn [db _][0m
+  [36m96[0m  [36m   (let [timers [200 500 1000 2000]][0m
+  [33m97[0m  [1m     (assoc db (get timers (inc (.indexOf timers (:timer db))))))))[0m
+  [0m  [0m  [33m     ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.89 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:6  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m93[0m  [36m(reg-event-db[0m
+  [36m94[0m  [36m :switch-timer[0m
+  [36m95[0m  [36m (fn [db _][0m
+  [36m96[0m  [36m   (let [timers [200 500 1000 2000]][0m
+  [33m97[0m  [1m     (assoc db (get timers (inc (.indexOf timers (:timer db))))))))[0m
+  [0m  [0m  [33m     ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.872 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.568 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/core.cljs   line:314  column:1  ----[0m
+
+  [1mToo many arguments to def at line 314 /Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs[0m
+
+  [36m312[0m  [36m;; -----[0m
+  [36m313[0m  [36m;; initialize timer[0m
+  [33m314[0m  [1m(def time-updater[0m
+  [0m   [0m  [33m^--- Too many arguments to def at line 314 /Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs[0m
+  [36m315[0m  [36m  ()[0m
+  [36m316[0m  [36m  (js/setInterval[0m
+  [36m317[0m  [36m   #(rf/dispatch [:inc-time]) 200))[0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.515 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/core.cljs   line:314  column:1  ----[0m
+
+  [1mToo many arguments to def at line 314 /Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs[0m
+
+  [36m312[0m  [36m;; -----[0m
+  [36m313[0m  [36m;; initialize timer[0m
+  [33m314[0m  [1m(def time-updater[0m
+  [0m   [0m  [33m^--- Too many arguments to def at line 314 /Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs[0m
+  [36m315[0m  [36m  ()[0m
+  [36m316[0m  [36m  (js/setInterval[0m
+  [36m317[0m  [36m   #(rf/dispatch [:inc-time]) 200))[0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.799 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.641 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.224 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.068 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.93 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.709 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.681 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 93[0m  [36m(reg-event-fx[0m
+  [36m 94[0m  [36m :switch-timer[0m
+  [36m 95[0m  [36m (fn [{:keys [db]} _][0m
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000]][0m
+  [33m 97[0m  [1m     {:db (assoc db (get timers (inc (.indexOf timers (:timer db)))))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m 98[0m  [36m      :dispatch [:switch-timer]})))[0m
+  [36m 99[0m  [36m[0m
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(def time-updater[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(def time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(def time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.295 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 93[0m  [36m(reg-event-fx[0m
+  [36m 94[0m  [36m :switch-timer[0m
+  [36m 95[0m  [36m (fn [{:keys [db]} _][0m
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000]][0m
+  [33m 97[0m  [1m     {:db (assoc db (get timers (inc (.indexOf timers (:timer db)))))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m 98[0m  [36m      :dispatch [:switch-timer]})))[0m
+  [36m 99[0m  [36m[0m
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.694 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 93[0m  [36m(reg-event-fx[0m
+  [36m 94[0m  [36m :switch-timer[0m
+  [36m 95[0m  [36m (fn [{:keys [db]} _][0m
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000]][0m
+  [33m 97[0m  [1m     {:db (assoc db (get timers (inc (.indexOf timers (:timer db)))))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m 98[0m  [36m      :dispatch [:switch-timer]})))[0m
+  [36m 99[0m  [36m[0m
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.732 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 93[0m  [36m(reg-event-fx[0m
+  [36m 94[0m  [36m :switch-timer[0m
+  [36m 95[0m  [36m (fn [{:keys [db]} _][0m
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000]][0m
+  [33m 97[0m  [1m     {:db (assoc db (get timers (inc (.indexOf timers (:timer db)))))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m 98[0m  [36m      :dispatch [:switch-timer]})))[0m
+  [36m 99[0m  [36m[0m
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.802 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 93[0m  [36m(reg-event-fx[0m
+  [36m 94[0m  [36m :switch-timer[0m
+  [36m 95[0m  [36m (fn [{:keys [db]} _][0m
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000]][0m
+  [33m 97[0m  [1m     {:db (assoc db (get timers (inc (.indexOf timers (:timer db)))))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m 98[0m  [36m      :dispatch [:switch-timer]})))[0m
+  [36m 99[0m  [36m[0m
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m100[0m  [36m;; -----[0m
+  [36m101[0m  [36m;; initialize timer[0m
+  [36m102[0m  [36m(defonce time-updater[0m
+  [36m103[0m  [36m  (js/setInterval[0m
+  [33m104[0m  [1m   #(rf/dispatch [:inc-time]) 200))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+  [36m105[0m  [36m;; -----[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.711 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:100  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000][0m
+  [36m 97[0m  [36m         old-timer (:timer-id db)[0m
+  [36m 98[0m  [36m         new-timer (get timers (inc (.indexOf timers )))][0m
+  [36m 99[0m  [36m     {:dispatch [:change-timer old-timer new-timer][0m
+  [33m100[0m  [1m      :db (assoc db new-timer)})))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:44  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                           ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :set-new-timer[0m
+  [36m110[0m  [36m (fn [db [_ interval]][0m
+  [36m111[0m  [36m   (js)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:44  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                           ^--- Use of undeclared Var rf/dispatch[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :set-new-timer[0m
+  [36m110[0m  [36m (fn [db [_ interval]][0m
+  [36m111[0m  [36m   (js)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:111  column:5  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/js[0m
+
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :set-new-timer[0m
+  [36m110[0m  [36m (fn [db [_ interval]][0m
+  [33m111[0m  [1m   (js)[0m
+  [0m   [0m  [33m    ^--- Use of undeclared Var dynamic-ranking.handlers/js[0m
+  [36m112[0m  [36m   (assoc db :timer interval)))[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.026 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:100  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000][0m
+  [36m 97[0m  [36m         old-timer (:timer-id db)[0m
+  [36m 98[0m  [36m         new-timer (get timers (inc (.indexOf timers )))][0m
+  [36m 99[0m  [36m     {:dispatch [:change-timer old-timer new-timer][0m
+  [33m100[0m  [1m      :db (assoc db new-timer)})))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:44  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                           ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:44  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                           ^--- Use of undeclared Var rf/dispatch[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:111  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [33m111[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m112[0m  [36m   db))[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.7 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:100  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000][0m
+  [36m 97[0m  [36m         old-timer (:timer-id db)[0m
+  [36m 98[0m  [36m         new-timer (get timers (inc (.indexOf timers )))][0m
+  [36m 99[0m  [36m     {:dispatch [:change-timer old-timer new-timer][0m
+  [33m100[0m  [1m      :db (assoc db new-timer)})))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-interval]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var rf/dispatch[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:111  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [33m111[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m112[0m  [36m   db))[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.769 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:100  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 96[0m  [36m   (let [timers [200 500 1000 2000][0m
+  [36m 97[0m  [36m         old-timer (:timer-id db)[0m
+  [36m 98[0m  [36m         new-timer (get timers (inc (.indexOf timers (:timer db))))][0m
+  [36m 99[0m  [36m     {:dispatch [:change-timer old-timer new-timer][0m
+  [33m100[0m  [1m      :db (assoc db new-timer)})))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var rf/dispatch[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:72  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/new-interval[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                                                       ^--- Use of undeclared Var dynamic-ranking.handlers/new-interval[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:111  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [33m111[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m112[0m  [36m   db))[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.704 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:100  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 96[0m  [36m   (let [{:keys [timer-id timer]} db[0m
+  [36m 97[0m  [36m         timers [200 500 1000 2000][0m
+  [36m 98[0m  [36m         new-timer (get timers (inc (.indexOf timers (:timer db))))][0m
+  [36m 99[0m  [36m     {:dispatch [:change-timer timer-id new-timer][0m
+  [33m100[0m  [1m      :db (assoc db new-timer)})))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var rf/dispatch[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:72  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/new-interval[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                                                       ^--- Use of undeclared Var dynamic-ranking.handlers/new-interval[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:111  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [33m111[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m112[0m  [36m   db))[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.715 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:100  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 96[0m  [36m   (let [{:keys [timer-id timer]} db[0m
+  [36m 97[0m  [36m         timers [200 500 1000 2000][0m
+  [36m 98[0m  [36m         new-timer (get timers (inc (.indexOf timers timer)))][0m
+  [36m 99[0m  [36m     {:dispatch [:change-timer timer-id new-timer][0m
+  [33m100[0m  [1m      :db (assoc db new-timer)})))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var rf/dispatch[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:72  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/new-interval[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                                                       ^--- Use of undeclared Var dynamic-ranking.handlers/new-interval[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:111  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [33m111[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m112[0m  [36m   db))[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.708 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:100  column:11  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/assoc[0m
+
+  [36m 96[0m  [36m   (let [{:keys [timer-id timer]} db[0m
+  [36m 97[0m  [36m         timers [200 500 1000 2000][0m
+  [36m 98[0m  [36m         new-timer (get timers (inc (.indexOf timers timer)))][0m
+  [36m 99[0m  [36m     {:dispatch [:change-timer timer-id new-timer][0m
+  [33m100[0m  [1m      :db (assoc db new-timer)})))[0m
+  [0m   [0m  [33m          ^--- Wrong number of args (2) passed to cljs.core/assoc[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:47  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var rf/dispatch[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:106  column:72  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/new-interval[0m
+
+  [36m102[0m  [36m(reg-event-fx[0m
+  [36m103[0m  [36m :change-timer[0m
+  [36m104[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m105[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m106[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                                                       ^--- Use of undeclared Var dynamic-ranking.handlers/new-interval[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [36m111[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:111  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m108[0m  [36m(reg-event-db[0m
+  [36m109[0m  [36m :clear-old-timer[0m
+  [36m110[0m  [36m (fn [db [_ old-timer]][0m
+  [33m111[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m112[0m  [36m   db))[0m
+  [36m113[0m  [36m[0m
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:117  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m114[0m  [36m;; initialize timer[0m
+  [36m115[0m  [36m(defn set-time-updater [interval][0m
+  [36m116[0m  [36m  (js/setInterval[0m
+  [33m117[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.865 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:98  column:41  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/new-timer[0m
+
+  [36m 94[0m  [36m(reg-event-fx[0m
+  [36m 95[0m  [36m :switch-timer[0m
+  [36m 96[0m  [36m (fn [{:keys [db]} _][0m
+  [36m 97[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+  [33m 98[0m  [1m     {:dispatch [:change-timer timer-id new-timer][0m
+  [0m   [0m  [33m                                        ^--- Use of undeclared Var dynamic-ranking.handlers/new-timer[0m
+  [36m 99[0m  [36m      :db (update db :time-interval-id inc)})))[0m
+  [36m100[0m  [36m[0m
+  [36m101[0m  [36m(reg-event-fx[0m
+  [36m102[0m  [36m :change-timer[0m
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:105  column:47  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m101[0m  [36m(reg-event-fx[0m
+  [36m102[0m  [36m :change-timer[0m
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m105[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m106[0m  [36m[0m
+  [36m107[0m  [36m(reg-event-db[0m
+  [36m108[0m  [36m :clear-old-timer[0m
+  [36m109[0m  [36m (fn [db [_ old-timer]][0m
+  [36m110[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:105  column:47  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m101[0m  [36m(reg-event-fx[0m
+  [36m102[0m  [36m :change-timer[0m
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m105[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var rf/dispatch[0m
+  [36m106[0m  [36m[0m
+  [36m107[0m  [36m(reg-event-db[0m
+  [36m108[0m  [36m :clear-old-timer[0m
+  [36m109[0m  [36m (fn [db [_ old-timer]][0m
+  [36m110[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:105  column:72  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/new-interval[0m
+
+  [36m101[0m  [36m(reg-event-fx[0m
+  [36m102[0m  [36m :change-timer[0m
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m105[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                                                       ^--- Use of undeclared Var dynamic-ranking.handlers/new-interval[0m
+  [36m106[0m  [36m[0m
+  [36m107[0m  [36m(reg-event-db[0m
+  [36m108[0m  [36m :clear-old-timer[0m
+  [36m109[0m  [36m (fn [db [_ old-timer]][0m
+  [36m110[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:110  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m107[0m  [36m(reg-event-db[0m
+  [36m108[0m  [36m :clear-old-timer[0m
+  [36m109[0m  [36m (fn [db [_ old-timer]][0m
+  [33m110[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m111[0m  [36m   db))[0m
+  [36m112[0m  [36m[0m
+  [36m113[0m  [36m;; initialize timer[0m
+  [36m114[0m  [36m(defn set-time-updater [interval][0m
+  [36m115[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:116  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m113[0m  [36m;; initialize timer[0m
+  [36m114[0m  [36m(defn set-time-updater [interval][0m
+  [36m115[0m  [36m  (js/setInterval[0m
+  [33m116[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:116  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m113[0m  [36m;; initialize timer[0m
+  [36m114[0m  [36m(defn set-time-updater [interval][0m
+  [36m115[0m  [36m  (js/setInterval[0m
+  [33m116[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.823 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:105  column:47  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m101[0m  [36m(reg-event-fx[0m
+  [36m102[0m  [36m :change-timer[0m
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m105[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m106[0m  [36m[0m
+  [36m107[0m  [36m(reg-event-db[0m
+  [36m108[0m  [36m :clear-old-timer[0m
+  [36m109[0m  [36m (fn [db [_ old-timer]][0m
+  [36m110[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:105  column:47  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m101[0m  [36m(reg-event-fx[0m
+  [36m102[0m  [36m :change-timer[0m
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m105[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var rf/dispatch[0m
+  [36m106[0m  [36m[0m
+  [36m107[0m  [36m(reg-event-db[0m
+  [36m108[0m  [36m :clear-old-timer[0m
+  [36m109[0m  [36m (fn [db [_ old-timer]][0m
+  [36m110[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:105  column:72  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/new-interval[0m
+
+  [36m101[0m  [36m(reg-event-fx[0m
+  [36m102[0m  [36m :change-timer[0m
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer new-]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [33m105[0m  [1m    :db (assoc db :timer-id (js/setInterval #(rf/dispatch [:inc-time]) new-interval))}))[0m
+  [0m   [0m  [33m                                                                       ^--- Use of undeclared Var dynamic-ranking.handlers/new-interval[0m
+  [36m106[0m  [36m[0m
+  [36m107[0m  [36m(reg-event-db[0m
+  [36m108[0m  [36m :clear-old-timer[0m
+  [36m109[0m  [36m (fn [db [_ old-timer]][0m
+  [36m110[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:110  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m107[0m  [36m(reg-event-db[0m
+  [36m108[0m  [36m :clear-old-timer[0m
+  [36m109[0m  [36m (fn [db [_ old-timer]][0m
+  [33m110[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m111[0m  [36m   db))[0m
+  [36m112[0m  [36m[0m
+  [36m113[0m  [36m;; initialize timer[0m
+  [36m114[0m  [36m(defn set-time-updater [interval][0m
+  [36m115[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:116  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m113[0m  [36m;; initialize timer[0m
+  [36m114[0m  [36m(defn set-time-updater [interval][0m
+  [36m115[0m  [36m  (js/setInterval[0m
+  [33m116[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:116  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m113[0m  [36m;; initialize timer[0m
+  [36m114[0m  [36m(defn set-time-updater [interval][0m
+  [36m115[0m  [36m  (js/setInterval[0m
+  [33m116[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.686 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:107  column:29  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [36m105[0m  [36m    :db (assoc db[0m
+  [36m106[0m  [36m               :timer-id (js/setInterval[0m
+  [33m107[0m  [1m                          #(rf/dispatch [:inc-time]) (get time-intervals time-interval-id)))}))[0m
+  [0m   [0m  [33m                            ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(reg-event-db[0m
+  [36m110[0m  [36m :clear-old-timer[0m
+  [36m111[0m  [36m (fn [db [_ old-timer]][0m
+  [36m112[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:107  column:29  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [36m105[0m  [36m    :db (assoc db[0m
+  [36m106[0m  [36m               :timer-id (js/setInterval[0m
+  [33m107[0m  [1m                          #(rf/dispatch [:inc-time]) (get time-intervals time-interval-id)))}))[0m
+  [0m   [0m  [33m                            ^--- Use of undeclared Var rf/dispatch[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(reg-event-db[0m
+  [36m110[0m  [36m :clear-old-timer[0m
+  [36m111[0m  [36m (fn [db [_ old-timer]][0m
+  [36m112[0m  [36m   (when old-timer (js/clearInterval interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:112  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m109[0m  [36m(reg-event-db[0m
+  [36m110[0m  [36m :clear-old-timer[0m
+  [36m111[0m  [36m (fn [db [_ old-timer]][0m
+  [33m112[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m113[0m  [36m   db))[0m
+  [36m114[0m  [36m[0m
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:118  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [33m118[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:118  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [33m118[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.682 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:107  column:29  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [36m105[0m  [36m    :db (assoc db[0m
+  [36m106[0m  [36m               :timer-id (js/setInterval[0m
+  [33m107[0m  [1m                          #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                            ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m108[0m  [36m                          (get time-intervals time-interval-id)))}))[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(reg-event-db[0m
+  [36m111[0m  [36m :clear-old-timer[0m
+  [36m112[0m  [36m (fn [db [_ old-timer]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:107  column:29  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [36m105[0m  [36m    :db (assoc db[0m
+  [36m106[0m  [36m               :timer-id (js/setInterval[0m
+  [33m107[0m  [1m                          #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                            ^--- Use of undeclared Var rf/dispatch[0m
+  [36m108[0m  [36m                          (get time-intervals time-interval-id)))}))[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(reg-event-db[0m
+  [36m111[0m  [36m :clear-old-timer[0m
+  [36m112[0m  [36m (fn [db [_ old-timer]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:113  column:38  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m110[0m  [36m(reg-event-db[0m
+  [36m111[0m  [36m :clear-old-timer[0m
+  [36m112[0m  [36m (fn [db [_ old-timer]][0m
+  [33m113[0m  [1m   (when old-timer (js/clearInterval interval))[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m114[0m  [36m   db))[0m
+  [36m115[0m  [36m[0m
+  [36m116[0m  [36m;; initialize timer[0m
+  [36m117[0m  [36m(defn set-time-updater [interval][0m
+  [36m118[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:119  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m116[0m  [36m;; initialize timer[0m
+  [36m117[0m  [36m(defn set-time-updater [interval][0m
+  [36m118[0m  [36m  (js/setInterval[0m
+  [33m119[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:119  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m116[0m  [36m;; initialize timer[0m
+  [36m117[0m  [36m(defn set-time-updater [interval][0m
+  [36m118[0m  [36m  (js/setInterval[0m
+  [33m119[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.691 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:107  column:29  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [36m105[0m  [36m    :db (assoc db[0m
+  [36m106[0m  [36m               :timer-id (js/setInterval[0m
+  [33m107[0m  [1m                          #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                            ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m108[0m  [36m                          (get time-intervals time-interval-id)))}))[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(reg-fx[0m
+  [36m111[0m  [36m :clear-timer[0m
+  [36m112[0m  [36m (fn [timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:107  column:29  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m103[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m104[0m  [36m   {:dispatch [:clear-old-timer old-timer][0m
+  [36m105[0m  [36m    :db (assoc db[0m
+  [36m106[0m  [36m               :timer-id (js/setInterval[0m
+  [33m107[0m  [1m                          #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                            ^--- Use of undeclared Var rf/dispatch[0m
+  [36m108[0m  [36m                          (get time-intervals time-interval-id)))}))[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(reg-fx[0m
+  [36m111[0m  [36m :clear-timer[0m
+  [36m112[0m  [36m (fn [timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:113  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m110[0m  [36m(reg-fx[0m
+  [36m111[0m  [36m :clear-timer[0m
+  [36m112[0m  [36m (fn [timer][0m
+  [33m113[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m114[0m  [36m[0m
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [36m118[0m  [36m   #(rf/dispatch [:inc-time]) interval))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:118  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [33m118[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:118  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [33m118[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.862 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m101[0m  [36m(reg-fx[0m
+  [36m102[0m  [36m :clear-timer[0m
+  [36m103[0m  [36m (fn [timer][0m
+  [33m104[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m105[0m  [36m[0m
+  [36m106[0m  [36m(reg-event-fx[0m
+  [36m107[0m  [36m :change-timer[0m
+  [36m108[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m   {:dispatch [:clear-timer old-timer][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:112  column:29  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m108[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m   {:dispatch [:clear-timer old-timer][0m
+  [36m110[0m  [36m    :db (assoc db[0m
+  [36m111[0m  [36m               :timer-id (js/setInterval[0m
+  [33m112[0m  [1m                          #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                            ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m113[0m  [36m                          (get time-intervals time-interval-id)))}))[0m
+  [36m114[0m  [36m[0m
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:112  column:29  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m108[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m   {:dispatch [:clear-timer old-timer][0m
+  [36m110[0m  [36m    :db (assoc db[0m
+  [36m111[0m  [36m               :timer-id (js/setInterval[0m
+  [33m112[0m  [1m                          #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                            ^--- Use of undeclared Var rf/dispatch[0m
+  [36m113[0m  [36m                          (get time-intervals time-interval-id)))}))[0m
+  [36m114[0m  [36m[0m
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:118  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [33m118[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:118  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [33m118[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.727 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m101[0m  [36m(reg-fx[0m
+  [36m102[0m  [36m :clear-timer[0m
+  [36m103[0m  [36m (fn [timer][0m
+  [33m104[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m105[0m  [36m[0m
+  [36m106[0m  [36m(reg-event-fx[0m
+  [36m107[0m  [36m :change-timer[0m
+  [36m108[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m   {:clear-timer old-timer[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:112  column:29  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m108[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m   {:clear-timer old-timer[0m
+  [36m110[0m  [36m    :db (assoc db[0m
+  [36m111[0m  [36m               :timer-id (js/setInterval[0m
+  [33m112[0m  [1m                          #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                            ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m113[0m  [36m                          (get time-intervals time-interval-id)))}))[0m
+  [36m114[0m  [36m[0m
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:112  column:29  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m108[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m   {:clear-timer old-timer[0m
+  [36m110[0m  [36m    :db (assoc db[0m
+  [36m111[0m  [36m               :timer-id (js/setInterval[0m
+  [33m112[0m  [1m                          #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                            ^--- Use of undeclared Var rf/dispatch[0m
+  [36m113[0m  [36m                          (get time-intervals time-interval-id)))}))[0m
+  [36m114[0m  [36m[0m
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:118  column:6  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [33m118[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:118  column:6  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m115[0m  [36m;; initialize timer[0m
+  [36m116[0m  [36m(defn set-time-updater [interval][0m
+  [36m117[0m  [36m  (js/setInterval[0m
+  [33m118[0m  [1m   #(rf/dispatch [:inc-time]) interval))[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rf/dispatch[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.691 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m101[0m  [36m(reg-fx[0m
+  [36m102[0m  [36m :clear-timer[0m
+  [36m103[0m  [36m (fn [timer][0m
+  [33m104[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m105[0m  [36m[0m
+  [36m106[0m  [36m(reg-event-fx[0m
+  [36m107[0m  [36m :change-timer[0m
+  [36m108[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m   {:clear-timer old-timer[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:112  column:29  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m108[0m  [36m(fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m  {:clear-timer old-timer[0m
+  [36m110[0m  [36m   :db (assoc db[0m
+  [36m111[0m  [36m              :timer-id (js/setInterval[0m
+  [33m112[0m  [1m                         #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                           ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m113[0m  [36m                         (get time-intervals time-interval-id)))}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:112  column:29  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m108[0m  [36m(fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m109[0m  [36m  {:clear-timer old-timer[0m
+  [36m110[0m  [36m   :db (assoc db[0m
+  [36m111[0m  [36m              :timer-id (js/setInterval[0m
+  [33m112[0m  [1m                         #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                           ^--- Use of undeclared Var rf/dispatch[0m
+  [36m113[0m  [36m                         (get time-intervals time-interval-id)))}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.276 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m 94[0m  [36m(reg-fx[0m
+  [36m 95[0m  [36m :clear-timer[0m
+  [36m 96[0m  [36m (fn [timer][0m
+  [33m 97[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m 98[0m  [36m[0m
+  [36m 99[0m  [36m(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:7  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/clear-timer[0m
+
+  [36m100[0m  [36m:switch-timer[0m
+  [36m101[0m  [36m(fn [{:keys [db]} _][0m
+  [36m102[0m  [36m  (let [{:keys [timer-id time-interval-id]} db][0m
+  [36m103[0m  [36m    {:dispatch [:change-timer timer-id (inc time-interval-id)][0m
+  [33m104[0m  [1m     clear-timer old-timer[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var dynamic-ranking.handlers/clear-timer[0m
+  [36m105[0m  [36m     :db (update db[0m
+  [36m106[0m  [36m                 :time-interval-id inc[0m
+  [36m107[0m  [36m                 :timer-id (js/setInterval[0m
+  [36m108[0m  [36m                            #(rf/dispatch [:inc-time])[0m
+  [36m109[0m  [36m                            (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:19  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/old-timer[0m
+
+  [36m100[0m  [36m:switch-timer[0m
+  [36m101[0m  [36m(fn [{:keys [db]} _][0m
+  [36m102[0m  [36m  (let [{:keys [timer-id time-interval-id]} db][0m
+  [36m103[0m  [36m    {:dispatch [:change-timer timer-id (inc time-interval-id)][0m
+  [33m104[0m  [1m     clear-timer old-timer[0m
+  [0m   [0m  [33m                 ^--- Use of undeclared Var dynamic-ranking.handlers/old-timer[0m
+  [36m105[0m  [36m     :db (update db[0m
+  [36m106[0m  [36m                 :time-interval-id inc[0m
+  [36m107[0m  [36m                 :timer-id (js/setInterval[0m
+  [36m108[0m  [36m                            #(rf/dispatch [:inc-time])[0m
+  [36m109[0m  [36m                            (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:108  column:32  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m104[0m  [36m      clear-timer old-timer[0m
+  [36m105[0m  [36m      :db (update db[0m
+  [36m106[0m  [36m                  :time-interval-id inc[0m
+  [36m107[0m  [36m                  :timer-id (js/setInterval[0m
+  [33m108[0m  [1m                             #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                               ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m109[0m  [36m                             (get time-intervals time-interval-id)))})))[0m
+  [36m110[0m  [36m[0m
+  [36m111[0m  [36m[0m
+  [36m112[0m  [36m(reg-event-fx[0m
+  [36m113[0m  [36m :change-timer[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:108  column:32  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m104[0m  [36m      clear-timer old-timer[0m
+  [36m105[0m  [36m      :db (update db[0m
+  [36m106[0m  [36m                  :time-interval-id inc[0m
+  [36m107[0m  [36m                  :timer-id (js/setInterval[0m
+  [33m108[0m  [1m                             #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                               ^--- Use of undeclared Var rf/dispatch[0m
+  [36m109[0m  [36m                             (get time-intervals time-interval-id)))})))[0m
+  [36m110[0m  [36m[0m
+  [36m111[0m  [36m[0m
+  [36m112[0m  [36m(reg-event-fx[0m
+  [36m113[0m  [36m :change-timer[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:116  column:9  ----[0m
+
+  [1mWrong number of args (1) passed to cljs.core/assoc[0m
+
+  [36m112[0m  [36m(reg-event-fx[0m
+  [36m113[0m  [36m :change-timer[0m
+  [36m114[0m  [36m (fn [{:keys [db]} [_ old-timer time-interval-id]][0m
+  [36m115[0m  [36m   {:clear-timer old-timer[0m
+  [33m116[0m  [1m    :db (assoc db[0m
+  [0m   [0m  [33m        ^--- Wrong number of args (1) passed to cljs.core/assoc[0m
+  [36m117[0m  [36m             )}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.856 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m 94[0m  [36m(reg-fx[0m
+  [36m 95[0m  [36m :clear-timer[0m
+  [36m 96[0m  [36m (fn [timer][0m
+  [33m 97[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m 98[0m  [36m[0m
+  [36m 99[0m  [36m(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:7  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/clear-timer[0m
+
+  [36m100[0m  [36m:switch-timer[0m
+  [36m101[0m  [36m(fn [{:keys [db]} _][0m
+  [36m102[0m  [36m  (let [{:keys [timer-id time-interval-id]} db][0m
+  [36m103[0m  [36m    {:dispatch [:change-timer timer-id (inc time-interval-id)][0m
+  [33m104[0m  [1m     clear-timer old-timer[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var dynamic-ranking.handlers/clear-timer[0m
+  [36m105[0m  [36m     :db (update db[0m
+  [36m106[0m  [36m                 :time-interval-id inc[0m
+  [36m107[0m  [36m                 :timer-id (js/setInterval[0m
+  [36m108[0m  [36m                            #(rf/dispatch [:inc-time])[0m
+  [36m109[0m  [36m                            (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:19  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/old-timer[0m
+
+  [36m100[0m  [36m:switch-timer[0m
+  [36m101[0m  [36m(fn [{:keys [db]} _][0m
+  [36m102[0m  [36m  (let [{:keys [timer-id time-interval-id]} db][0m
+  [36m103[0m  [36m    {:dispatch [:change-timer timer-id (inc time-interval-id)][0m
+  [33m104[0m  [1m     clear-timer old-timer[0m
+  [0m   [0m  [33m                 ^--- Use of undeclared Var dynamic-ranking.handlers/old-timer[0m
+  [36m105[0m  [36m     :db (update db[0m
+  [36m106[0m  [36m                 :time-interval-id inc[0m
+  [36m107[0m  [36m                 :timer-id (js/setInterval[0m
+  [36m108[0m  [36m                            #(rf/dispatch [:inc-time])[0m
+  [36m109[0m  [36m                            (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:108  column:32  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m104[0m  [36mclear-timer old-timer[0m
+  [36m105[0m  [36m:db (update db[0m
+  [36m106[0m  [36m            :time-interval-id inc[0m
+  [36m107[0m  [36m            :timer-id (js/setInterval[0m
+  [33m108[0m  [1m                       #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                         ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m109[0m  [36m                       (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:108  column:32  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m104[0m  [36mclear-timer old-timer[0m
+  [36m105[0m  [36m:db (update db[0m
+  [36m106[0m  [36m            :time-interval-id inc[0m
+  [36m107[0m  [36m            :timer-id (js/setInterval[0m
+  [33m108[0m  [1m                       #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var rf/dispatch[0m
+  [36m109[0m  [36m                       (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.753 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m 94[0m  [36m(reg-fx[0m
+  [36m 95[0m  [36m :clear-timer[0m
+  [36m 96[0m  [36m (fn [timer][0m
+  [33m 97[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m 98[0m  [36m[0m
+  [36m 99[0m  [36m(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:20  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/old-timer[0m
+
+  [36m100[0m  [36m:switch-timer[0m
+  [36m101[0m  [36m(fn [{:keys [db]} _][0m
+  [36m102[0m  [36m  (let [{:keys [timer-id time-interval-id]} db][0m
+  [36m103[0m  [36m    {:dispatch [:change-timer timer-id (inc time-interval-id)][0m
+  [33m104[0m  [1m     :clear-timer old-timer[0m
+  [0m   [0m  [33m                  ^--- Use of undeclared Var dynamic-ranking.handlers/old-timer[0m
+  [36m105[0m  [36m     :db (update db[0m
+  [36m106[0m  [36m                 :time-interval-id inc[0m
+  [36m107[0m  [36m                 :timer-id (js/setInterval[0m
+  [36m108[0m  [36m                            #(rf/dispatch [:inc-time])[0m
+  [36m109[0m  [36m                            (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:108  column:32  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m104[0m  [36m:clear-timer old-timer[0m
+  [36m105[0m  [36m:db (update db[0m
+  [36m106[0m  [36m            :time-interval-id inc[0m
+  [36m107[0m  [36m            :timer-id (js/setInterval[0m
+  [33m108[0m  [1m                       #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                         ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m109[0m  [36m                       (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:108  column:32  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m104[0m  [36m:clear-timer old-timer[0m
+  [36m105[0m  [36m:db (update db[0m
+  [36m106[0m  [36m            :time-interval-id inc[0m
+  [36m107[0m  [36m            :timer-id (js/setInterval[0m
+  [33m108[0m  [1m                       #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var rf/dispatch[0m
+  [36m109[0m  [36m                       (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.664 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m 94[0m  [36m(reg-fx[0m
+  [36m 95[0m  [36m :clear-timer[0m
+  [36m 96[0m  [36m (fn [timer][0m
+  [33m 97[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m 98[0m  [36m[0m
+  [36m 99[0m  [36m(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:104  column:20  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/old-timer[0m
+
+  [36m100[0m  [36m:switch-timer[0m
+  [36m101[0m  [36m(fn [{:keys [db]} _][0m
+  [36m102[0m  [36m  (let [{:keys [timer-id time-interval-id]} db][0m
+  [36m103[0m  [36m    {:dispatch [:change-timer timer-id (inc time-interval-id)][0m
+  [33m104[0m  [1m     :clear-timer old-timer[0m
+  [0m   [0m  [33m                  ^--- Use of undeclared Var dynamic-ranking.handlers/old-timer[0m
+  [36m105[0m  [36m     :db (assoc db[0m
+  [36m106[0m  [36m                :time-interval-id (inc :time-interval-id db)[0m
+  [36m107[0m  [36m                :timer-id (js/setInterval[0m
+  [36m108[0m  [36m                           #(rf/dispatch [:inc-time])[0m
+  [36m109[0m  [36m                           (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.371 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/handlers.cljs   line:106  column:36  ----[0m
+
+  [1mWrong number of args (2) passed to: core/inc[0m
+
+  [36m104[0m  [36m:clear-timer old-timer[0m
+  [36m105[0m  [36m:db (assoc db[0m
+  [33m106[0m  [1m           :time-interval-id (inc :time-interval-id db)[0m
+  [0m   [0m  [33m                             ^--- Wrong number of args (2) passed to: core/inc[0m
+  [36m107[0m  [36m           :timer-id (js/setInterval[0m
+  [36m108[0m  [36m                      #(rf/dispatch [:inc-time])[0m
+  [36m109[0m  [36m                      (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m 94[0m  [36m(reg-fx[0m
+  [36m 95[0m  [36m :clear-timer[0m
+  [36m 96[0m  [36m (fn [timer][0m
+  [33m 97[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m 98[0m  [36m[0m
+  [36m 99[0m  [36m(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:103  column:20  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/old-timer[0m
+
+  [36m 99[0m  [36m(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+  [33m103[0m  [1m     {:clear-timer old-timer[0m
+  [0m   [0m  [33m                   ^--- Use of undeclared Var dynamic-ranking.handlers/old-timer[0m
+  [36m104[0m  [36m      :db (assoc db[0m
+  [36m105[0m  [36m                 :time-interval-id (inc :time-interval-id db)[0m
+  [36m106[0m  [36m                 :timer-id (js/setInterval[0m
+  [36m107[0m  [36m                            #(rf/dispatch [:inc-time])[0m
+  [36m108[0m  [36m                            (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.361 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/handlers.cljs   line:105  column:36  ----[0m
+
+  [1mWrong number of args (2) passed to: core/inc[0m
+
+  [36m103[0m  [36m{:clear-timer old-timer[0m
+  [36m104[0m  [36m :db (assoc db[0m
+  [33m105[0m  [1m            :time-interval-id (inc :time-interval-id db)[0m
+  [0m   [0m  [33m                              ^--- Wrong number of args (2) passed to: core/inc[0m
+  [36m106[0m  [36m            :timer-id (js/setInterval[0m
+  [36m107[0m  [36m                       #(rf/dispatch [:inc-time])[0m
+  [36m108[0m  [36m                       (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m 94[0m  [36m(reg-fx[0m
+  [36m 95[0m  [36m :clear-timer[0m
+  [36m 96[0m  [36m (fn [timer][0m
+  [33m 97[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m 98[0m  [36m[0m
+  [36m 99[0m  [36m(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.405 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/handlers.cljs   line:105  column:36  ----[0m
+
+  [1mWrong number of args (2) passed to: core/inc[0m
+
+  [36m103[0m  [36m{:clear-timer timer-id[0m
+  [36m104[0m  [36m :db (assoc db[0m
+  [33m105[0m  [1m            :time-interval-id (inc :time-interval-id db)[0m
+  [0m   [0m  [33m                              ^--- Wrong number of args (2) passed to: core/inc[0m
+  [36m106[0m  [36m            :timer-id (js/setInterval[0m
+  [36m107[0m  [36m                       #(rf/dispatch [:inc-time])[0m
+  [36m108[0m  [36m                       (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.749 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.126 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.728 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.813 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.94 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.674 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.572 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.943 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m 94[0m  [36m(reg-fx[0m
+  [36m 95[0m  [36m :clear-timer[0m
+  [36m 96[0m  [36m (fn [timer][0m
+  [33m 97[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m 98[0m  [36m[0m
+  [36m 99[0m  [36m(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.367 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/handlers.cljs   line:105  column:45  ----[0m
+
+  [1mWrong number of args (2) passed to: core/inc[0m
+
+  [36m103[0m  [36m{:clear-timer timer-id[0m
+  [36m104[0m  [36m :db          (assoc db[0m
+  [33m105[0m  [1m                     :time-interval-id (inc :time-interval-id db)[0m
+  [0m   [0m  [33m                                       ^--- Wrong number of args (2) passed to: core/inc[0m
+  [36m106[0m  [36m                     :timer-id (js/setInterval[0m
+  [36m107[0m  [36m                                #(rf/dispatch [:inc-time])[0m
+  [36m108[0m  [36m                                (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:97  column:34  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.handlers/interval[0m
+
+  [36m 94[0m  [36m(reg-fx[0m
+  [36m 95[0m  [36m :clear-timer[0m
+  [36m 96[0m  [36m (fn [timer][0m
+  [33m 97[0m  [1m   (when timer (js/clearInterval interval))))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.handlers/interval[0m
+  [36m 98[0m  [36m[0m
+  [36m 99[0m  [36m#_(reg-event-fx[0m
+  [36m100[0m  [36m :switch-timer[0m
+  [36m101[0m  [36m (fn [{:keys [db]} _][0m
+  [36m102[0m  [36m   (let [{:keys [timer-id time-interval-id]} db][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.012 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.986 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.466 seconds.[0m
+[36m----  Could not Analyze  src/cljs/dynamic_ranking/handlers.cljs   line:105  column:45  ----[0m
+
+  [1mWrong number of args (2) passed to: core/inc[0m
+
+  [36m103[0m  [36m{:clear-timer timer-id[0m
+  [36m104[0m  [36m :db          (assoc db[0m
+  [33m105[0m  [1m                     :time-interval-id (inc :time-interval-id db)[0m
+  [0m   [0m  [33m                                       ^--- Wrong number of args (2) passed to: core/inc[0m
+  [36m106[0m  [36m                     :timer-id (js/setInterval[0m
+  [36m107[0m  [36m                                #(rf/dispatch [:inc-time])[0m
+  [36m108[0m  [36m                                (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Analysis Error : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:107  column:40  ----[0m
+
+  [1mNo such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+
+  [36m103[0m  [36m{:clear-timer timer-id[0m
+  [36m104[0m  [36m :db          (assoc db[0m
+  [36m105[0m  [36m                     :time-interval-id (inc (:time-interval-id db))[0m
+  [36m106[0m  [36m                     :timer-id (js/setInterval[0m
+  [33m107[0m  [1m                                #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                                  ^--- No such namespace: rf, could not locate rf.cljs, rf.cljc, or JavaScript source providing ""[0m
+  [36m108[0m  [36m                                (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/handlers.cljs   line:107  column:40  ----[0m
+
+  [1mUse of undeclared Var rf/dispatch[0m
+
+  [36m103[0m  [36m{:clear-timer timer-id[0m
+  [36m104[0m  [36m :db          (assoc db[0m
+  [36m105[0m  [36m                     :time-interval-id (inc (:time-interval-id db))[0m
+  [36m106[0m  [36m                     :timer-id (js/setInterval[0m
+  [33m107[0m  [1m                                #(rf/dispatch [:inc-time])[0m
+  [0m   [0m  [33m                                  ^--- Use of undeclared Var rf/dispatch[0m
+  [36m108[0m  [36m                                (get time-intervals time-interval-id)))})))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.954 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.902 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.801 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/db.cljs   line:8  column:41  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.db/dispatch[0m
+
+  [36m 4[0m  [36m(def default-db[0m
+  [36m 5[0m  [36m  {:page              :home[0m
+  [36m 6[0m  [36m   :data-type         :pe[0m
+  [36m 7[0m  [36m   :time-interval-id  0[0m
+  [33m 8[0m  [1m   :timer-id          (js/setInterval #(dispatch [:inc-time]) 200)[0m
+  [0m  [0m  [33m                                        ^--- Use of undeclared Var dynamic-ranking.db/dispatch[0m
+  [36m 9[0m  [36m   :time              0[0m
+  [36m10[0m  [36m   :data              [["1991-03-06" '(["000002.SZ" 31.71])][0m
+  [36m11[0m  [36m                       ["1991-03-07" '(["000002.SZ" 31.56])][0m
+  [36m12[0m  [36m                       ["1991-03-08" '(["000002.SZ" 31.41])][0m
+  [36m13[0m  [36m                       ["1991-03-11" '(["000002.SZ" 31.11])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/db.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.979 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.66 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.669 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.666 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.78 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.003 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.113 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.438 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.816 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.889 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.015 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.198 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.067 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.15 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.297 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.461 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.062 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.534 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.709 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.668 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.787 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.905 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.069 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.77 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.066 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.759 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.76 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.796 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.782 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.933 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.696 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.804 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.739 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.039 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.688 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.892 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.846 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.912 seconds.[0m
+[36m----  Could not Read  src/cljs/dynamic_ranking/core.cljs   line:149 ----[0m
+
+  [1m/Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 149, col 31] The map literal starting with :top on line 141 column 18 contains 7 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m147[0m  [36m                       \3 "#F79018"[0m
+  [36m148[0m  [36m                       \6 "#8536A3")[0m
+  [33m149[0m  [1m         :transition}}[0m
+  [0m   [0m  [33m         /Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 149, col 31] The map literal starting with :top on line 141 column 18 contains 7 form(s). Map literals must contain an even number of forms.[0m
+  [36m150[0m  [36m[:span.in-bar[0m
+  [36m151[0m  [36m #_(when-not (neg? index)[0m
+  [36m152[0m  [36m     #_[:img.logo {:src (str (get-tiny-logo-url code)[0m
+
+[36m----  Reader Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.388 seconds.[0m
+[36m----  Could not Read  src/cljs/dynamic_ranking/core.cljs   line:149 ----[0m
+
+  [1m/Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 149, col 31] The map literal starting with :top on line 141 column 18 contains 7 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m147[0m  [36m                       \3 "#F79018"[0m
+  [36m148[0m  [36m                       \6 "#8536A3")[0m
+  [33m149[0m  [1m         :transition}}[0m
+  [0m   [0m  [33m         /Users/yuzhao/gits/luminus-projects/dynamic-ranking/src/cljs/dynamic_ranking/core.cljs [line 149, col 31] The map literal starting with :top on line 141 column 18 contains 7 form(s). Map literals must contain an even number of forms.[0m
+  [36m150[0m  [36m[:span.in-bar[0m
+  [36m151[0m  [36m #_(when-not (neg? index)[0m
+  [36m152[0m  [36m     #_[:img.logo {:src (str (get-tiny-logo-url code)[0m
+
+[36m----  Reader Error : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:149  column:49  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/time-intervals[0m
+
+  [36m145[0m  [36m         :background (case (first code)[0m
+  [36m146[0m  [36m                       \0 "#00B692"[0m
+  [36m147[0m  [36m                       \3 "#F79018"[0m
+  [36m148[0m  [36m                       \6 "#8536A3")[0m
+  [33m149[0m  [1m         :transition (let [itv (/ (get time-intervals @time-interval-id) 1000)][0m
+  [0m   [0m  [33m                                       ^--- Use of undeclared Var dynamic-ranking.core/time-intervals[0m
+  [36m150[0m  [36m                       (str "top " itv "s ease-out, width " itv "s ease-out"))}}[0m
+  [36m151[0m  [36m[:span.in-bar[0m
+  [36m152[0m  [36m #_(when-not (neg? index)[0m
+  [36m153[0m  [36m     #_[:img.logo {:src (str (get-tiny-logo-url code)[0m
+  [36m154[0m  [36m                             "." (get postfix (str/join (take 6 code))))}])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.869 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/dynamic_ranking/core.cljs   line:139  column:42  ----[0m
+
+  [1mUse of undeclared Var dynamic-ranking.core/time-intervals[0m
+
+  [36m135[0m  [36m    index      (.indexOf rank-secu code)[0m
+  [36m136[0m  [36m    vals       (map second @rank)[0m
+  [36m137[0m  [36m    val        (if (neg? index) 0 (nth vals index))[0m
+  [36m138[0m  [36m    max-val    (max 500 (first vals)) ;; 这招好用[0m
+  [33m139[0m  [1m    transition (let [itv (/ (get time-intervals @time-interval-id) 1000)][0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var dynamic-ranking.core/time-intervals[0m
+  [36m140[0m  [36m                        (str "top " itv "s ease-out, width " itv "s ease-out"))[0m
+  [36m141[0m  [36m    ][0m
+  [36m142[0m  [36m[:div.rect[0m
+  [36m143[0m  [36m {:style {:top        (if (neg? index)[0m
+  [36m144[0m  [36m                        400[0m
+
+[36m----  Compiler Warning : Please see src/cljs/dynamic_ranking/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.861 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.991 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/dynamic_ranking/core.js

@@ -1,5 +1,6 @@
 (ns dynamic-ranking.subscriptions
-  (:require [re-frame.core :refer [reg-sub]]))
+  (:require [re-frame.core :refer [reg-sub]]
+            [dynamic-ranking.handlers :refer [time-intervals]]))
 
 (reg-sub
   :page
@@ -12,9 +13,9 @@
    (:docs db)))
 
 (reg-sub
- :pe
+ :data
  (fn [db _]
-   (:pe db)))
+   (:data db)))
 
 (reg-sub
  :secucodes
@@ -37,9 +38,9 @@
    (:current-date db)))
 
 (reg-sub
- :current-pe-rank
+ :current-rank
  (fn [db _]
-   (:current-pe-rank db)))
+   (:current-rank db)))
 
 (reg-sub
  :data-length
@@ -60,3 +61,18 @@
  :first-holder-days
  (fn [db _]
    (:first-holder-days db)))
+
+(reg-sub
+ :stocknames
+ (fn [db _]
+   (:stocknames db)))
+
+(reg-sub
+ :data-type
+ (fn [db _]
+   (:data-type db)))
+
+(reg-sub
+ :time-interval-id
+ (fn [db _]
+   (:time-interval-id db)))

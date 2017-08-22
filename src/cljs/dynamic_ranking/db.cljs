@@ -1,23 +1,16 @@
 (ns dynamic-ranking.db
-  )
+  (:require [re-frame.core :refer [dispatch]]))
 
 (def default-db
   {:page              :home
+   :data-type         :pe
+   :time-interval-id  0
+   :timer-id          (js/setInterval #(dispatch [:inc-time]) 2000)
    :time              0
-   :rank              (range 5)
-   :pe                [["1991-03-06" '(["000002.SZ" 31.71])]
-                       ["1991-03-07" '(["000002.SZ" 31.56])]
-                       ["1991-03-08" '(["000002.SZ" 31.41])]
-                       ["1991-03-11" '(["000002.SZ" 31.11])]
-                       ["1991-03-12" '(["000002.SZ" 30.96])]
-                       ["1991-03-13" '(["000002.SZ" 30.81])]
-                       ["1991-03-14" '(["000005.SZ" 47.33] ["000002.SZ" 30.66])]
-                       ["1991-03-15" '(["000005.SZ" 47.1] ["000002.SZ" 30.51])]
-                       ["1991-03-18" '(["000005.SZ" 46.65] ["000002.SZ" 30.2])]
-                       ["1991-03-19" '(["000005.SZ" 46.65] ["000002.SZ" 30.05])]]
-   :current-date      "1991-03-06"
-   :current-pe-rank   [] #_ [["000002.SZ" 31.71]]
-   :secucodes         [] #_ ["000002.SZ"]
+   :data              []
+   :current-date      ""
+   :current-rank      []
+   :secucodes         []
    :data-length       10
    :stocknames        {}
    :current-top       "000002.SZ"

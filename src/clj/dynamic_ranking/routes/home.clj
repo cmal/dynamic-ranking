@@ -9,6 +9,10 @@
 (defn home-page []
   (layout/render "home.html"))
 
+(defn send-file [filename]
+  (-> (response/ok (-> filename io/resource slurp))
+      (response/header "Content-Type" "text/plain; charset=utf-8")))
+
 (defroutes home-routes
   (GET "/" []
        (home-page))
@@ -16,8 +20,11 @@
        (-> (response/ok (-> "docs/docs.md" io/resource slurp))
            (response/header "Content-Type" "text/plain; charset=utf-8")))
   (GET "/pe" []
-       (-> (json-response (-> "docs/pe.txt" io/resource slurp edn/read-string))))
+       #_(-> (json-response (-> "docs/pe.txt" io/resource slurp edn/read-string)))
+       (send-file "docs/pe.txt"))
+  (GET "/lowest-pe" [] (send-file "docs/lowest-pe.txt"))
+  (GET "/mv" []
+       (send-file "docs/mv.txt"))
   (GET "/stocknames" []
-       (-> (response/ok (-> "docs/stock-name.txt" io/resource slurp))
-           (response/header "Content-Type" "text/plain; charset=utf-8"))))
+       (send-file "docs/stock-name.txt")))
 
