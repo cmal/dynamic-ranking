@@ -1,9 +1,12 @@
 (ns dynamic-ranking.db
   (:require [re-frame.core :refer [dispatch]]))
 
+(def time-intervals [2000 1000 500 200])
+
 (def default-db
   {:page              :home
    :data-type         :pe
+   :axes              nil
    :time-interval-id  0
    :time              0
    :data              []

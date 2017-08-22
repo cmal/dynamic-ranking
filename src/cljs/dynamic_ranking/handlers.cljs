@@ -1,5 +1,5 @@
 (ns dynamic-ranking.handlers
-  (:require [dynamic-ranking.db :as db]
+  (:require [dynamic-ranking.db :refer [default-db time-intervals]]
             [re-frame.core :refer [dispatch reg-event-db reg-event-fx reg-fx]]
             [clojure.string :as str]
 ))
@@ -7,7 +7,7 @@
 (reg-event-db
   :initialize-db
   (fn [_ _]
-    db/default-db))
+    default-db))
 
 (reg-event-db
   :set-active-page
@@ -26,11 +26,19 @@
           :data data
           :data-length (count data))))
 
+(def v-axes
+  (let [lst (map (fn [mul] (vec (map #(* mul %) (range 1 10))))
+                 (iterate #(* 10 %) 0.01))]
+    {:pe        (vec (apply concat (take 20 (drop 2 lst))))
+     :lowest-pe (vec (apply concat (take 6 lst)))
+     :mv        (vec (apply concat (take 20 (drop 6 lst)) ))}))
+
 (reg-event-db
  :set-type
  (fn [db [_ type]]
    (assoc db
-          :data-type type)))
+          :data-type type
+          :axes (v-axes type))))
 
 (reg-event-db
  :set-secucodes
@@ -89,8 +97,6 @@
      (assoc db :top-stockname
             (get stocknames (str/join (take 6 current-top)))))))
 
-(def time-intervals [2000 1000 500 200])
-
 (reg-fx
  :switch-interval
  (let [live-intervals (atom {"switch-timer" (js/setInterval
@@ -113,4 +119,5 @@
        :delay (get time-intervals new-time-interval-id) ;; how many milli secs
        :event [:inc-time]                               ;; what event to dispatch
        }
-      :db (assoc db :time-interval-id new-time-interval-id)})))
+      :db (assoc db
+                 :time-interval-id new-time-interval-id)})))

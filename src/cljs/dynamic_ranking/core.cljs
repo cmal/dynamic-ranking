@@ -10,7 +10,7 @@
             [markdown.core :refer [md->html]]
             [ajax.core :refer [GET POST]]
             [dynamic-ranking.ajax :refer [load-interceptors!]]
-            [dynamic-ranking.handlers :refer [time-intervals]]
+            [dynamic-ranking.handlers]
             [dynamic-ranking.subscriptions]
             [dynamic-ranking.img :refer [postfix]]
             )
@@ -50,57 +50,11 @@
       [:div {:dangerouslySetInnerHTML
              {:__html (md->html docs)}}]])])
 
-(def bar-height 34)
-
-#_(defn div-rec-component [i time rank]
-    (r/create-class
-     {:display-name (str "div-rec-component" @time @rank)
-      :component-did-update
-      (fn []
-        #_(println "==> component did update"))
-      :component-did-mount
-      (fn []
-        #_(println "==> component did mount"))
-      :component-will-unmount
-      (fn []
-        #_(println "==> component will unmount"))
-      :reagent-render
-      (fn [i time rank]
-        #_(println "==> component render")
-        [:div.canvas-rect
-         {:style {:width (+ (* (inc i) bar-height) (* 5 (mod @time 10)))
-                  :top   (let [top (if (= (nth @rank i) (dec (count @rank)))
-                                     (* 20 (+ 3 (nth @rank i)))
-                                     (* 20 (nth @rank i)))]
-                           (println "top " top)
-                           top)
-                  }}
-         i])}))
-
-#_(defn dynamic-rank []
-    (let [time (rf/subscribe [:time])
-          rank (rf/subscribe [:rank])]
-      [:div.canvas-inner
-       (doall
-        (for [i (range 5)]
-          ^{:key (str "dynr-" i)}
-          [div-rec-component i time rank]
-          ))]))
-
-#_(defn chart []
-    (let [time (rf/subscribe [:time])]
-      [:div
-       [:div @time]
-       [:div [dynamic-rank]]
-       [:div.canvas-cover]]))
-
-
 (defn get-width-by-val [max-val val index]
   (let [max-width 80
         min-width 30
-        interval  (- max-width min-width)
-        width     (str (min 80 (+ min-width (* interval (/ val max-val)))) "%")]
-    width))
+        interval  (- max-width min-width)]
+    (str (min max-width (+ min-width (* interval (/ val max-val)))) "%")))
 
 (defn get-tiny-logo-url [secucode]
   (str "http://dev.joudou.com/static/enterprise_logos/logos/" (str/join (concat (take 1 secucode) '(\/) (take 6 secucode)))))
@@ -108,61 +62,64 @@
 
 (defn large-num-formatter [val]
   (cond
-    (< val 1E4) [:span.val-num (.toFixed val 2)]
-    (< val 1E8) [:span
-                 [:span.val-num (.toFixed (/ val 1E4) 2)] [:span.val-chn "万"]]
+    (< val 1E4)  [:span.val-num (.toFixed val 2)]
+    (< val 1E8)  [:span
+                  [:span.val-num (.toFixed (/ val 1E4) 2)] [:span.val-chn "万"]]
     (< val 1E12) [:span
                   [:span.val-num (.toFixed (/ val 1E8) 2)] [:span.val-chn "亿"]]
-    :else [:span
-           [:span.val-num (.toFixed (/ val 1E12) 2)] [:span.val-chn "万亿"]]))
+    :else        [:span
+                  [:span.val-num (.toFixed (/ val 1E12) 2)] [:span.val-chn "万亿"]]))
 
 (defn data-formatter [val data-type]
   (case data-type
-    :pe        (if (zero? val) "" (.toFixed val 2))
-    :lowest-pe (if (zero? val) "" (.toFixed val 2))
+    :pe        (if (zero? val) "" (.toFixed (* 1 val) 2))
+    :lowest-pe (if (zero? val) "" (.toFixed (* 1 val) 2))
     :mv        (if (zero? val) "" (large-num-formatter val))))
+
+(def bar-height 34)
+
+(defn transition-css
+  [transition]
+  {:transition         transition
+   :-webkit-transition transition
+   :-moz-transition    transition
+   :-o-transition      transition})
 
 (defn div-rect-component [i code]
   (r/create-class
    {:display-name (str "div-rect-component" i)
     :reagent-render
     (fn [i code]
-      (let [rank       (rf/subscribe [:current-rank])
-            stocknames (rf/subscribe [:stocknames])
-            data-type  (rf/subscribe [:data-type])
-            time-interval-id (rf/subscribe [:time-interval-id])
-            rank-secu  (vec (map first @rank))
-            index      (.indexOf rank-secu code)
-            vals       (map second @rank)
-            val        (if (neg? index) 0 (nth vals index))
-            max-val    (max 500 (first vals)) ;; 这招好用
-            transition (let [itv (/ (get time-intervals @time-interval-id) 1000)]
-                                (str "top " itv "s ease-out, width " itv "s ease-out"))
+      (let [rank             (rf/subscribe [:current-rank])
+            stocknames       (rf/subscribe [:stocknames])
+            data-type        (rf/subscribe [:data-type])
+            itv              (rf/subscribe [:interval-sec])
+            rank-secu        (vec (map first @rank))
+            index            (.indexOf rank-secu code)
+            vals             (map second @rank)
+            unfmt-val        (if (neg? index) 0 (nth vals index))
+            val              (data-formatter unfmt-val @data-type)
+            max-val          (case @data-type :lowest-pe (max 30 (last vals)) :pe (max 500 (first vals)) (first vals)) ;; 这招好用
+            stockname        (get @stocknames (str/join (take 6 code)))
+            top              (if (neg? index) 400 (* bar-height index))
+            width            (get-width-by-val max-val unfmt-val index)
+            background       (case (first code)
+                               \0 "#00B692"
+                               \3 "#F79018"
+                               \6 "#8536A3")
+            transition       (str "top " itv "s ease-out, width " itv "s linear")
             ]
         [:div.rect
-         {:style {:top        (if (neg? index)
-                                400
-                                (* bar-height index))
-                  :width      (get-width-by-val max-val val index)
-                  :background (case (first code)
-                                \0 "#00B692"
-                                \3 "#F79018"
-                                \6 "#8536A3")
-                  :transition transition
-                  :-webkit-transition transition
-                  :-moz-transition transition
-                  :-o-transition transition}}
+         {:style (merge {:top        top
+                         :width      width
+                         :background background
+                         }
+                        (transition-css transition))}
          [:span.in-bar
-          #_(when-not (neg? index)
-              #_[:img.logo {:src (str (get-tiny-logo-url code)
-                                      "." (get postfix (str/join (take 6 code))))}])
-          [:span.name
-           (get @stocknames (str/join (take 6 code)))]
-          [:span.code
-           code
-           #_(when (and overflow? (zero? index)) " >>>")]]
+          [:span.name stockname]
+          [:span.code code]]
          [:span.out-bar
-          [:span.val (data-formatter val @data-type)]]]))}))
+          [:span.val val]]]))}))
 
 (defn dynamic-rank []
   (let [secucodes (rf/subscribe [:secucodes])]
@@ -187,16 +144,9 @@
 
 (defn rank-desc []
   [:div.rank-desc
-   [:div.rank-desc-item "1st"]
-   [:div.rank-desc-item "2nd"]
-   [:div.rank-desc-item "3rd"]
-   [:div.rank-desc-item "4th"]
-   [:div.rank-desc-item "5th"]
-   [:div.rank-desc-item "6th"]
-   [:div.rank-desc-item "7th"]
-   [:div.rank-desc-item "8th"]
-   [:div.rank-desc-item "9th"]
-   [:div.rank-desc-item "10th"]])
+   (for [text ["1st" "2nd" "3rd" "4th" "5th"
+               "6th" "7th" "8th" "9th" "10th"]]
+     ^{:key (str "rank-desc-item-" text)} [:div.rank-desc-item text])])
 
 (defn progress-bar [total index]
   (let [width 530]
@@ -207,6 +157,23 @@
                     (rf/dispatch [:set-time (* total (/ (- (.-clientX e) (.-x (getPageOffset node))) width))])))}
      [:div.progress-past
       {:style {:width (* width (/ index total))}}]]))
+
+(defn v-axes []
+  (let [axes (rf/subscribe [:axes])
+        rank (rf/subscribe [:current-rank])
+        vals (map second @rank)
+        itv (rf/subscribe [:interval-sec])
+        transition (str "left " itv "s linear")]
+    [:div.v-axes
+     (for [a @axes
+           :let [fst-val (first vals)
+                 lst-val (last vals)]]
+       ^{:key (str "v-axis-" a)}
+       [:div.v-axis
+        {:style (merge {:left a
+                        }
+                       (transition-css transition))}])]))
+
 
 (defonce month-names
   {"01" "Jan"
@@ -229,20 +196,23 @@
         time              (rf/subscribe [:time])
         secucode          (rf/subscribe [:current-top])
         stockname         (rf/subscribe [:top-stockname])
-        first-holder-days (rf/subscribe [:first-holder-days])]
+        first-holder-days (rf/subscribe [:first-holder-days])
+        data-type         (rf/subscribe [:data-type])
+        name (.toUpperCase (name @data-type))]
     [:div.container
      [progress-bar @total (mod @time @total)]
      [:div.top-desc #_(ffirst @pe-rank)
       [:div @secucode]
       [:div @stockname]
-      [:div "#1 PE holder"]
+      [:div "#1 " name " holder"]
       [:div "for " @first-holder-days " days"]]
-     [:div.title "Top PE of Chinese stock market's history on"]
+     [:div.title "Top " name " of Chinese stock market's history on"]
      (let [[y m d] (str/split @date #"-")]
        [:div.date (month-names m) " " d ", " y])
      [rank-desc]
      [main-chart]
-     [time-controller]]))
+     [time-controller]
+     [v-axes]]))
 
 (def pages
   {:home    #'home-page
@@ -314,7 +284,7 @@
   (rf/dispatch-sync [:initialize-db])
   (load-interceptors!)
   (fetch-docs!)
-  (fetch-mv!)
+  (fetch-lowest-pe!)
   (fetch-stocknames!)
   (hook-browser-navigation!)
   (mount-components))

@@ -1,6 +1,6 @@
 (ns dynamic-ranking.subscriptions
   (:require [re-frame.core :refer [reg-sub]]
-            [dynamic-ranking.handlers :refer [time-intervals]]))
+            [dynamic-ranking.db :refer [time-intervals]]))
 
 (reg-sub
   :page
@@ -76,3 +76,13 @@
  :time-interval-id
  (fn [db _]
    (:time-interval-id db)))
+
+(reg-sub
+ :interval-sec
+ (fn [db _]
+   (/ (get time-intervals (:time-interval-id db)) 1000)))
+
+(reg-sub
+ :axes
+ (fn [db _]
+   (:axes db)))

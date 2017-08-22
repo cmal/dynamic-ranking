@@ -256,3 +256,8 @@ div.timer-btn {
     height: 20px;
     line-height: 20px;
 }
+
+div.v-axis {
+    position: absolute;
+    
+}
