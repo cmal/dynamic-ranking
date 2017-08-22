@@ -50,31 +50,43 @@
       [:div {:dangerouslySetInnerHTML
              {:__html (md->html docs)}}]])])
 
-(defn get-width-by-val [max-val val index]
+#_(defn get-width-by-val [max-val val index]
   (let [max-width 80
         min-width 30
         interval  (- max-width min-width)]
     (str (min max-width (+ min-width (* interval (/ val max-val)))) "%")))
 
+(defn get-width-by-val [max-width min-width max-val val]
+  (let [interval (- max-width min-width)]
+    (str (min max-width (+ min-width (* interval (/ val max-val)))) "%")))
+
 (defn get-tiny-logo-url [secucode]
-  (str "http://dev.joudou.com/static/enterprise_logos/logos/" (str/join (concat (take 1 secucode) '(\/) (take 6 secucode)))))
+  (str "http://dev.joudou.com/static/enterprise_logos/logos/"
+       (str/join (concat (take 1 secucode) '(\/) (take 6 secucode)))))
 
 
-(defn large-num-formatter [val]
+(defn large-num-component [val digits]
   (cond
-    (< val 1E4)  [:span.val-num (.toFixed val 2)]
-    (< val 1E8)  [:span
-                  [:span.val-num (.toFixed (/ val 1E4) 2)] [:span.val-chn "万"]]
-    (< val 1E12) [:span
-                  [:span.val-num (.toFixed (/ val 1E8) 2)] [:span.val-chn "亿"]]
-    :else        [:span
-                  [:span.val-num (.toFixed (/ val 1E12) 2)] [:span.val-chn "万亿"]]))
+    (< val 1E4)  [:span.out-bar [:span.val-num (.toFixed val digits)]]
+    (< val 1E8)  [:span.out-bar
+                  [:span.val-num (.toFixed (/ val 1E4) digits)] [:span.val-chn "万"]]
+    (< val 1E12) [:span.out-bar
+                  [:span.val-num (.toFixed (/ val 1E8) digits)] [:span.val-chn "亿"]]
+    :else        [:span.out-bar
+                  [:span.val-num (.toFixed (/ val 1E12) digits)] [:span.val-chn "万亿"]]))
 
-(defn data-formatter [val data-type]
+(defn large-num-formatter [val digits]
+  (cond
+    (< val 1E4) (.toFixed val digits)
+    (< val 1E8) (str (.toFixed (/ val 1E4) digits) "万")
+    (< val 1E12) (str (.toFixed (/ val 1E8) digits) "亿")
+    :else (str (.toFixed (/ val 1E12) digits) "万亿")))
+
+(defn data-formatter [f val data-type digits]
   (case data-type
-    :pe        (if (zero? val) "" (.toFixed (* 1 val) 2))
-    :lowest-pe (if (zero? val) "" (.toFixed (* 1 val) 2))
-    :mv        (if (zero? val) "" (large-num-formatter val))))
+    :pe        (if (zero? val) "" (.toFixed (* 1 val) digits))
+    :lowest-pe (if (zero? val) "" (.toFixed (* 1 val) digits))
+    :mv        (if (zero? val) "" (f val digits))))
 
 (def bar-height 34)
 
@@ -94,32 +106,33 @@
             stocknames       (rf/subscribe [:stocknames])
             data-type        (rf/subscribe [:data-type])
             itv              (rf/subscribe [:interval-sec])
+            max-width (rf/subscribe [:chart-max-percent])
+            min-width (rf/subscribe [:chart-min-percent])
             rank-secu        (vec (map first @rank))
             index            (.indexOf rank-secu code)
             vals             (map second @rank)
             unfmt-val        (if (neg? index) 0 (nth vals index))
-            val              (data-formatter unfmt-val @data-type)
-            max-val          (case @data-type :lowest-pe (max 30 (last vals)) :pe (max 500 (first vals)) (first vals)) ;; 这招好用
+            val              (data-formatter large-num-component unfmt-val @data-type 2)
+            max-val          (case @data-type :lowest-pe (max 10 (last vals)) :pe (max 500 (first vals)) (first vals)) ;; 这招好用
             stockname        (get @stocknames (str/join (take 6 code)))
             top              (if (neg? index) 400 (* bar-height index))
-            width            (get-width-by-val max-val unfmt-val index)
+            width            (get-width-by-val @max-width @min-width max-val unfmt-val)
             background       (case (first code)
                                \0 "#00B692"
                                \3 "#F79018"
                                \6 "#8536A3")
-            transition       (str "top " itv "s ease-out, width " itv "s linear")
+            transition       (str "top " @itv "s ease-out, width " @itv "s linear")
             ]
         [:div.rect
-         {:style (merge {:top        top
-                         :width      width
-                         :background background
+         {:style (merge {:top           top
+                         :width         width
+                         :background    background
                          }
                         (transition-css transition))}
          [:span.in-bar
           [:span.name stockname]
           [:span.code code]]
-         [:span.out-bar
-          [:span.val val]]]))}))
+         val]))}))
 
 (defn dynamic-rank []
   (let [secucodes (rf/subscribe [:secucodes])]
@@ -159,20 +172,38 @@
       {:style {:width (* width (/ index total))}}]]))
 
 (defn v-axes []
-  (let [axes (rf/subscribe [:axes])
-        rank (rf/subscribe [:current-rank])
-        vals (map second @rank)
-        itv (rf/subscribe [:interval-sec])
-        transition (str "left " itv "s linear")]
+  (let [axes       (rf/subscribe [:axes])
+        rank       (rf/subscribe [:current-rank])
+        itv        (rf/subscribe [:interval-sec])
+        ratio      (rf/subscribe [:x-axis-ratio])
+        data-type  (rf/subscribe [:data-type])
+        vals       (map second @rank)
+        transition (str "left " @itv "s linear")]
     [:div.v-axes
-     (for [a @axes
-           :let [fst-val (first vals)
-                 lst-val (last vals)]]
-       ^{:key (str "v-axis-" a)}
-       [:div.v-axis
-        {:style (merge {:left a
-                        }
-                       (transition-css transition))}])]))
+     (doall
+      (for [a    @axes
+            :let [fst-val (first vals)
+                  lst-val (last vals)
+                  left (+ 408 (* @ratio a)) ;; 408 = 120 + .3 * 960
+;;                  _ (println "left" @ratio a left)
+                  ]
+            :when (> (* 10 a) fst-val)]
+        ^{:key (str "v-axis-" a)}
+        [:div.v-axis
+         {:style {:left               left
+                  :transition         transition
+                  :-webkit-transition transition
+                  :-moz-transition    transition
+                  :-o-transition      transition
+                  }}
+         [:div.v-axis-cover]
+         [:div.v-axis-label
+          {:style {:left (cond
+                           (< a 10000) -2
+                           :else -5)}}
+          (cond
+            (< a 1) (.toFixed a 1)
+            :else   (data-formatter large-num-formatter a @data-type 0))]]))]))
 
 
 (defonce month-names
@@ -188,6 +219,10 @@
    "10" "Oct"
    "11" "Nov"
    "12" "Dec"})
+
+(defn v-line []
+  [:div.v-line
+   ])
 
 (defn chart-page []
   (let [date              (rf/subscribe [:current-date])
@@ -212,7 +247,8 @@
      [rank-desc]
      [main-chart]
      [time-controller]
-     [v-axes]]))
+     #_[v-axes]
+     #_[v-line]]))
 
 (def pages
   {:home    #'home-page
@@ -284,7 +320,8 @@
   (rf/dispatch-sync [:initialize-db])
   (load-interceptors!)
   (fetch-docs!)
-  (fetch-lowest-pe!)
+  #_(fetch-lowest-pe!)
+  (fetch-mv!)
   (fetch-stocknames!)
   (hook-browser-navigation!)
   (mount-components))

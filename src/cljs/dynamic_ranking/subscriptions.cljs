@@ -86,3 +86,18 @@
  :axes
  (fn [db _]
    (:axes db)))
+
+(reg-sub
+ :x-axis-ratio
+ (fn [db _]
+   (:x-axis-ratio db)))
+
+(reg-sub
+ :chart-max-percent
+ (fn [db _]
+   (:chart-max-percent db)))
+
+(reg-sub
+ :chart-min-percent
+ (fn [db _]
+   (:chart-min-percent db)))

@@ -80,17 +80,22 @@ div.container {
 
 div.chart {
     position: relative;
-    top: 240px;
+    top: 320px;
     margin-left: 120px;
+    width: 960px;
 }
 
 div.rank-desc {
     position: relative;
     float: left;
-    top: 240px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    top: 300px;
     text-align:right;
     width: 100px;
     padding-right: 20px;
+    background: black;
+    z-index: 40000;
 }
 
 div.rank-desc-item {
@@ -99,37 +104,16 @@ div.rank-desc-item {
     font-size: 28px;
 }
 
-div.canvas-rect {
-    position: absolute;
-    height: 18px;
-    background: green;
-    text-align: right;
-    line-height: 18px;
-    z-index: -1;
-
-    transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in; /* Firefox 4 */
-    -webkit-transition: all 1s ease-in; /* Safari 和 Chrome */
-    -o-transition: all 1s ease-in; /* Opera */
-}
-
-div.canvas-inner {
-    position: relative;
-    width: 240px;
-    height: 80px;
-    border: 0px solid #999;
-    /* background: rgba(255,255,255,0.1); */
-    z-index: 0;
-}
-
 div.canvas-cover {
     position: relative;
     height: 180px;
+    width: 9999px;
     left: -120px;
     /* width: 100%; */
     background: black;
     border: 0px solid #999;
     /* display: none; */
+    z-index: 1000;
 }
 
 div.rank {
@@ -138,7 +122,7 @@ div.rank {
     height: 343px;
     border: 0px solid #999;
     background: rgba(100,100,0,0.1);
-    z-index: 0;
+    z-index: 2;
 }
 
 div.rect {
@@ -146,7 +130,7 @@ div.rect {
     height: 26px;
     text-align: left;
     line-height: 26px;
-    z-index: -1;
+    z-index: 4;
     /* top: 400px; */
 
     /* transition: top .5s ease-out, width .5s linear; */
@@ -189,6 +173,14 @@ span.val-chn {
     font-size: 26px;
 }
 
+span.out-bar {
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    top: -3px;
+    padding-left: 10px;
+    font-size: 30px;
+}
 
 span.val {
     display: inline-block;
@@ -259,5 +251,31 @@ div.timer-btn {
 
 div.v-axis {
     position: absolute;
-    
+    top: 300px;
+    width: 3px;
+    background: #777;
+    height: 400px;
+    z-index: 1;
+}
+
+div.v-axis-cover {
+
+}
+
+div.v-axis-label {
+    position: relative;
+    min-width: 70px;
+    color: #777;
+    top: -20px;
+    left: -2px;
+}
+
+div.v-line {
+    position: absolute;
+    width: 1px;
+    border-left: 2px dashed rgba(202, 133, 217, 0.7);
+    height: 400px;
+    top: 280px;
+    left: 408px;
+    z-index: 100;
 }

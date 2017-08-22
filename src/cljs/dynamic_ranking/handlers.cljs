@@ -28,10 +28,10 @@
 
 (def v-axes
   (let [lst (map (fn [mul] (vec (map #(* mul %) (range 1 10))))
-                 (iterate #(* 10 %) 0.01))]
-    {:pe        (vec (apply concat (take 20 (drop 2 lst))))
+                 (iterate #(* 10 %) 0.1))]
+    {:pe        (vec (apply concat (take 20 (drop 1 lst))))
      :lowest-pe (vec (apply concat (take 6 lst)))
-     :mv        (vec (apply concat (take 20 (drop 6 lst)) ))}))
+     :mv        (vec (apply concat (take 20 (drop 5 lst)) ))}))
 
 (reg-event-db
  :set-type
@@ -50,12 +50,21 @@
   (let [data      (:data db)
         index   (mod time (:data-length db))
         rec     (nth data (if (neg? index) 0 index))
-        rank (second rec)]
+        rank (second rec)
+        data (map second rank)
+        max-val (case (:data-type db)
+                  :lowest-pe (max 10 (last data))
+                  :pe (max 500 (first data))
+                  (first data))
+        ]
     (assoc db
            :time time
            :current-date (first rec)
            :current-rank (vec rank)
            :current-top (ffirst rank)
+           :x-axis-ratio (/ (* 960 0.01 (- (:chart-max-percent db)
+                                           (:chart-min-percent db)))
+                            max-val)
            )))
 
 (reg-event-fx
@@ -97,16 +106,18 @@
      (assoc db :top-stockname
             (get stocknames (str/join (take 6 current-top)))))))
 
-(reg-fx
+#_(reg-fx
  :switch-interval
- (let [live-intervals (atom {"switch-timer" (js/setInterval
-                                             #(dispatch [:inc-time])
-                                             (get time-intervals 0))})] ;; get initialized
+ (let [live-intervals (atom {})] ;; bug: every time figwheel recompiles, the setIntervals in atom will loss
+   (when-not (get @live-intervals "switch-timer")
+           (js/setInterval
+            #(dispatch [:inc-time])
+            (get time-intervals 0)));; get initialized
    (fn [{:keys [action id delay event]}]
      (js/clearInterval (get @live-intervals id))
      (swap! live-intervals assoc id (js/setInterval #(dispatch event) delay)))))
 
-(reg-event-fx
+#_(reg-event-fx
  :switch-timer
  (fn [{:keys [db]} _]
    (let [{:keys [time-interval-id]} db
@@ -121,3 +132,28 @@
        }
       :db (assoc db
                  :time-interval-id new-time-interval-id)})))
+
+#_(reg-event-db
+ :set-x-axis-ratio
+ (fn [db [_ val max-val]]
+   (assoc db :x-axis-ratio (/ val max-val))))
+
+
+(reg-fx
+ :clear-timer
+ (fn [timer-id]
+   (js/clearInterval timer-id)))
+
+(reg-event-fx
+ :switch-timer
+ (fn [{:keys [db]} _]
+   (let [{:keys [timer-id time-interval-id]} db
+         new-time-interval-id (mod
+                               (inc time-interval-id)
+                               (count time-intervals))]
+     {:clear-timer timer-id
+      :db          (assoc db
+                          :time-interval-id new-time-interval-id
+                          :timer-id (js/setInterval
+                                     #(dispatch [:inc-time])
+                                     (get time-intervals new-time-interval-id)))}))) ;; not pure
