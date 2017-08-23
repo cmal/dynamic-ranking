@@ -188,9 +188,13 @@
             :let [fst-val (first vals)
                   lst-val (last vals)
                   left (+ 408 (* @ratio a)) ;; 408 = 120 + .3 * 960
-;;                  _ (println "left" @ratio a left)
+                  ;;                  _ (println "left" @ratio a left)
+                  log10 (Math/log 10)
+                  q1 (quot (Math/log (inc a)) log10)
+                  q2 (quot (Math/log fst-val) log10)
+                  ;; _ (println a fst-val q1 q2)
                   ]
-            :when (> (* 10 a) fst-val)]
+            :when #_(> (* 10 a) fst-val) (= q1 q2)]
         ^{:key (str "v-axis-" a)}
         [:div.v-axis
          {:style {:left               left
@@ -258,8 +262,8 @@
      [rank-desc]
      [main-chart]
      [time-controller]
-     #_[v-axes]
-     #_[v-line]]))
+     [v-axes]
+     [v-line]]))
 
 (def pages
   {:home    #'home-page
