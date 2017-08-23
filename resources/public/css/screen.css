@@ -89,7 +89,7 @@ div.rank-desc {
     position: relative;
     float: left;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 16px;
     top: 300px;
     text-align:right;
     width: 100px;
@@ -174,12 +174,13 @@ span.val-chn {
 }
 
 span.out-bar {
-    display: inline-block;
+    display: block;
     position: relative;
     left: 100%;
     top: -3px;
     padding-left: 10px;
     font-size: 30px;
+    white-space: nowrap;
 }
 
 span.val {
@@ -212,15 +213,15 @@ div.date {
     font-size: 80px;
 }
 
-img.logo {
-    display: inline-block;
-    position: relative;
-    top: -1.5px;
-    width: 26px;
-    height: 26px;
-    line-height: 26px;
-    background: white;
-}
+/* img.logo { */
+/*     display: inline-block; */
+/*     position: relative; */
+/*     top: -1.5px; */
+/*     width: 26px; */
+/*     height: 26px; */
+/*     line-height: 26px; */
+/*     background: white; */
+/* } */
 
 div.progress-bar {
     position: absolute;
@@ -241,9 +242,12 @@ div.timer-btn {
     position: absolute;
     top: 180px;
     right: 620px;
-    width: 51px;
-    border: 1px solid #E9E7E6;
-    background: #E9E7E6;
+    width: 66px;
+    border: 1px solid black;
+    /* border: 1px solid #E9E7E6; */
+    background: black;
+    /* background: #E9E7E6; */
+    font-size: 20px;
     color: #666;
     height: 20px;
     line-height: 20px;
@@ -278,4 +282,16 @@ div.v-line {
     top: 280px;
     left: 408px;
     z-index: 100;
+}
+
+
+div.secu-img {
+    position: absolute;
+    left: 200px;
+    top: 10px;
+}
+
+img.logo {
+    height: 80px;
+    background: #FFF;
 }

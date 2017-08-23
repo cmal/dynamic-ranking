@@ -61,9 +61,9 @@
     (str (min max-width (+ min-width (* interval (/ val max-val)))) "%")))
 
 (defn get-tiny-logo-url [secucode]
-  (str "http://dev.joudou.com/static/enterprise_logos/logos/"
-       (str/join (concat (take 1 secucode) '(\/) (take 6 secucode)))))
-
+  (let [code (str/join (take 6 secucode))]
+    (str "http://dev.joudou.com/static/enterprise_logos/logos/"
+         (first secucode) \/ code \. (get postfix code))))
 
 (defn large-num-component [val digits]
   (cond
@@ -84,9 +84,9 @@
 
 (defn data-formatter [f val data-type digits]
   (case data-type
-    :pe        (if (zero? val) "" (.toFixed (* 1 val) digits))
-    :lowest-pe (if (zero? val) "" (.toFixed (* 1 val) digits))
-    :mv        (if (zero? val) "" (f val digits))))
+    :pe        (when-not (zero? val) (f (* 1 val) digits))
+    :lowest-pe (when-not (zero? val) (f (* 1 val) digits))
+    :mv        (when-not (zero? val) (f val digits))))
 
 (def bar-height 34)
 
@@ -112,8 +112,10 @@
             index            (.indexOf rank-secu code)
             vals             (map second @rank)
             unfmt-val        (if (neg? index) 0 (nth vals index))
-            val              (data-formatter large-num-component unfmt-val @data-type 2)
-            max-val          (case @data-type :lowest-pe (max 10 (last vals)) :pe (max 500 (first vals)) (first vals)) ;; 这招好用
+            max-val          (case @data-type
+                               :lowest-pe (max 10 (last vals))
+                               :pe (max 500 (first vals))
+                               (first vals)) ;; 这招好用
             stockname        (get @stocknames (str/join (take 6 code)))
             top              (if (neg? index) 400 (* bar-height index))
             width            (get-width-by-val @max-width @min-width max-val unfmt-val)
@@ -123,16 +125,17 @@
                                \6 "#8536A3")
             transition       (str "top " @itv "s ease-out, width " @itv "s linear")
             ]
-        [:div.rect
-         {:style (merge {:top           top
-                         :width         width
-                         :background    background
-                         }
-                        (transition-css transition))}
-         [:span.in-bar
-          [:span.name stockname]
-          [:span.code code]]
-         val]))}))
+        [:div.rect-wrapper
+         [:div.rect
+          {:style (merge {:top        top
+                          :width      width
+                          :background background
+                          }
+                         (transition-css transition))}
+          [:span.in-bar
+           [:span.name stockname]
+           [:span.code code]]
+          (data-formatter large-num-component unfmt-val @data-type 2)]]))}))
 
 (defn dynamic-rank []
   (let [secucodes (rf/subscribe [:secucodes])]
@@ -148,7 +151,7 @@
 (defn time-controller []
   (let [id (rf/subscribe [:time-interval-id])]
     [:div.timer-btn {:on-click #(rf/dispatch [:switch-timer])}
-     "速度 " (get speed @id) " "]))
+     #_"速度 " (get speed @id) " "]))
 
 (defn main-chart []
   [:div.chart
@@ -206,7 +209,7 @@
             :else   (data-formatter large-num-formatter a @data-type 0))]]))]))
 
 
-(defonce month-names
+(def month-names
   {"01" "Jan"
    "02" "Feb"
    "03" "Mar"
@@ -221,8 +224,13 @@
    "12" "Dec"})
 
 (defn v-line []
-  [:div.v-line
-   ])
+  [:div.v-line])
+
+(defn get-data-type-name [data-type]
+  (case data-type
+    :pe "PE"
+    :lowest-pe "最小PE"
+    :mv "市值"))
 
 (defn chart-page []
   (let [date              (rf/subscribe [:current-date])
@@ -239,11 +247,14 @@
      [:div.top-desc #_(ffirst @pe-rank)
       [:div @secucode]
       [:div @stockname]
-      [:div "#1 " name " holder"]
-      [:div "for " @first-holder-days " days"]]
-     [:div.title "Top " name " of Chinese stock market's history on"]
+      [:div.secu-img
+       [:img.logo {:src (get-tiny-logo-url @secucode)}]]
+      [:div (get-data-type-name @data-type) "保持者"]
+      [:div "第 " @first-holder-days " 天"]]
+     [:div.title "A股" (get-data-type-name @data-type) "历史前10位"]
      (let [[y m d] (str/split @date #"-")]
-       [:div.date (month-names m) " " d ", " y])
+       #_[:div.date (month-names m) " " d ", " y]
+       [:div.date y "年" m "月" d "日"])
      [rank-desc]
      [main-chart]
      [time-controller]
