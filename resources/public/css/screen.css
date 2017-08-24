@@ -5,8 +5,8 @@ body {
     margin: 0;
     background: black;
     color: #E9E7E6;
-    min-width: 1024px;
-    max-width: 1680px;
+    min-width: 768px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -80,35 +80,36 @@ div.container {
 
 div.chart {
     position: relative;
-    top: 320px;
-    margin-left: 120px;
-    width: 960px;
+    top: 240px;
+    margin-left: 100px;
+    width: 770px;
 }
 
 div.rank-desc {
     position: relative;
     float: left;
-    padding-bottom: 20px;
-    padding-top: 16px;
-    top: 300px;
+    padding-bottom: 16px;
+    padding-top: 12px;
+    top: 236px;
     text-align:right;
-    width: 100px;
-    padding-right: 20px;
+    width: 80px;
+    padding-right: 16px;
     background: black;
     z-index: 40000;
 }
 
 div.rank-desc-item {
-    height: 34px;
-    line-height: 34px;
-    font-size: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 24px;
 }
 
 div.canvas-cover {
     position: relative;
-    height: 180px;
-    width: 9999px;
-    left: -120px;
+    height: 160px;
+    width: 1024px;
+    left: -100px;
+    top: -10px;
     /* width: 100%; */
     background: black;
     border: 0px solid #999;
@@ -119,7 +120,8 @@ div.canvas-cover {
 div.rank {
     position: relative;
     width: 100%;
-    height: 343px;
+    height: 320px;
+    top: 10px;
     border: 0px solid #999;
     background: rgba(100,100,0,0.1);
     z-index: 2;
@@ -127,9 +129,9 @@ div.rank {
 
 div.rect {
     position: absolute;
-    height: 26px;
+    height: 24px;
     text-align: left;
-    line-height: 26px;
+    line-height: 24px;
     z-index: 4;
     /* top: 400px; */
 
@@ -141,7 +143,7 @@ div.rect {
 }
 
 span.in-bar, span.out-bar {
-    line-height: 34px;
+    line-height: 30px;
 }
 
 span.in-bar {
@@ -154,7 +156,7 @@ span.code {
     margin-left: 5px;
     margin-right: 5px;
     top: -3px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 span.name {
@@ -163,14 +165,14 @@ span.name {
     margin-left: 5px;
     margin-right: 5px;
     top: -4px;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 span.val-chn {
     display: inline-block;
     position: relative;
-    top: -2px;
-    font-size: 26px;
+    top: -1px;
+    font-size: 22px;
 }
 
 span.out-bar {
@@ -179,7 +181,8 @@ span.out-bar {
     left: 100%;
     top: -3px;
     padding-left: 10px;
-    font-size: 30px;
+    font-size: 24px;
+    max-width: 100px;
     white-space: nowrap;
 }
 
@@ -189,28 +192,28 @@ span.val {
     left: 100%;
     top: -3px;
     padding-left: 10px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 div.top-desc {
     position: absolute;
-    top: 30px;
-    left: 80px;
-    font-size: 40px;
+    top: 24px;
+    left: 60px;
+    font-size: 32px;
 }
 
 div.title {
     position: absolute;
-    top: 30px;
-    right: 60px;
-    font-size: 40px;
+    top: 24px;
+    right: 48px;
+    font-size: 32px;
 }
 
 div.date {
     position: absolute;
-    top: 80px;
-    right: 60px;
-    font-size: 80px;
+    top: 64px;
+    right: 48px;
+    font-size: 64px;
 }
 
 /* img.logo { */
@@ -225,40 +228,47 @@ div.date {
 
 div.progress-bar {
     position: absolute;
-    height: 20px;
+    height: 16px;
     background: #E9E7E6;
-    top: 180px;
-    right: 60px;
+    top: 160px;
+    right: 48px;
     border: 1px solid #E9E7E6;
     cursor: pointer;
 }
 
 div.progress-past {
-    background: #1375b0;
-    height: 20px;
+    /* background: #1375b0; */
+    background: linear-gradient(45deg,
+                                #777 25%, #1375B0 0, #1375B0 50%,
+                                #777 0, #777 75%, #1375B0 0);
+    height: 16px;
+    background-size: 25px 25px;
 }
 
 div.timer-btn {
     position: absolute;
-    top: 180px;
-    right: 620px;
-    width: 66px;
+    top: 160px;
+    right: 496px;
+    width: 54px;
     border: 1px solid black;
     /* border: 1px solid #E9E7E6; */
     background: black;
     /* background: #E9E7E6; */
-    font-size: 20px;
+    font-size: 16px;
     color: #666;
-    height: 20px;
-    line-height: 20px;
+    height: 16px;
+    line-height: 16px;
+}
+
+div.v-axes {
 }
 
 div.v-axis {
     position: absolute;
-    top: 300px;
+    top: 240px;
     width: 3px;
     background: #777;
-    height: 400px;
+    height: 320px;
     z-index: 1;
 }
 
@@ -268,30 +278,30 @@ div.v-axis-cover {
 
 div.v-axis-label {
     position: relative;
-    min-width: 70px;
+    min-width: 56px;
     color: #777;
     top: -20px;
-    left: -2px;
+    left: -4px;
 }
 
 div.v-line {
     position: absolute;
     width: 1px;
-    border-left: 2px dashed rgba(202, 133, 217, 0.7);
-    height: 400px;
-    top: 280px;
-    left: 408px;
-    z-index: 100;
+    border-left: 3px dashed #777; /* rgba(202, 133, 217, 0.7); */
+    height: 320px;
+    top: 240px;
+    left: 331px;
+    z-index: 1; /* 100 */
 }
 
 
 div.secu-img {
     position: absolute;
-    left: 200px;
-    top: 10px;
+    left: 160px;
+    top: 8px;
 }
 
 img.logo {
-    height: 80px;
+    height: 64px;
     background: #FFF;
 }

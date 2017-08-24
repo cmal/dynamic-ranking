@@ -62,7 +62,7 @@
            :current-date (first rec)
            :current-rank (vec rank)
            :current-top (ffirst rank)
-           :x-axis-ratio (/ (* 960 0.01 (- (:chart-max-percent db)
+           :x-axis-ratio (/ (* 770 0.01 (- (:chart-max-percent db)
                                            (:chart-min-percent db)))
                             max-val)
            )))

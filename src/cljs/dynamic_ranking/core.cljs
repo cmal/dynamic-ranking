@@ -88,7 +88,7 @@
     :lowest-pe (when-not (zero? val) (f (* 1 val) digits))
     :mv        (when-not (zero? val) (f val digits))))
 
-(def bar-height 34)
+(def bar-height 28)
 
 (defn transition-css
   [transition]
@@ -117,7 +117,7 @@
                                :pe (max 500 (first vals))
                                (first vals)) ;; 这招好用
             stockname        (get @stocknames (str/join (take 6 code)))
-            top              (if (neg? index) 400 (* bar-height index))
+            top              (if (neg? index) 320 (* bar-height index))
             width            (get-width-by-val @max-width @min-width max-val unfmt-val)
             background       (case (first code)
                                \0 "#00B692"
@@ -155,7 +155,7 @@
 
 (defn main-chart []
   [:div.chart
-   [:div [dynamic-rank]]
+   [dynamic-rank]
    [:div.canvas-cover]])
 
 (defn rank-desc []
@@ -165,7 +165,7 @@
      ^{:key (str "rank-desc-item-" text)} [:div.rank-desc-item text])])
 
 (defn progress-bar [total index]
-  (let [width 530]
+  (let [width 424]
     [:div#progress-bar.progress-bar
      {:style    {:width width}
       :on-click (fn [e]
@@ -181,33 +181,31 @@
         ratio      (rf/subscribe [:x-axis-ratio])
         data-type  (rf/subscribe [:data-type])
         vals       (map second @rank)
-        transition (str "left " @itv "s linear")]
+        transition (str "left " @itv "s linear, opacity " @itv "s ease-out")]
     [:div.v-axes
      (doall
       (for [a    @axes
             :let [fst-val (first vals)
                   lst-val (last vals)
-                  left (+ 408 (* @ratio a)) ;; 408 = 120 + .3 * 960
+                  left (+ 331 (* @ratio a)) ;; 331 = 100 + .3 * 770
                   ;;                  _ (println "left" @ratio a left)
                   log10 (Math/log 10)
-                  q1 (quot (Math/log (inc a)) log10)
+                  q1 (quot (Math/log (* 1.01 a)) log10)
                   q2 (quot (Math/log fst-val) log10)
-                  ;; _ (println a fst-val q1 q2)
                   ]
-            :when #_(> (* 10 a) fst-val) (= q1 q2)]
+            ]
         ^{:key (str "v-axis-" a)}
         [:div.v-axis
-         {:style {:left               left
-                  :transition         transition
-                  :-webkit-transition transition
-                  :-moz-transition    transition
-                  :-o-transition      transition
-                  }}
+         {:style (merge {:left (min left 960)
+                         :opacity (if (and (= q1 q2) (< left 900)) 1 0)
+                         }
+                        (transition-css transition))}
          [:div.v-axis-cover]
          [:div.v-axis-label
           {:style {:left (cond
                            (< a 10000) -2
-                           :else -5)}}
+                           :else -5)
+                   }} ;; 1. :when 2. left > some-val
           (cond
             (< a 1) (.toFixed a 1)
             :else   (data-formatter large-num-formatter a @data-type 0))]]))]))
