@@ -106,18 +106,22 @@
      (assoc db :top-stockname
             (get stocknames (str/join (take 6 current-top)))))))
 
-#_(reg-fx
- :switch-interval
- (let [live-intervals (atom {})] ;; bug: every time figwheel recompiles, the setIntervals in atom will loss
-   (when-not (get @live-intervals "switch-timer")
-           (js/setInterval
-            #(dispatch [:inc-time])
-            (get time-intervals 0)));; get initialized
-   (fn [{:keys [action id delay event]}]
-     (js/clearInterval (get @live-intervals id))
-     (swap! live-intervals assoc id (js/setInterval #(dispatch event) delay)))))
+(defonce live-intervals (atom {}))
 
-#_(reg-event-fx
+;; get initialized
+(when-not (get @live-intervals "switch-timer")
+    (swap! live-intervals assoc
+           "switch-timer" (js/setInterval
+                           #(dispatch [:inc-time])
+                           (get time-intervals 0))))
+(reg-fx
+ :switch-interval
+ (fn [{:keys [action id delay event]}]
+   (let [timer-id (js/setInterval #(dispatch event) delay)]
+     (js/clearInterval (get @live-intervals id))
+     (swap! live-intervals assoc id timer-id))))
+
+(reg-event-fx
  :switch-timer
  (fn [{:keys [db]} _]
    (let [{:keys [time-interval-id]} db
@@ -133,18 +137,12 @@
       :db (assoc db
                  :time-interval-id new-time-interval-id)})))
 
-#_(reg-event-db
- :set-x-axis-ratio
- (fn [db [_ val max-val]]
-   (assoc db :x-axis-ratio (/ val max-val))))
-
-
-(reg-fx
+#_(reg-fx
  :clear-timer
  (fn [timer-id]
    (js/clearInterval timer-id)))
 
-(reg-event-fx
+#_(reg-event-fx
  :switch-timer
  (fn [{:keys [db]} _]
    (let [{:keys [timer-id time-interval-id]} db

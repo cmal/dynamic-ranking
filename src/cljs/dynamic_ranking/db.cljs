@@ -10,7 +10,6 @@
    :chart-width       1000 ;; chart width in px
    :x-axis-ratio      1    ;; value per px
    :time-interval-id  0
-   :timer-id          (js/setInterval #(dispatch [:inc-time]) (first time-intervals))
    :chart-max-percent 80
    :chart-min-percent 30
    :time              0

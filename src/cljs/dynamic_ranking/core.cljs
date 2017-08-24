@@ -188,7 +188,6 @@
             :let [fst-val (first vals)
                   lst-val (last vals)
                   left (+ 331 (* @ratio a)) ;; 331 = 100 + .3 * 770
-                  ;;                  _ (println "left" @ratio a left)
                   log10 (Math/log 10)
                   q1 (quot (Math/log (* 1.01 a)) log10)
                   q2 (quot (Math/log fst-val) log10)
