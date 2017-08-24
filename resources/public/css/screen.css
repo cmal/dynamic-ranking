@@ -239,8 +239,8 @@ div.progress-bar {
 div.progress-past {
     /* background: #1375b0; */
     background: linear-gradient(45deg,
-                                #777 25%, #1375B0 0, #1375B0 50%,
-                                #777 0, #777 75%, #1375B0 0);
+                                #58b 25%, #1375B0 0, #1375B0 50%,
+                                #58b 0, #58b 75%, #1375B0 0);
     height: 16px;
     background-size: 25px 25px;
 }
