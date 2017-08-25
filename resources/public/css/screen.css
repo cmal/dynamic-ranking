@@ -236,6 +236,12 @@ div.progress-bar {
     cursor: pointer;
 }
 
+@keyframes ants {
+    to {
+        background-position: 100% 100%
+    }
+}
+
 div.progress-past {
     /* background: #1375b0; */
     background: linear-gradient(45deg,

@@ -164,15 +164,20 @@
                "6th" "7th" "8th" "9th" "10th"]]
      ^{:key (str "rank-desc-item-" text)} [:div.rank-desc-item text])])
 
-(defn progress-bar [total index]
-  (let [width 424]
+(defn progress-bar []
+  (let [width 424
+        total (rf/subscribe [:data-length])
+        time (rf/subscribe [:time])
+        itv (rf/subscribe [:interval-sec])]
     [:div#progress-bar.progress-bar
      {:style    {:width width}
       :on-click (fn [e]
                   (when-let [node (js/document.getElementById "progress-bar")]
-                    (rf/dispatch [:set-time (* total (/ (- (.-clientX e) (.-x (getPageOffset node))) width))])))}
+                    (rf/dispatch [:set-time (* @total (/ (- (.-clientX e) (.-x (getPageOffset node))) width))])))}
      [:div.progress-past
-      {:style {:width (* width (/ index total))}}]]))
+      {:style {:width (* width (/ (mod @time @total) @total))
+               :animation (str "ants " (* 100 @itv) "s linear infinite")
+               }}]]))
 
 (defn v-axes []
   (let [axes       (rf/subscribe [:axes])
@@ -236,15 +241,13 @@
 (defn chart-page []
   (let [date              (rf/subscribe [:current-date])
         pe-rank           (rf/subscribe [:current-rank])
-        total             (rf/subscribe [:data-length])
-        time              (rf/subscribe [:time])
         secucode          (rf/subscribe [:current-top])
         stockname         (rf/subscribe [:top-stockname])
         first-holder-days (rf/subscribe [:first-holder-days])
         data-type         (rf/subscribe [:data-type])
         name (.toUpperCase (name @data-type))]
     [:div.container
-     [progress-bar @total (mod @time @total)]
+     [progress-bar]
      [:div.top-desc #_(ffirst @pe-rank)
       [:div @secucode]
       [:div @stockname]
