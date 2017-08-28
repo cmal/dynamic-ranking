@@ -86,7 +86,7 @@
   (case data-type
     :pe        (when-not (zero? val) (f (* 1 val) digits))
     :lowest-pe (when-not (zero? val) (f (* 1 val) digits))
-    :mv        (when-not (zero? val) (f val digits))))
+    :mv        (when-not (zero? val) (f (* 1 val) digits))))
 
 (def bar-height 28)
 
@@ -123,8 +123,7 @@
                                \0 "#00B692"
                                \3 "#F79018"
                                \6 "#8536A3")
-            transition       (str "top " @itv "s ease-out, width " @itv "s linear")
-            ]
+            transition       (str "top " @itv "s ease-out, width " @itv "s linear")]
         [:div.rect-wrapper
          [:div.rect
           {:style (merge {:top        top
@@ -145,6 +144,21 @@
             :let [code (nth @secucodes i)]]
         ^{:key (str "dyrk-" i)}
         [div-rect-component i code]))]))
+
+(defn data-type-controller []
+  (let [data-type (rf/subscribe [:data-type])]
+    [:div.data-type-btn
+     {:on-click (fn [e]
+                  (rf/dispatch [:set-type
+                                (if (= :lowest-pe @data-type)
+                                  :mv
+                                  :lowest-pe)]))}
+     (if (= :lowest-pe @data-type) "切换市值" "切换PE")]))
+
+(defn axes-controller []
+  (let [show-axes? (rf/subscribe [:show-axes])]
+    [:div.axes-btn {:on-click #(rf/dispatch [:switch-axes])}
+     (if @show-axes? "隐藏轴" "显示轴")]))
 
 (def speed ["1x" "2x" "4x" "10x"])
 
@@ -173,11 +187,14 @@
      {:style    {:width width}
       :on-click (fn [e]
                   (when-let [node (js/document.getElementById "progress-bar")]
-                    (rf/dispatch [:set-time (* @total (/ (- (.-clientX e) (.-x (getPageOffset node))) width))])))}
+                    (rf/dispatch [:set-time (* @total
+                                               (/ (- (.-clientX e)
+                                                     (.-x (getPageOffset node))
+                                                     1)
+                                                  width))])))}
      [:div.progress-past
       {:style {:width (* width (/ (mod @time @total) @total))
-               :animation (str "ants " (* 100 @itv) "s linear infinite")
-               }}]]))
+               :animation (str "ants " (* 100 @itv) "s linear infinite")}}]]))
 
 (defn v-axes []
   (let [axes       (rf/subscribe [:axes])
@@ -245,6 +262,9 @@
         stockname         (rf/subscribe [:top-stockname])
         first-holder-days (rf/subscribe [:first-holder-days])
         data-type         (rf/subscribe [:data-type])
+        lowest-pe (rf/subscribe [:lowest-pe])
+        mv (rf/subscribe [:mv])
+        show-axes? (rf/subscribe [:show-axes])
         name (.toUpperCase (name @data-type))]
     [:div.container
      [progress-bar]
@@ -261,9 +281,14 @@
        [:div.date y "年" m "月" d "日"])
      [rank-desc]
      [main-chart]
+     (when (and @lowest-pe @mv)
+       [data-type-controller])
+     [axes-controller]
      [time-controller]
-     [v-axes]
-     [v-line]]))
+     (when @show-axes?
+       [:div
+        [v-axes]
+        [v-line]])]))
 
 (def pages
   {:home    #'home-page
@@ -307,13 +332,7 @@
 (defn data-handler
   [data type]
   (let [d (read-string data)]
-    (rf/dispatch [:set-data d])
-    (rf/dispatch [:set-secucodes (->> d
-                                      (map second)
-                                      (mapcat (fn [rec] (map first rec)))
-                                      set
-                                      vec)])
-    (rf/dispatch [:set-type type])))
+    (rf/dispatch [:set-data type d])))
 
 (defn fetch-pe! []
   (GET "/pe" {:handler #(data-handler % :pe)}))
@@ -334,8 +353,8 @@
 (defn init! []
   (rf/dispatch-sync [:initialize-db])
   (load-interceptors!)
-  (fetch-docs!)
-  #_(fetch-lowest-pe!)
+  #_(fetch-docs!)
+  (fetch-lowest-pe!)
   (fetch-mv!)
   (fetch-stocknames!)
   (hook-browser-navigation!)

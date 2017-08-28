@@ -1,8 +1,7 @@
 (ns dynamic-ranking.handlers
   (:require [dynamic-ranking.db :refer [default-db time-intervals]]
             [re-frame.core :refer [dispatch reg-event-db reg-event-fx reg-fx]]
-            [clojure.string :as str]
-))
+            [clojure.string :as str]))
 
 (reg-event-db
   :initialize-db
@@ -19,35 +18,40 @@
  (fn [db [_ docs]]
    (assoc db :docs docs)))
 
-(reg-event-db
+(reg-event-fx
  :set-data
- (fn [db [_ data]]
-   (assoc db
-          :data data
-          :data-length (count data))))
+ (fn [{:keys [db]} [_ type data]]
+   (merge
+    {:db (assoc db
+                type data
+                :data-length (count data))
+     }
+    (when (= :mv type)
+      {:dispatch [:set-type type]}))))
 
 (def v-axes
   (let [lst (map (fn [mul] (vec (map #(* mul %) (range 1 10))))
-                 (iterate #(* 10 %) 0.1))]
-    {:pe        (vec (apply concat (take 20 (drop 1 lst))))
-     :lowest-pe (vec (apply concat (take 6 lst)))
-     :mv        (vec (apply concat (take 20 (drop 5 lst)) ))}))
+                 (iterate #(* 10 %) 1))]
+    {:pe        (vec (apply concat (take 20 lst)))
+     :lowest-pe (vec (apply concat (take 5 lst)))
+     :mv        (vec (apply concat (take 20 (drop 4 lst))))}))
 
 (reg-event-db
  :set-type
  (fn [db [_ type]]
    (assoc db
           :data-type type
-          :axes (v-axes type))))
-
-(reg-event-db
- :set-secucodes
- (fn [db [_ secucodes]]
-   (assoc db :secucodes secucodes)))
+          :data-length (count (get db type))
+          :axes (v-axes type)
+          :secucodes (->> (get db type)
+                          (map second)
+                          (mapcat (fn [rec] (map first rec)))
+                          set
+                          vec))))
 
 (defn change-time
   [db time]
-  (let [data      (:data db)
+  (let [data    (get db (:data-type db))
         index   (mod time (:data-length db))
         rec     (nth data (if (neg? index) 0 index))
         rank (second rec)
@@ -62,15 +66,16 @@
            :current-date (first rec)
            :current-rank (vec rank)
            :current-top (ffirst rank)
-           :x-axis-ratio (/ (* 770 0.01 (- (:chart-max-percent db)
-                                           (:chart-min-percent db)))
-                            max-val)
-           )))
+           :x-axis-ratio (/ (* 770
+                               0.01
+                               (- (:chart-max-percent db)
+                                  (:chart-min-percent db)))
+                            max-val))))
 
 (reg-event-fx
  :set-time
  (fn [{:keys [db]} [_ time]]
-   {:db (if (empty? (:data db))
+   {:db (if (empty? (get db (:data-type db)))
           (assoc db :time time)
           (-> (change-time db time)
               (assoc :first-holder-days 1)))
@@ -88,7 +93,7 @@
  (fn [{:keys [db]} _]
    (let [old-top (:current-top db)]
      {:db       (let [time (inc (:time db))]
-                  (if (empty? (:data db))
+                  (if (empty? (get db (:data-type db)))
                     (assoc db :time time)
                     (-> (change-time db time)
                         (update-holder-days old-top))))
@@ -137,21 +142,7 @@
       :db (assoc db
                  :time-interval-id new-time-interval-id)})))
 
-#_(reg-fx
- :clear-timer
- (fn [timer-id]
-   (js/clearInterval timer-id)))
-
-#_(reg-event-fx
- :switch-timer
- (fn [{:keys [db]} _]
-   (let [{:keys [timer-id time-interval-id]} db
-         new-time-interval-id (mod
-                               (inc time-interval-id)
-                               (count time-intervals))]
-     {:clear-timer timer-id
-      :db          (assoc db
-                          :time-interval-id new-time-interval-id
-                          :timer-id (js/setInterval
-                                     #(dispatch [:inc-time])
-                                     (get time-intervals new-time-interval-id)))}))) ;; not pure
+(reg-event-db
+ :switch-axes
+ (fn [db [_ show-axes]]
+   (update db :show-axes not)))

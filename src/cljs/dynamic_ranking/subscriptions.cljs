@@ -13,11 +13,6 @@
    (:docs db)))
 
 (reg-sub
- :data
- (fn [db _]
-   (:data db)))
-
-(reg-sub
  :secucodes
  (fn [db _]
    (:secucodes db)))
@@ -101,3 +96,18 @@
  :chart-min-percent
  (fn [db _]
    (:chart-min-percent db)))
+
+(reg-sub
+ :show-axes
+ (fn [db _]
+   (:show-axes db)))
+
+(reg-sub
+ :lowest-pe
+ (fn [db _]
+   (:lowest-pe db)))
+
+(reg-sub
+ :mv
+ (fn [db _]
+   (:mv db)))

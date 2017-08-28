@@ -21,4 +21,5 @@
    :stocknames        {}
    :current-top       "000002.SZ"
    :top-stockname     "万  科Ａ"
-   :first-holder-days 1})
+   :first-holder-days 1
+   :show-axes         false})
