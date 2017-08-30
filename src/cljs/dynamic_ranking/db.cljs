@@ -1,11 +1,11 @@
 (ns dynamic-ranking.db
   (:require [re-frame.core :refer [dispatch]]))
 
-(def time-intervals [2000 1000 500 200])
+(def time-intervals [2000 1000 500 200 1E12])
 
 (def default-db
   {:page              :home
-   :data-type         :pe
+   :data-type         :lowest-mv
    :axes              nil
    :chart-width       1000 ;; chart width in px
    :x-axis-ratio      1    ;; value per px

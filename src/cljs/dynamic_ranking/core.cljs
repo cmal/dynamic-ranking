@@ -65,7 +65,7 @@
     (str "http://dev.joudou.com/static/enterprise_logos/logos/"
          (first secucode) \/ code \. (get postfix code))))
 
-(defn large-num-component [val digits]
+(defn large-num [val digits]
   (cond
     (< val 1E4)  [:span.out-bar [:span.val-num (.toFixed val digits)]]
     (< val 1E8)  [:span.out-bar
@@ -75,18 +75,19 @@
     :else        [:span.out-bar
                   [:span.val-num (.toFixed (/ val 1E12) digits)] [:span.val-chn "万亿"]]))
 
-(defn large-num-formatter [val digits]
+(defn large-num-fmtr [val digits]
   (cond
     (< val 1E4) (.toFixed val digits)
     (< val 1E8) (str (.toFixed (/ val 1E4) digits) "万")
     (< val 1E12) (str (.toFixed (/ val 1E8) digits) "亿")
     :else (str (.toFixed (/ val 1E12) digits) "万亿")))
 
-(defn data-formatter [f val data-type digits]
+(defn data-fmtr [f val data-type digits]
   (case data-type
     :pe        (when-not (zero? val) (f (* 1 val) digits))
     :lowest-pe (when-not (zero? val) (f (* 1 val) digits))
-    :mv        (when-not (zero? val) (f (* 1 val) digits))))
+    :mv        (when-not (zero? val) (f (* 1 val) digits))
+    :lowest-mv (when-not (zero? val) (f (* 1 val) digits))))
 
 (def bar-height 28)
 
@@ -97,9 +98,9 @@
    :-moz-transition    transition
    :-o-transition      transition})
 
-(defn div-rect-component [i code]
+(defn chart-rect [i code]
   (r/create-class
-   {:display-name (str "div-rect-component" i)
+   {:display-name (str "chart-rect" i)
     :reagent-render
     (fn [i code]
       (let [rank             (rf/subscribe [:current-rank])
@@ -108,17 +109,14 @@
             itv              (rf/subscribe [:interval-sec])
             max-width (rf/subscribe [:chart-max-percent])
             min-width (rf/subscribe [:chart-min-percent])
+            max-val          (rf/subscribe [:max-val])
             rank-secu        (vec (map first @rank))
             index            (.indexOf rank-secu code)
             vals             (map second @rank)
-            unfmt-val        (if (neg? index) 0 (nth vals index))
-            max-val          (case @data-type
-                               :lowest-pe (max 10 (last vals))
-                               :pe (max 500 (first vals))
-                               (first vals)) ;; 这招好用
+            unfmt-val        (if (neg? index) @max-val (nth vals index))
             stockname        (get @stocknames (str/join (take 6 code)))
             top              (if (neg? index) 320 (* bar-height index))
-            width            (get-width-by-val @max-width @min-width max-val unfmt-val)
+            width            (get-width-by-val @max-width @min-width @max-val unfmt-val)
             background       (case (first code)
                                \0 "#00B692"
                                \3 "#F79018"
@@ -134,7 +132,7 @@
           [:span.in-bar
            [:span.name stockname]
            [:span.code code]]
-          (data-formatter large-num-component unfmt-val @data-type 2)]]))}))
+          (data-fmtr large-num unfmt-val @data-type 2)]]))}))
 
 (defn dynamic-rank []
   (let [secucodes (rf/subscribe [:secucodes])]
@@ -143,24 +141,27 @@
       (for [i    (range (count @secucodes))
             :let [code (nth @secucodes i)]]
         ^{:key (str "dyrk-" i)}
-        [div-rect-component i code]))]))
+        [chart-rect i code]))]))
+
+(defn next-type [item]
+  (let [coll [:pe :lowest-pe :mv :lowest-mv]]
+    (get coll
+     (mod (inc (.indexOf coll item))
+          (count coll)))))
 
 (defn data-type-controller []
   (let [data-type (rf/subscribe [:data-type])]
     [:div.data-type-btn
      {:on-click (fn [e]
-                  (rf/dispatch [:set-type
-                                (if (= :lowest-pe @data-type)
-                                  :mv
-                                  :lowest-pe)]))}
-     (if (= :lowest-pe @data-type) "切换市值" "切换PE")]))
+                  (rf/dispatch [:set-type (next-type @data-type)]))}
+     "切换类型"]))
 
 (defn axes-controller []
   (let [show-axes? (rf/subscribe [:show-axes])]
     [:div.axes-btn {:on-click #(rf/dispatch [:switch-axes])}
      (if @show-axes? "隐藏轴" "显示轴")]))
 
-(def speed ["1x" "2x" "4x" "10x"])
+(def speed ["1x" "2x" "4x" "10x" "暂停"])
 
 (defn time-controller []
   (let [id (rf/subscribe [:time-interval-id])]
@@ -202,23 +203,29 @@
         itv        (rf/subscribe [:interval-sec])
         ratio      (rf/subscribe [:x-axis-ratio])
         data-type  (rf/subscribe [:data-type])
+        max-val (rf/subscribe [:max-val])
         vals       (map second @rank)
         transition (str "left " @itv "s linear, opacity " @itv "s ease-out")]
     [:div.v-axes
      (doall
       (for [a    @axes
-            :let [fst-val (first vals)
-                  lst-val (last vals)
+            :let [
+;;                  _ (println @max-val)
+                  ;; max-val (if (str/index-of (name @data-type) "lowest")
+                  ;;           (last vals)
+                  ;;           (first vals))
+;;                  _ (println max-val)
+;;                  min-val (last vals)
                   left (+ 331 (* @ratio a)) ;; 331 = 100 + .3 * 770
                   log10 (Math/log 10)
                   q1 (quot (Math/log (* 1.01 a)) log10)
-                  q2 (quot (Math/log fst-val) log10)
+                  q2 (quot (Math/log @max-val) log10)
                   ]
             ]
         ^{:key (str "v-axis-" a)}
         [:div.v-axis
-         {:style (merge {:left (min left 960)
-                         :opacity (if (and (= q1 q2) (< left 900)) 1 0)
+         {:style (merge {:left (min left #_960 770)
+                         :opacity (if (and (= q1 q2) (< left #_900 770)) 1 0)
                          }
                         (transition-css transition))}
          [:div.v-axis-cover]
@@ -229,10 +236,10 @@
                    }} ;; 1. :when 2. left > some-val
           (cond
             (< a 1) (.toFixed a 1)
-            :else   (data-formatter large-num-formatter a @data-type 0))]]))]))
+            :else   (data-fmtr large-num-fmtr a @data-type 0))]]))]))
 
 
-(def month-names
+#_(def month-names
   {"01" "Jan"
    "02" "Feb"
    "03" "Mar"
@@ -253,7 +260,8 @@
   (case data-type
     :pe "PE"
     :lowest-pe "最小PE"
-    :mv "市值"))
+    :mv "市值"
+    :lowest-mv "最小市值"))
 
 (defn chart-page []
   (let [date              (rf/subscribe [:current-date])
@@ -264,6 +272,7 @@
         data-type         (rf/subscribe [:data-type])
         lowest-pe (rf/subscribe [:lowest-pe])
         mv (rf/subscribe [:mv])
+        lowest-mv (rf/subscribe [:lowest-mv])
         show-axes? (rf/subscribe [:show-axes])
         name (.toUpperCase (name @data-type))]
     [:div.container
@@ -281,7 +290,7 @@
        [:div.date y "年" m "月" d "日"])
      [rank-desc]
      [main-chart]
-     (when (and @lowest-pe @mv)
+     (when (and @lowest-pe @mv @lowest-mv)
        [data-type-controller])
      [axes-controller]
      [time-controller]
@@ -343,6 +352,9 @@
 (defn fetch-mv! []
   (GET "/mv" {:handler #(data-handler % :mv)}))
 
+(defn fetch-lowest-mv! []
+  (GET "/lowest-mv" {:handler #(data-handler % :lowest-mv)}))
+
 (defn fetch-stocknames! []
   (GET "/stocknames" {:handler #(rf/dispatch [:set-stocknames (read-string %)])}))
 
@@ -356,6 +368,7 @@
   #_(fetch-docs!)
   (fetch-lowest-pe!)
   (fetch-mv!)
+  (fetch-lowest-mv!)
   (fetch-stocknames!)
   (hook-browser-navigation!)
   (mount-components))

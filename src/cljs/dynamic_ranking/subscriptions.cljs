@@ -111,3 +111,13 @@
  :mv
  (fn [db _]
    (:mv db)))
+
+(reg-sub
+ :lowest-mv
+ (fn [db _]
+   (:lowest-mv db)))
+
+(reg-sub
+ :max-val
+ (fn [db _]
+   (:max-val db)))

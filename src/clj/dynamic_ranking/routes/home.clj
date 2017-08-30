@@ -19,12 +19,9 @@
   (GET "/docs" []
        (-> (response/ok (-> "docs/docs.md" io/resource slurp))
            (response/header "Content-Type" "text/plain; charset=utf-8")))
-  (GET "/pe" []
-       #_(-> (json-response (-> "docs/pe.txt" io/resource slurp edn/read-string)))
-       (send-file "docs/pe.txt"))
+  (GET "/pe" [] (send-file "docs/pe.txt"))
   (GET "/lowest-pe" [] (send-file "docs/lowest-pe.txt"))
-  (GET "/mv" []
-       (send-file "docs/mv.txt"))
-  (GET "/stocknames" []
-       (send-file "docs/stock-name.txt")))
+  (GET "/mv" [] (send-file "docs/mv.txt"))
+  (GET "/lowest-mv" [] (send-file "docs/lowest-mv.txt"))
+  (GET "/stocknames" [] (send-file "docs/stock-name.txt")))
 

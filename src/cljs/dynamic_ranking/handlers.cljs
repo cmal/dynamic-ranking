@@ -21,20 +21,18 @@
 (reg-event-fx
  :set-data
  (fn [{:keys [db]} [_ type data]]
-   (merge
-    {:db (assoc db
-                type data
-                :data-length (count data))
-     }
-    (when (= :mv type)
-      {:dispatch [:set-type type]}))))
+   {:db       (assoc db
+                     type data
+                     :data-length (count data))
+    :dispatch [:set-type type]}))
 
 (def v-axes
   (let [lst (map (fn [mul] (vec (map #(* mul %) (range 1 10))))
                  (iterate #(* 10 %) 1))]
     {:pe        (vec (apply concat (take 20 lst)))
      :lowest-pe (vec (apply concat (take 5 lst)))
-     :mv        (vec (apply concat (take 20 (drop 4 lst))))}))
+     :mv        (vec (apply concat (take 20 (drop 4 lst))))
+     :lowest-mv (vec (apply concat (take 20 (drop 4 lst))))}))
 
 (reg-event-db
  :set-type
@@ -59,13 +57,15 @@
         max-val (case (:data-type db)
                   :lowest-pe (max 10 (last data))
                   :pe (max 500 (first data))
-                  (first data))
+                  :mv (first data)
+                  :lowest-mv (last data))
         ]
     (assoc db
            :time time
            :current-date (first rec)
            :current-rank (vec rank)
            :current-top (ffirst rank)
+           :max-val max-val
            :x-axis-ratio (/ (* 770
                                0.01
                                (- (:chart-max-percent db)
