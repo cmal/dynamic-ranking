@@ -50,12 +50,6 @@
       [:div {:dangerouslySetInnerHTML
              {:__html (md->html docs)}}]])])
 
-#_(defn get-width-by-val [max-val val index]
-  (let [max-width 80
-        min-width 30
-        interval  (- max-width min-width)]
-    (str (min max-width (+ min-width (* interval (/ val max-val)))) "%")))
-
 (defn get-width-by-val [max-width min-width max-val val]
   (let [interval (- max-width min-width)]
     (str (min max-width (+ min-width (* interval (/ val max-val)))) "%")))
@@ -64,6 +58,8 @@
   (let [code (str/join (take 6 secucode))]
     (str "http://dev.joudou.com/static/enterprise_logos/logos/"
          (first secucode) \/ code \. (get postfix code))))
+
+(def joudou-logo-url "http://dev.joudou.com/static/joudou_logo.jpg")
 
 (defn large-num [val digits]
   (cond
@@ -77,10 +73,10 @@
 
 (defn large-num-fmtr [val digits]
   (cond
-    (< val 1E4) (.toFixed val digits)
-    (< val 1E8) (str (.toFixed (/ val 1E4) digits) "万")
+    (< val 1E4)  (.toFixed val digits)
+    (< val 1E8)  (str (.toFixed (/ val 1E4) digits) "万")
     (< val 1E12) (str (.toFixed (/ val 1E8) digits) "亿")
-    :else (str (.toFixed (/ val 1E12) digits) "万亿")))
+    :else        (str (.toFixed (/ val 1E12) digits) "万亿")))
 
 (defn data-fmtr [f val data-type digits]
   (case data-type
@@ -103,25 +99,28 @@
    {:display-name (str "chart-rect" i)
     :reagent-render
     (fn [i code]
-      (let [rank             (rf/subscribe [:current-rank])
-            stocknames       (rf/subscribe [:stocknames])
-            data-type        (rf/subscribe [:data-type])
-            itv              (rf/subscribe [:interval-sec])
-            max-width (rf/subscribe [:chart-max-percent])
-            min-width (rf/subscribe [:chart-min-percent])
-            max-val          (rf/subscribe [:max-val])
-            rank-secu        (vec (map first @rank))
-            index            (.indexOf rank-secu code)
-            vals             (map second @rank)
-            unfmt-val        (if (neg? index) @max-val (nth vals index))
-            stockname        (get @stocknames (str/join (take 6 code)))
-            top              (if (neg? index) 320 (* bar-height index))
-            width            (get-width-by-val @max-width @min-width @max-val unfmt-val)
-            background       (case (first code)
-                               \0 "#00B692"
-                               \3 "#F79018"
-                               \6 "#8536A3")
-            transition       (str "top " @itv "s ease-out, width " @itv "s linear")]
+      (let [rank       (rf/subscribe [:current-rank])
+            stocknames (rf/subscribe [:stocknames])
+            data-type  (rf/subscribe [:data-type])
+            itv        (rf/subscribe [:interval-sec])
+            max-width  (rf/subscribe [:chart-max-percent])
+            min-width  (rf/subscribe [:chart-min-percent])
+            max-val    (rf/subscribe [:max-val])
+            undef-val  (rf/subscribe [:undef-val])
+            rank-secu  (vec (map first @rank))
+            index      (.indexOf rank-secu code)
+            vals       (map second @rank)
+            unfmt-val  (if (neg? index)
+                         #_@max-val @undef-val
+                         (nth vals index))
+            stockname  (get @stocknames (str/join (take 6 code)))
+            top        (if (neg? index) 320 (* bar-height index))
+            width      (get-width-by-val @max-width @min-width @max-val unfmt-val)
+            background (case (first code)
+                         \0 "#00B692"
+                         \3 "#F79018"
+                         \6 "#8536A3")
+            transition (str "top " @itv "s ease-out, width " @itv "s linear")]
         [:div.rect-wrapper
          [:div.rect
           {:style (merge {:top        top
@@ -146,8 +145,8 @@
 (defn next-type [item]
   (let [coll [:pe :lowest-pe :mv :lowest-mv]]
     (get coll
-     (mod (inc (.indexOf coll item))
-          (count coll)))))
+         (mod (inc (.indexOf coll item))
+              (count coll)))))
 
 (defn data-type-controller []
   (let [data-type (rf/subscribe [:data-type])]
@@ -182,8 +181,8 @@
 (defn progress-bar []
   (let [width 424
         total (rf/subscribe [:data-length])
-        time (rf/subscribe [:time])
-        itv (rf/subscribe [:interval-sec])]
+        time  (rf/subscribe [:time])
+        itv   (rf/subscribe [:interval-sec])]
     [:div#progress-bar.progress-bar
      {:style    {:width width}
       :on-click (fn [e]
@@ -194,7 +193,7 @@
                                                      1)
                                                   width))])))}
      [:div.progress-past
-      {:style {:width (* width (/ (mod @time @total) @total))
+      {:style {:width     (* width (/ (mod @time @total) @total))
                :animation (str "ants " (* 100 @itv) "s linear infinite")}}]]))
 
 (defn v-axes []
@@ -203,28 +202,19 @@
         itv        (rf/subscribe [:interval-sec])
         ratio      (rf/subscribe [:x-axis-ratio])
         data-type  (rf/subscribe [:data-type])
-        max-val (rf/subscribe [:max-val])
+        max-val    (rf/subscribe [:max-val])
         vals       (map second @rank)
         transition (str "left " @itv "s linear, opacity " @itv "s ease-out")]
     [:div.v-axes
      (doall
       (for [a    @axes
-            :let [
-;;                  _ (println @max-val)
-                  ;; max-val (if (str/index-of (name @data-type) "lowest")
-                  ;;           (last vals)
-                  ;;           (first vals))
-;;                  _ (println max-val)
-;;                  min-val (last vals)
-                  left (+ 331 (* @ratio a)) ;; 331 = 100 + .3 * 770
+            :let [left (+ 331 (* @ratio a)) ;; 331 = 100 + .3 * 770
                   log10 (Math/log 10)
                   q1 (quot (Math/log (* 1.01 a)) log10)
-                  q2 (quot (Math/log @max-val) log10)
-                  ]
-            ]
+                  q2 (quot (Math/log @max-val) log10)]]
         ^{:key (str "v-axis-" a)}
         [:div.v-axis
-         {:style (merge {:left (min left #_960 770)
+         {:style (merge {:left    (min left #_960 770)
                          :opacity (if (and (= q1 q2) (< left #_900 770)) 1 0)
                          }
                         (transition-css transition))}
@@ -232,7 +222,7 @@
          [:div.v-axis-label
           {:style {:left (cond
                            (< a 10000) -2
-                           :else -5)
+                           :else       -5)
                    }} ;; 1. :when 2. left > some-val
           (cond
             (< a 1) (.toFixed a 1)
@@ -240,27 +230,24 @@
 
 
 #_(def month-names
-  {"01" "Jan"
-   "02" "Feb"
-   "03" "Mar"
-   "04" "Apr"
-   "05" "May"
-   "06" "Jun"
-   "07" "Jul"
-   "08" "Aug"
-   "09" "Sep"
-   "10" "Oct"
-   "11" "Nov"
-   "12" "Dec"})
-
-(defn v-line []
-  [:div.v-line])
+    {"01" "Jan"
+     "02" "Feb"
+     "03" "Mar"
+     "04" "Apr"
+     "05" "May"
+     "06" "Jun"
+     "07" "Jul"
+     "08" "Aug"
+     "09" "Sep"
+     "10" "Oct"
+     "11" "Nov"
+     "12" "Dec"})
 
 (defn get-data-type-name [data-type]
   (case data-type
-    :pe "PE"
+    :pe        "PE"
     :lowest-pe "最小PE"
-    :mv "市值"
+    :mv        "市值"
     :lowest-mv "最小市值"))
 
 (defn chart-page []
@@ -270,18 +257,20 @@
         stockname         (rf/subscribe [:top-stockname])
         first-holder-days (rf/subscribe [:first-holder-days])
         data-type         (rf/subscribe [:data-type])
-        lowest-pe (rf/subscribe [:lowest-pe])
-        mv (rf/subscribe [:mv])
-        lowest-mv (rf/subscribe [:lowest-mv])
-        show-axes? (rf/subscribe [:show-axes])
-        name (.toUpperCase (name @data-type))]
+        lowest-pe         (rf/subscribe [:lowest-pe])
+        mv                (rf/subscribe [:mv])
+        lowest-mv         (rf/subscribe [:lowest-mv])
+        show-axes?        (rf/subscribe [:show-axes])
+        name              (.toUpperCase (name @data-type))]
     [:div.container
+     [:div.joudou-logo
+      [:img.joudou-logo {:src joudou-logo-url}]]
      [progress-bar]
      [:div.top-desc #_(ffirst @pe-rank)
       [:div @secucode]
       [:div @stockname]
       [:div.secu-img
-       [:img.logo {:src (get-tiny-logo-url @secucode)}]]
+       [:img.secu-logo {:src (get-tiny-logo-url @secucode)}]]
       [:div (get-data-type-name @data-type) "保持者"]
       [:div "第 " @first-holder-days " 天"]]
      [:div.title "A股" (get-data-type-name @data-type) "历史前10位"]
@@ -297,7 +286,7 @@
      (when @show-axes?
        [:div
         [v-axes]
-        [v-line]])]))
+        [:div.v-line]])]))
 
 (def pages
   {:home    #'home-page

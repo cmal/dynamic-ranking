@@ -121,3 +121,8 @@
  :max-val
  (fn [db _]
    (:max-val db)))
+
+(reg-sub
+ :undef-val
+ (fn [db _]
+   (:undef-val db)))

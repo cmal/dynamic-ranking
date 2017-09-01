@@ -260,7 +260,8 @@ div.data-type-btn {
     border: 1px solid black;
     background: black;
     font-size: 16px;
-    color: #666;
+    color: #000;
+    cursor: pointer;
     height: 16px;
     line-height: 16px;
 }
@@ -273,7 +274,8 @@ div.axes-btn {
     border: 1px solid black;
     background: black;
     font-size: 16px;
-    color: #666;
+    color: #000;
+    cursor: pointer;
     height: 16px;
     line-height: 16px;
 }
@@ -288,7 +290,8 @@ div.timer-btn {
     background: black;
     /* background: #E9E7E6; */
     font-size: 16px;
-    color: #666;
+    color: #000;
+    cursor: pointer;
     height: 16px;
     line-height: 16px;
 }
@@ -301,7 +304,7 @@ div.v-axes {
 div.v-axis {
     position: absolute;
     top: 240px;
-    width: 3px;
+    width: 2px;
     background: #777;
     height: 320px;
     z-index: 1;
@@ -322,7 +325,7 @@ div.v-axis-label {
 div.v-line {
     position: absolute;
     width: 1px;
-    border-left: 3px dashed #777; /* rgba(202, 133, 217, 0.7); */
+    border-left: 2px dashed #777; /* rgba(202, 133, 217, 0.7); */
     height: 320px;
     top: 240px;
     left: 331px;
@@ -336,8 +339,17 @@ div.secu-img {
     top: 8px;
 }
 
-img.logo {
+img.secu-logo {
     height: 64px;
     background: #FFF;
 }
 
+div.joudou-logo {
+    position: absolute;
+    left: 360px;
+    top: 30px;
+}
+
+img.joudou-logo {
+    height: 120px;
+}

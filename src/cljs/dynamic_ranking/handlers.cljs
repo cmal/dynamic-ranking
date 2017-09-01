@@ -4,14 +4,14 @@
             [clojure.string :as str]))
 
 (reg-event-db
-  :initialize-db
-  (fn [_ _]
-    default-db))
+ :initialize-db
+ (fn [_ _]
+   default-db))
 
 (reg-event-db
-  :set-active-page
-  (fn [db [_ page]]
-    (assoc db :page page)))
+ :set-active-page
+ (fn [db [_ page]]
+   (assoc db :page page)))
 
 (reg-event-db
  :set-docs
@@ -49,16 +49,17 @@
 
 (defn change-time
   [db time]
-  (let [data    (get db (:data-type db))
-        index   (mod time (:data-length db))
-        rec     (nth data (if (neg? index) 0 index))
-        rank (second rec)
-        data (map second rank)
-        max-val (case (:data-type db)
-                  :lowest-pe (max 10 (last data))
-                  :pe (max 500 (first data))
-                  :mv (first data)
-                  :lowest-mv (last data))
+  (let [data-type           (:data-type db)
+        data                (get db data-type)
+        index               (mod time (:data-length db))
+        rec                 (nth data (if (neg? index) 0 index))
+        rank                (second rec)
+        data                (map second rank)
+        [max-val undef-val] (case data-type
+                              :lowest-pe (let [val (max 10 (last data))] [val val])
+                              :pe        [(max 500 (first data)) (last data)]
+                              :mv        [(first data) (last data)]
+                              :lowest-mv (let [val (last data)] [val val]))
         ]
     (assoc db
            :time time
@@ -66,6 +67,7 @@
            :current-rank (vec rank)
            :current-top (ffirst rank)
            :max-val max-val
+           :undef-val undef-val
            :x-axis-ratio (/ (* 770
                                0.01
                                (- (:chart-max-percent db)
@@ -75,10 +77,10 @@
 (reg-event-fx
  :set-time
  (fn [{:keys [db]} [_ time]]
-   {:db (if (empty? (get db (:data-type db)))
-          (assoc db :time time)
-          (-> (change-time db time)
-              (assoc :first-holder-days 1)))
+   {:db       (if (empty? (get db (:data-type db)))
+                (assoc db :time time)
+                (-> (change-time db time)
+                    (assoc :first-holder-days 1)))
     :dispatch [:update-top-stockname]}))
 
 (defn update-holder-days
@@ -115,10 +117,10 @@
 
 ;; get initialized
 (when-not (get @live-intervals "switch-timer")
-    (swap! live-intervals assoc
-           "switch-timer" (js/setInterval
-                           #(dispatch [:inc-time])
-                           (get time-intervals 0))))
+  (swap! live-intervals assoc
+         "switch-timer" (js/setInterval
+                         #(dispatch [:inc-time])
+                         (get time-intervals 0))))
 (reg-fx
  :switch-interval
  (fn [{:keys [action id delay event]}]
@@ -130,12 +132,12 @@
  :switch-timer
  (fn [{:keys [db]} _]
    (let [{:keys [time-interval-id]} db
-         new-time-interval-id (mod
-                               (inc time-interval-id)
-                               (count time-intervals))]
+         new-time-interval-id       (mod
+                                     (inc time-interval-id)
+                                     (count time-intervals))]
      {:switch-interval
       {;; NOTE: the `:id` is not what is returned by `setInterval`  !!!
-       :id    "switch-timer"                      ;; it is MY id for this interval
+       :id    "switch-timer"                            ;; it is MY id for this interval
        :delay (get time-intervals new-time-interval-id) ;; how many milli secs
        :event [:inc-time]                               ;; what event to dispatch
        }

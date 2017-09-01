@@ -1,7 +1,7 @@
 (ns dynamic-ranking.db
   (:require [re-frame.core :refer [dispatch]]))
 
-(def time-intervals [2000 1000 500 200 1E12])
+(def time-intervals [2000 1000 500 200 9999999])
 
 (def default-db
   {:page              :home
