@@ -162,6 +162,8 @@
 
 (def speed ["1x" "2x" "4x" "10x" "暂停"])
 
+(def bar-width 324)
+
 (defn time-controller []
   (let [id (rf/subscribe [:time-interval-id])]
     [:div.timer-btn {:on-click #(rf/dispatch [:switch-timer])}
@@ -179,21 +181,20 @@
      ^{:key (str "rank-desc-item-" text)} [:div.rank-desc-item text])])
 
 (defn progress-bar []
-  (let [width 424
-        total (rf/subscribe [:data-length])
+  (let [total (rf/subscribe [:data-length])
         time  (rf/subscribe [:time])
         itv   (rf/subscribe [:interval-sec])]
     [:div#progress-bar.progress-bar
-     {:style    {:width width}
+     {:style    {:width bar-width}
       :on-click (fn [e]
                   (when-let [node (js/document.getElementById "progress-bar")]
                     (rf/dispatch [:set-time (* @total
                                                (/ (- (.-clientX e)
                                                      (.-x (getPageOffset node))
                                                      1)
-                                                  width))])))}
+                                                  bar-width))])))}
      [:div.progress-past
-      {:style {:width     (* width (/ (mod @time @total) @total))
+      {:style {:width     (* bar-width (/ (mod @time @total) @total))
                :animation (str "ants " (* 100 @itv) "s linear infinite")}}]]))
 
 (defn v-axes []
@@ -214,10 +215,9 @@
                   q2 (quot (Math/log @max-val) log10)]]
         ^{:key (str "v-axis-" a)}
         [:div.v-axis
-         {:style (merge {:left    (min left #_960 770)
-                         :opacity (if (and (= q1 q2) (< left #_900 770)) 1 0)
-                         }
-                        (transition-css transition))}
+         {:style (assoc (transition-css transition)
+                        :left    (min left #_960 770)
+                        :opacity (if (and (= q1 q2) (< left #_900 770)) 1 0))}
          [:div.v-axis-cover]
          [:div.v-axis-label
           {:style {:left (cond
@@ -261,7 +261,11 @@
         mv                (rf/subscribe [:mv])
         lowest-mv         (rf/subscribe [:lowest-mv])
         show-axes?        (rf/subscribe [:show-axes])
-        name              (.toUpperCase (name @data-type))]
+        total             (rf/subscribe [:data-length])
+        time              (rf/subscribe [:time])
+        name              (.toUpperCase (name @data-type))
+        itv               (rf/subscribe [:interval-sec])
+        transition        (str "left " @itv "s linear, opacity " @itv "s ease-out")]
     [:div.container
      [:div.joudou-logo
       [:img.joudou-logo {:src joudou-logo-url}]]
@@ -273,10 +277,14 @@
        [:img.secu-logo {:src (get-tiny-logo-url @secucode)}]]
       [:div (get-data-type-name @data-type) "保持者"]
       [:div "第 " @first-holder-days " 天"]]
-     [:div.title "A股" (get-data-type-name @data-type) "历史前10位"]
+     [:div.title "A股" (get-data-type-name @data-type) "前10位"]
      (let [[y m d] (str/split @date #"-")]
        #_[:div.date (month-names m) " " d ", " y]
-       [:div.date y "年" m "月" d "日"])
+       [:div.date
+        {:style (assoc (transition-css transition)
+                       :left (+ 150 (* bar-width (/ (mod @time @total) @total)))
+                       )}
+        y "年" m "月" d "日"])
      [rank-desc]
      [main-chart]
      (when (and @lowest-pe @mv @lowest-mv)

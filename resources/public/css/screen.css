@@ -205,15 +205,16 @@ div.top-desc {
 div.title {
     position: absolute;
     top: 24px;
-    right: 48px;
-    font-size: 32px;
+    left: 300px;
+    font-size: 36px;
+    color: papayawhip;
 }
 
 div.date {
     position: absolute;
-    top: 64px;
-    right: 48px;
-    font-size: 64px;
+    top: 140px;
+    font-size: 28px;
+    color: powderblue;
 }
 
 /* img.logo { */
@@ -228,10 +229,10 @@ div.date {
 
 div.progress-bar {
     position: absolute;
-    height: 16px;
+    height: 12px;
     background: #E9E7E6;
-    top: 160px;
-    right: 48px;
+    top: 180px;
+    left: 220px;
     border: 1px solid #E9E7E6;
     cursor: pointer;
 }
@@ -247,7 +248,7 @@ div.progress-past {
     background: linear-gradient(45deg,
                                 #58b 25%, #1375B0 0, #1375B0 50%,
                                 #58b 0, #58b 75%, #1375B0 0);
-    height: 16px;
+    height: 12px;
     background-size: 25px 25px;
 }
 
@@ -255,10 +256,11 @@ div.progress-past {
 div.data-type-btn {
     position: absolute;
     top: 160px;
-    right: 680px;
+    /* right: 680px; */
+    left: -80px;
     width: 70px;
     border: 1px solid black;
-    background: black;
+    background: #666;
     font-size: 16px;
     color: #000;
     cursor: pointer;
@@ -268,11 +270,12 @@ div.data-type-btn {
 
 div.axes-btn {
     position: absolute;
-    top: 160px;
-    right: 600px;
+    top: 180px;
+    /* right: 600px; */
+    left: -80px;
     width: 54px;
     border: 1px solid black;
-    background: black;
+    background: #666;
     font-size: 16px;
     color: #000;
     cursor: pointer;
@@ -282,12 +285,13 @@ div.axes-btn {
 
 div.timer-btn {
     position: absolute;
-    top: 160px;
-    right: 496px;
+    top: 200px;
+    /* right: 496px; */
+    left: -80px;
     width: 54px;
     border: 1px solid black;
     /* border: 1px solid #E9E7E6; */
-    background: black;
+    background: #666;
     /* background: #E9E7E6; */
     font-size: 16px;
     color: #000;
@@ -342,12 +346,14 @@ div.secu-img {
 img.secu-logo {
     height: 64px;
     background: #FFF;
+    display: none;
 }
 
 div.joudou-logo {
     position: absolute;
-    left: 360px;
-    top: 30px;
+    left: 840px;
+    top: 250px;
+    z-index: 10000;
 }
 
 img.joudou-logo {
